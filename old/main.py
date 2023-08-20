@@ -1,0 +1,486 @@
+import json
+from fastapi import FastAPI, Response
+from fastapi.responses import JSONResponse, FileResponse
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from datetime import datetime
+
+
+import time
+import httpx
+import asyncio
+import uvicorn
+import multiprocessing
+
+# Local Assets
+from platforms import atcoder, codechef, codeforces, hackerearth, hackerrank, leetcode, toph
+
+
+HTTPX_CLIENT = httpx.AsyncClient(timeout=300)
+
+
+description = """
+<h1>A simple asynchronous API made with FastAPI that gives you the contests' details from different platforms. 🚀</h1>
+
+<h2>Made by: Nusab Taha ( @Nusab19 )</h2>
+
+Website: <a href="https://nusab19.github.io">nusab19.github.io</a>
+<br>
+Email: <a href="mailto:nusabtaha33@gmail.com">Nusab Taha</a>
+
+"""
+
+app = FastAPI(
+    title="Contests API",
+    description=description,
+    version="1.0",
+    license_info={
+        "name": "MIT license",
+        "url": "https://github.com/Nusab19/ContestsAPI/blob/main/LICENSE.md",
+    }
+)
+
+scheduler = AsyncIOScheduler()
+
+cachedData = {}
+keyword_platforms = {
+    "1": "atcoder",
+    "2": "codechef",
+    "3": "codeforces",
+    "4": "hackerearth",
+    "5": "hackerrank",
+    "6": "leetcode",
+    "7": "toph"
+}
+
+
+platform_funcs = {
+    "1": atcoder.getContests,
+    "2": codechef.getContests,
+    "3": codeforces.getContests,
+    "4": hackerearth.getContests,
+    "5": hackerrank.getContests,
+    "6": leetcode.getContests,
+    "7": toph.getContests
+}
+
+
+@app.on_event("startup")
+async def fx():
+    await cacheOnStart()
+    scheduler.add_job(cacheOnStart, 'interval', seconds=7 * 60)
+    scheduler.start()
+
+
+async def cacheOnStart():
+    x = [i(HTTPX_CLIENT) for i in platform_funcs.values()]
+    x = await asyncio.gather(*x)
+    y = keyword_platforms.values()
+
+    cachedData.update(dict(zip(y, x)))
+
+    print(f"Cached Data at {datetime.now()}")
+
+
+# Index / root
+@app.get("/")
+async def index():
+    welcomeMessage = """
+This API is created by Nusab Taha.
+
+For the docs, visit /docs endpoint.
+
+More info at: https://github.com/Nusab19
+
+Made using FastAPI with python3
+
+""".strip()
+
+    data = {"ok": True, "message": welcomeMessage}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+# 404 Exception
+@app.exception_handler(404)
+async def custom_404_handler(*_):
+    say = {"ok": False, "message": " Invalid Endpoint.\nWebPage not found 404"}
+    return JSONResponse(status_code=404, content=say)
+
+
+# favicon.ico
+@app.get('/favicon.ico', include_in_schema=False)
+async def favicon():
+    return FileResponse("Images/favicon.ico")
+
+
+# Platform Names
+@app.get("/platforms")
+async def platformNames():
+    data = {
+        "ok": True,
+        "message": list(keyword_platforms.values()),
+        "data": dict(keyword_platforms.items())}
+
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/all")
+async def allPlatformContests():
+    data = {"ok": True}
+    x = [i(HTTPX_CLIENT) for i in platform_funcs.values()]
+    x = await asyncio.gather(*x)
+    y = keyword_platforms.values()
+
+    data.update(dict(zip(y, x)))
+
+    try:
+        return Response(
+            content=json.dumps(
+                data,
+                indent=4,
+                default=str),
+            media_type='application/json')
+    finally:
+        del data["ok"]
+        cachedData.update(data)
+
+
+def formatError(e: Exception):
+    return {
+        "ok": False,
+        "message": "Failed to fetch contests",
+        "error": str(e)}
+
+
+@app.get("/1")
+@app.get("/atcoder")
+async def atcoderContests():
+    try:
+        data = {"ok": True}
+        x = await atcoder.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["atcoder"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/2")
+@app.get("/codechef")
+async def codechefContests():
+    try:
+        data = {"ok": True}
+        x = await codechef.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["codechef"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/3")
+@app.get("/codeforces")
+async def codeforcesContests():
+    try:
+        data = {"ok": True}
+        x = await codeforces.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["codeforces"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/4")
+@app.get("/hackerearth")
+async def hackerEarthContests():
+    try:
+        data = {"ok": True}
+        x = await hackerearth.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["hackerearth"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/5")
+@app.get("/hackerrank")
+async def hackerrankContests():
+    try:
+        data = {"ok": True}
+        x = await hackerrank.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["hackerrank"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/6")
+@app.get("/leetcode")
+async def leetCodeContests():
+    try:
+        data = {"ok": True}
+        x = await leetcode.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["leetcode"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/7")
+@app.get("/toph")
+async def tophContests():
+    try:
+        data = {"ok": True}
+        x = await toph.getContests(HTTPX_CLIENT)
+        data.update({"data": x})
+        try:
+            return Response(
+                content=json.dumps(
+                    data,
+                    indent=4,
+                    default=str),
+                media_type='application/json')
+        finally:
+            cachedData["toph"] = data["data"]
+
+    except Exception as e:
+        data = formatError(e)
+        return Response(content=json.dumps(data, indent=4, default=str),
+                        media_type='application/json')
+
+
+@app.get("/cached/all")
+async def all_cached():
+    data = {"ok": True}
+    data.update(cachedData.copy())
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/1")
+@app.get("/cached/atcoder")
+async def CachedAtcoderContests():
+    data = {"ok": True, "data": cachedData.get("atcoder")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/2")
+@app.get("/cached/codechef")
+async def CachedCodechef():
+    data = {"ok": True, "data": cachedData.get("codechef")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/3")
+@app.get("/cached/codeforces")
+async def CachedCodeforces():
+    data = {"ok": True, "data": cachedData.get("codeforces")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/4")
+@app.get("/cached/hackerearth")
+async def CachedHackerearth():
+    data = {"ok": True, "data": cachedData.get("hackerearth")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/5")
+@app.get("/cached/hackerrank")
+async def CachedHackerrank():
+    data = {"ok": True, "data": cachedData.get("hackerrank")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/6")
+@app.get("/cached/leetcode")
+async def CachedLeetCode():
+    data = {"ok": True, "data": cachedData.get("leetcode")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.get("/cached/7")
+@app.get("/cached/toph")
+async def CachedToph():
+    data = {"ok": True, "data": cachedData.get("toph")}
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+_tempData = {"count": 0, "startTime": time.time()}
+
+
+def secondsToTime(s):
+  m, s = divmod(s, 60)
+  h, m = divmod(m, 60)
+  d, h = divmod(h, 24)
+  result = ""
+  if d > 0:
+    result += f"{d} day{'s' if d > 1 else ''}"
+  if h > 0:
+    result += f" {h} hour{'s' if h > 1 else ''}"
+  if m > 0:
+    result += f" {m} minute{'s' if m > 1 else ''}"
+  if not result:
+    result = "0 minutes"
+  return result.strip()
+
+
+
+
+@app.get("/status")
+async def api_status():
+    uptime = time.time() - _tempData["startTime"]
+    reqCount = _tempData["count"]
+    data = {
+        "uptime": secondsToTime(uptime),
+        "requestsCount": reqCount
+    }
+    return Response(
+        content=json.dumps(
+            data,
+            indent=4,
+            default=str),
+        media_type='application/json')
+
+
+@app.middleware("http")
+async def add_process_time_header(request, func):
+    p = request.client.host
+    response = await func(request)
+    try:
+        return response
+    finally:
+        _tempData["count"] += 1
+
+
+
+def importKeepAlive():
+    import keepalive
+
+
+multiprocessing.Process(target=importKeepAlive).start()
+
+
+
+if __name__ == "__main__":
+    config = uvicorn.Config(
+        app=app,
+        host="0.0.0.0",
+        port=5000,
+        reload=True
+    )
+
+    server = uvicorn.Server(config=config)
+    server.run()
