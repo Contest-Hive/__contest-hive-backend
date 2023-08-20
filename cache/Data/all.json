@@ -1,0 +1,173 @@
+{
+    "ok": true,
+    "data": {
+        "atcoder": [
+            {
+                "name": "GAMEFREAK Programming Contest 2023 (AtCoder Beginner Contest 317)",
+                "url": "https://atcoder.jp/contests/abc317",
+                "startTime": "26-08-2023 12:00:00 UTC",
+                "duration": "1 hour 40 minutes",
+                "durationSeconds": 6000
+            },
+            {
+                "name": "TOYOTA Programming Contest 2023 Summer final",
+                "url": "https://atcoder.jp/contests/toyota2023summer-final",
+                "startTime": "27-08-2023 01:00:00 UTC",
+                "duration": "3 hours 30 minutes",
+                "durationSeconds": 12600
+            },
+            {
+                "name": "THIRD PROGRAMMING CONTEST 2023 ALGO（AtCoder Beginner Contest 318）",
+                "url": "https://atcoder.jp/contests/abc318",
+                "startTime": "02-09-2023 12:00:00 UTC",
+                "duration": "1 hour 40 minutes",
+                "durationSeconds": 6000
+            },
+            {
+                "name": "10th Asprova Programming Contest（AtCoder Heuristic Contest 023）",
+                "url": "https://atcoder.jp/contests/ahc023",
+                "startTime": "03-09-2023 01:00:00 UTC",
+                "duration": "7 days 10 hours",
+                "durationSeconds": 640800
+            },
+            {
+                "name": "World Tour Finals 2022 Day1",
+                "url": "https://atcoder.jp/contests/wtf22-day1",
+                "startTime": "08-09-2023 04:00:00 UTC",
+                "duration": "4 hours",
+                "durationSeconds": 14400
+            },
+            {
+                "name": "World Tour Finals 2022 Day1（Open Contest）",
+                "url": "https://atcoder.jp/contests/wtf22-day1-open",
+                "startTime": "08-09-2023 04:00:00 UTC",
+                "duration": "4 hours",
+                "durationSeconds": 14400
+            },
+            {
+                "name": "World Tour Finals 2022 Day2",
+                "url": "https://atcoder.jp/contests/wtf22-day2",
+                "startTime": "09-09-2023 04:00:00 UTC",
+                "duration": "4 hours",
+                "durationSeconds": 14400
+            },
+            {
+                "name": "World Tour Finals 2022 Day2（Open Contest）",
+                "url": "https://atcoder.jp/contests/wtf22-day2-open",
+                "startTime": "09-09-2023 04:00:00 UTC",
+                "duration": "4 hours",
+                "durationSeconds": 14400
+            },
+            {
+                "name": "AtCoder Regular Contest 165",
+                "url": "https://atcoder.jp/contests/arc165",
+                "startTime": "17-09-2023 12:00:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            }
+        ],
+        "codechef": [
+            {
+                "name": "Starters 100 (Unrated)",
+                "url": "https://www.codechef.com/START100",
+                "startTime": "30-08-2023 04:30:00 UTC",
+                "duration": "12 hours",
+                "durationSeconds": 43200
+            }
+        ],
+        "codeforces": [
+            {
+                "name": "Codeforces Round (Div. 3)",
+                "url": "https://codeforces.com/contests/1862",
+                "startTime": "24-08-2023 14:35:00 UTC",
+                "duration": "2 hours 15 minutes",
+                "durationSeconds": 8100
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1865",
+                "startTime": "26-08-2023 14:35:00 UTC",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 1)",
+                "url": "https://codeforces.com/contests/1864",
+                "startTime": "26-08-2023 14:35:00 UTC",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 1 + Div. 2)",
+                "url": "https://codeforces.com/contests/1863",
+                "startTime": "30-08-2023 14:35:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
+                "url": "https://codeforces.com/contests/1861",
+                "startTime": "31-08-2023 14:35:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "COMPFEST 15 - Preliminary Online Mirror (Unrated, ICPC Rules, Teams Preferred)",
+                "url": "https://codeforces.com/contests/1866",
+                "startTime": "03-09-2023 12:05:00 UTC",
+                "duration": "5 hours",
+                "durationSeconds": 18000
+            }
+        ],
+        "hackerearth": [
+            {
+                "name": "CharmHealth CodeRx Hackathon",
+                "url": "https://charmhealth.hackerearth.com/",
+                "startTime": "21-08-2023 16:00:00 UTC",
+                "duration": "96 days 15 hours 55 minutes",
+                "durationSeconds": 8351700
+            },
+            {
+                "name": "Rakathon 2023",
+                "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
+                "startTime": "08-09-2023 05:30:00 UTC",
+                "duration": "1 day 8 hours 30 minutes",
+                "durationSeconds": 117000
+            },
+            {
+                "name": "CyientifIQ Innovation League",
+                "url": "https://cyient.hackerearth.com/",
+                "startTime": "23-10-2023 17:00:00 UTC",
+                "duration": "27 days 8 hours",
+                "durationSeconds": 2361600
+            }
+        ],
+        "hackerrank": [],
+        "leetcode": [
+            {
+                "name": "Weekly Contest 360",
+                "url": "https://leetcode.com/contest/weekly-contest-360",
+                "startTime": "27-08-2023 02:30:00 UTC",
+                "duration": "1 hour 30 minutes",
+                "durationSeconds": 5400
+            },
+            {
+                "name": "Biweekly Contest 112",
+                "url": "https://leetcode.com/contest/biweekly-contest-112",
+                "startTime": "02-09-2023 14:30:00 UTC",
+                "duration": "1 hour 30 minutes",
+                "durationSeconds": 5400
+            }
+        ],
+        "toph": [
+            {
+                "name": "Tough Dash, September 2023",
+                "url": "https://toph.co/c/tough-dash-september-2023",
+                "startTime": "15-09-2023 15:00:00 UTC",
+                "duration": "40 minutes",
+                "durationSeconds": 2400
+            }
+        ]
+    },
+    "lastUpdated": "20-08-2023 19:16:48 UTC"
+}

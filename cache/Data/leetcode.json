@@ -1,0 +1,20 @@
+{
+    "ok": true,
+    "data": [
+        {
+            "name": "Weekly Contest 360",
+            "url": "https://leetcode.com/contest/weekly-contest-360",
+            "startTime": "27-08-2023 02:30:00 UTC",
+            "duration": "1 hour 30 minutes",
+            "durationSeconds": 5400
+        },
+        {
+            "name": "Biweekly Contest 112",
+            "url": "https://leetcode.com/contest/biweekly-contest-112",
+            "startTime": "02-09-2023 14:30:00 UTC",
+            "duration": "1 hour 30 minutes",
+            "durationSeconds": 5400
+        }
+    ],
+    "lastUpdated": "20-08-2023 19:16:48 UTC"
+}
