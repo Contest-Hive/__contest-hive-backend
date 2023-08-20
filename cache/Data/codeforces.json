@@ -1,0 +1,48 @@
+{
+    "ok": true,
+    "data": [
+        {
+            "name": "Codeforces Round (Div. 3)",
+            "url": "https://codeforces.com/contests/1862",
+            "startTime": "24-08-2023 14:35:00 UTC",
+            "duration": "2 hours 15 minutes",
+            "durationSeconds": 8100
+        },
+        {
+            "name": "Codeforces Round (Div. 2)",
+            "url": "https://codeforces.com/contests/1865",
+            "startTime": "26-08-2023 14:35:00 UTC",
+            "duration": "2 hours 30 minutes",
+            "durationSeconds": 9000
+        },
+        {
+            "name": "Codeforces Round (Div. 1)",
+            "url": "https://codeforces.com/contests/1864",
+            "startTime": "26-08-2023 14:35:00 UTC",
+            "duration": "2 hours 30 minutes",
+            "durationSeconds": 9000
+        },
+        {
+            "name": "Codeforces Round (Div. 1 + Div. 2)",
+            "url": "https://codeforces.com/contests/1863",
+            "startTime": "30-08-2023 14:35:00 UTC",
+            "duration": "2 hours",
+            "durationSeconds": 7200
+        },
+        {
+            "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
+            "url": "https://codeforces.com/contests/1861",
+            "startTime": "31-08-2023 14:35:00 UTC",
+            "duration": "2 hours",
+            "durationSeconds": 7200
+        },
+        {
+            "name": "COMPFEST 15 - Preliminary Online Mirror (Unrated, ICPC Rules, Teams Preferred)",
+            "url": "https://codeforces.com/contests/1866",
+            "startTime": "03-09-2023 12:05:00 UTC",
+            "duration": "5 hours",
+            "durationSeconds": 18000
+        }
+    ],
+    "lastUpdated": "20-08-2023 19:19:02 UTC"
+}
