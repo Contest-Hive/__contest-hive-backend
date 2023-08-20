@@ -3,6 +3,9 @@ name: Cache Data
 on:
   push:
     branches: [ main ]
+    
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   dumpData:
@@ -29,7 +32,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Auto-format code with autopep8"
+        git commit -m "Auto Dumped Data"
         
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
