@@ -68,9 +68,16 @@
         ],
         "codechef": [
             {
+                "name": "August Long 2023 (Unrated)",
+                "url": "https://www.codechef.com/AUG23",
+                "startTime": "30-08-2023 06:30:00 UTC",
+                "duration": "12 hours",
+                "durationSeconds": 43200
+            },
+            {
                 "name": "Starters 100 (Unrated)",
                 "url": "https://www.codechef.com/START100",
-                "startTime": "30-08-2023 04:30:00 UTC",
+                "startTime": "30-09-2023 04:30:00 UTC",
                 "duration": "12 hours",
                 "durationSeconds": 43200
             }
@@ -169,5 +176,5 @@
             }
         ]
     },
-    "lastUpdated": "23-08-2023 17:31:39 UTC"
+    "lastUpdated": "23-08-2023 17:38:52 UTC"
 }
