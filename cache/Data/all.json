@@ -84,13 +84,6 @@
         ],
         "codeforces": [
             {
-                "name": "Codeforces Round 894 (Div. 3)",
-                "url": "https://codeforces.com/contests/1862",
-                "startTime": "24-08-2023 14:35:00 UTC",
-                "duration": "2 hours 15 minutes",
-                "durationSeconds": 8100
-            },
-            {
                 "name": "Harbour.Space Scholarship Contest 2023-2024 (Div. 1 + Div. 2)",
                 "url": "https://codeforces.com/contests/1864",
                 "startTime": "26-08-2023 14:35:00 UTC",
@@ -176,5 +169,5 @@
             }
         ]
     },
-    "lastUpdated": "24-08-2023 14:33:56 UTC"
+    "lastUpdated": "24-08-2023 14:41:27 UTC"
 }
