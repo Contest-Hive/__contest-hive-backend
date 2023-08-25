@@ -65,6 +65,13 @@
             "durationSeconds": 14400
         },
         {
+            "name": "AtCoder Beginner Contest 319",
+            "url": "https://atcoder.jp/contests/abc319",
+            "startTime": "09-09-2023 12:00:00 UTC",
+            "duration": "1 hour 40 minutes",
+            "durationSeconds": 6000
+        },
+        {
             "name": "AtCoder Regular Contest 165",
             "url": "https://atcoder.jp/contests/arc165",
             "startTime": "17-09-2023 12:00:00 UTC",
@@ -72,5 +79,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "25-08-2023 08:38:10 UTC"
+    "lastUpdated": "25-08-2023 08:45:39 UTC"
 }
