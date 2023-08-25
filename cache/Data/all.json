@@ -178,8 +178,8 @@
                 "name": "[ Mock ] Breaking Code'23 : Programming Contest by CSE, MBSTU",
                 "url": "https://toph.co/c/mbstu-cse-inter-department-2023-mock",
                 "startTime": "25-08-2023 11:45:00 UTC",
-                "duration": "2 hours",
-                "durationSeconds": 7200
+                "duration": "1 hour 30 minutes",
+                "durationSeconds": 5400
             },
             {
                 "name": "Tough Dash, September 2023",
@@ -190,5 +190,5 @@
             }
         ]
     },
-    "lastUpdated": "25-08-2023 11:25:43 UTC"
+    "lastUpdated": "25-08-2023 11:33:25 UTC"
 }
