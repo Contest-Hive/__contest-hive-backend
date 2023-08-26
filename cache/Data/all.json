@@ -89,7 +89,36 @@
                 "durationSeconds": 43200
             }
         ],
-        "codeforces": [],
+        "codeforces": [
+            {
+                "name": "Pinely Round 2 (Div. 1 + Div. 2)",
+                "url": "https://codeforces.com/contests/1863",
+                "startTime": "30-08-2023 14:35:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
+                "url": "https://codeforces.com/contests/1861",
+                "startTime": "31-08-2023 14:35:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "COMPFEST 15 - Preliminary Online Mirror (Unrated, ICPC Rules, Teams Preferred)",
+                "url": "https://codeforces.com/contests/1866",
+                "startTime": "03-09-2023 12:05:00 UTC",
+                "duration": "5 hours",
+                "durationSeconds": 18000
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1867",
+                "startTime": "11-09-2023 14:35:00 UTC",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            }
+        ],
         "hackerearth": [
             {
                 "name": "CharmHealth CodeRx Hackathon",
@@ -140,5 +169,5 @@
             }
         ]
     },
-    "lastUpdated": "26-08-2023 20:21:40 UTC"
+    "lastUpdated": "26-08-2023 20:29:15 UTC"
 }
