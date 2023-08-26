@@ -2,13 +2,6 @@
     "ok": true,
     "data": [
         {
-            "name": "GAMEFREAK Programming Contest 2023 (AtCoder Beginner Contest 317)",
-            "url": "https://atcoder.jp/contests/abc317",
-            "startTime": "26-08-2023 12:00:00 UTC",
-            "duration": "1 hour 40 minutes",
-            "durationSeconds": 6000
-        },
-        {
             "name": "TOYOTA Programming Contest 2023 Summer final",
             "url": "https://atcoder.jp/contests/toyota2023summer-final",
             "startTime": "27-08-2023 01:00:00 UTC",
@@ -86,5 +79,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "26-08-2023 12:00:11 UTC"
+    "lastUpdated": "26-08-2023 12:27:43 UTC"
 }
