@@ -175,13 +175,6 @@
         ],
         "toph": [
             {
-                "name": "Breaking Code'23 : Programming Contest by CSE, MBSTU",
-                "url": "https://toph.co/c/mbstu-cse-inter-department-2023",
-                "startTime": "26-08-2023 04:05:00 UTC",
-                "duration": "5 hours",
-                "durationSeconds": 18000
-            },
-            {
                 "name": "Tough Dash, September 2023",
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "15-09-2023 15:00:00 UTC",
@@ -190,5 +183,5 @@
             }
         ]
     },
-    "lastUpdated": "26-08-2023 04:03:11 UTC"
+    "lastUpdated": "26-08-2023 04:20:30 UTC"
 }
