@@ -80,8 +80,8 @@
                 "name": "Pinely Round 2 (Div. 1 + Div. 2)",
                 "url": "https://codeforces.com/contests/1863",
                 "startTime": "30-08-2023 14:35:00 UTC",
-                "duration": "2 hours",
-                "durationSeconds": 7200
+                "duration": "3 hours",
+                "durationSeconds": 10800
             },
             {
                 "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
@@ -155,5 +155,5 @@
             }
         ]
     },
-    "lastUpdated": "27-08-2023 09:35:13 UTC"
+    "lastUpdated": "27-08-2023 09:42:30 UTC"
 }
