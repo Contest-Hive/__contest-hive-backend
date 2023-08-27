@@ -107,13 +107,6 @@
         ],
         "hackerearth": [
             {
-                "name": "CharmHealth CodeRx Hackathon",
-                "url": "https://charmhealth.hackerearth.com/",
-                "startTime": "27-08-2023 16:00:00 UTC",
-                "duration": "90 days 15 hours 55 minutes",
-                "durationSeconds": 7833300
-            },
-            {
                 "name": "Rakathon 2023",
                 "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
                 "startTime": "08-09-2023 05:30:00 UTC",
@@ -155,5 +148,5 @@
             }
         ]
     },
-    "lastUpdated": "27-08-2023 15:57:33 UTC"
+    "lastUpdated": "27-08-2023 16:13:18 UTC"
 }
