@@ -114,6 +114,13 @@
                 "durationSeconds": 117000
             },
             {
+                "name": "CharmHealth CodeRx Hackathon",
+                "url": "https://charmhealth.hackerearth.com/",
+                "startTime": "13-09-2023 16:00:00 UTC",
+                "duration": "73 days 15 hours 55 minutes",
+                "durationSeconds": 6364500
+            },
+            {
                 "name": "CyientifIQ Innovation League",
                 "url": "https://cyient.hackerearth.com/",
                 "startTime": "23-10-2023 17:00:00 UTC",
@@ -148,5 +155,5 @@
             }
         ]
     },
-    "lastUpdated": "28-08-2023 07:57:48 UTC"
+    "lastUpdated": "28-08-2023 08:15:46 UTC"
 }
