@@ -16,6 +16,13 @@
             "durationSeconds": 18000
         },
         {
+            "name": "Codeforces Round 895 (Div. 3)",
+            "url": "https://codeforces.com/contests/1872",
+            "startTime": "07-09-2023 14:35:00 UTC",
+            "duration": "2 hours 15 minutes",
+            "durationSeconds": 8100
+        },
+        {
             "name": "Codeforces Round (Div. 2)",
             "url": "https://codeforces.com/contests/1869",
             "startTime": "10-09-2023 14:05:00 UTC",
@@ -51,5 +58,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "30-08-2023 17:33:43 UTC"
+    "lastUpdated": "30-08-2023 17:41:37 UTC"
 }
