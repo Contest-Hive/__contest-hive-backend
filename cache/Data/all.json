@@ -73,7 +73,15 @@
                 "durationSeconds": 6000
             }
         ],
-        "codechef": [],
+        "codechef": [
+            {
+                "name": "September Long 2023",
+                "url": "https://www.codechef.com/SEP23",
+                "startTime": "06-09-2023 06:30:00 UTC",
+                "duration": "12 hours",
+                "durationSeconds": 43200
+            }
+        ],
         "codeforces": [
             {
                 "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
@@ -175,5 +183,5 @@
             }
         ]
     },
-    "lastUpdated": "30-08-2023 15:41:52 UTC"
+    "lastUpdated": "30-08-2023 15:51:38 UTC"
 }
