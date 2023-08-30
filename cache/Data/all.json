@@ -76,13 +76,6 @@
         "codechef": [],
         "codeforces": [
             {
-                "name": "Pinely Round 2 (Div. 1 + Div. 2)",
-                "url": "https://codeforces.com/contests/1863",
-                "startTime": "30-08-2023 14:35:00 UTC",
-                "duration": "3 hours",
-                "durationSeconds": 10800
-            },
-            {
                 "name": "Educational Codeforces Round 154 (Rated for Div. 2)",
                 "url": "https://codeforces.com/contests/1861",
                 "startTime": "31-08-2023 14:35:00 UTC",
@@ -182,5 +175,5 @@
             }
         ]
     },
-    "lastUpdated": "30-08-2023 14:28:23 UTC"
+    "lastUpdated": "30-08-2023 14:35:20 UTC"
 }
