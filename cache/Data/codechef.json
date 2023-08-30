@@ -1,13 +1,5 @@
 {
     "ok": true,
-    "data": [
-        {
-            "name": "August Long 2023 (Unrated)",
-            "url": "https://www.codechef.com/AUG23",
-            "startTime": "30-08-2023 06:30:00 UTC",
-            "duration": "12 hours",
-            "durationSeconds": 43200
-        }
-    ],
-    "lastUpdated": "30-08-2023 06:25:27 UTC"
+    "data": [],
+    "lastUpdated": "30-08-2023 06:32:50 UTC"
 }

@@ -73,15 +73,7 @@
                 "durationSeconds": 6000
             }
         ],
-        "codechef": [
-            {
-                "name": "August Long 2023 (Unrated)",
-                "url": "https://www.codechef.com/AUG23",
-                "startTime": "30-08-2023 06:30:00 UTC",
-                "duration": "12 hours",
-                "durationSeconds": 43200
-            }
-        ],
+        "codechef": [],
         "codeforces": [
             {
                 "name": "Pinely Round 2 (Div. 1 + Div. 2)",
@@ -190,5 +182,5 @@
             }
         ]
     },
-    "lastUpdated": "30-08-2023 06:25:27 UTC"
+    "lastUpdated": "30-08-2023 06:32:50 UTC"
 }
