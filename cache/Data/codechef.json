@@ -2,12 +2,12 @@
     "ok": true,
     "data": [
         {
-            "name": "September Long 2023",
+            "name": "September Short 2023 (Unrated)",
             "url": "https://www.codechef.com/SEP23",
-            "startTime": "06-09-2023 06:30:00 UTC",
-            "duration": "12 hours",
-            "durationSeconds": 43200
+            "startTime": "06-09-2023 14:30:00 UTC",
+            "duration": "2 hours",
+            "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "30-08-2023 19:31:54 UTC"
+    "lastUpdated": "30-08-2023 19:41:54 UTC"
 }
