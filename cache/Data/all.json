@@ -20,8 +20,8 @@
                 "name": "World Tour Finals 2022 Day1",
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "08-09-2023 04:00:00 UTC",
-                "duration": "4 hours",
-                "durationSeconds": 14400
+                "duration": "5 hours",
+                "durationSeconds": 18000
             },
             {
                 "name": "World Tour Finals 2022 Day1（Open Contest）",
@@ -197,5 +197,5 @@
             }
         ]
     },
-    "lastUpdated": "01-09-2023 05:51:54 UTC"
+    "lastUpdated": "01-09-2023 06:09:08 UTC"
 }
