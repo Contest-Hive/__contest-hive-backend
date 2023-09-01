@@ -71,6 +71,13 @@
                 "startTime": "23-09-2023 12:00:00 UTC",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
+            },
+            {
+                "name": "Marubeni Programming Contest 2023 (AtCoder Heuristic Contest 024)",
+                "url": "https://atcoder.jp/contests/ahc024",
+                "startTime": "24-09-2023 06:00:00 UTC",
+                "duration": "4 hours",
+                "durationSeconds": 14400
             }
         ],
         "codechef": [
@@ -190,5 +197,5 @@
             }
         ]
     },
-    "lastUpdated": "01-09-2023 04:41:36 UTC"
+    "lastUpdated": "01-09-2023 04:52:07 UTC"
 }
