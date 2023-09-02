@@ -13,18 +13,10 @@ from platforms import (
     HackerEarth,
     HackerRank,
     LeetCode,
-    Toph
+    Toph,
+    convert_start_time as convertTime
 )
 
-
-HTTPX_CLIENT = httpx.AsyncClient(timeout=None, follow_redirects=1)
-
-
-description = """
-<h1>Contest Hive 🚀 is an asynchronous API that gives info about upcoming contests from 7 different platforms</h1>
-
-Author: <a href="https://nusab19.pages.dev">Nusab Taha</a>
-"""
 
 
 class Contests:
@@ -56,13 +48,14 @@ class Contests:
         with open(f"Data/{name}.json", "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4,  ensure_ascii=False)
 
-    async def dumpContests(self, data):
+    async def dumpContests(self, data: dict):
         # making `Data` folder if not exists
-        if not os.path.exists("Data"):os.mkdir("Data")
+        if not os.path.exists("Data"):
+            os.mkdir("Data")
 
         self.dumpJson("all", data)
         print("Dumped All")
-        
+
         # Dumping each platform
         for name, dt in data["data"].items():
             newData = {
@@ -76,6 +69,7 @@ class Contests:
         print("Task Finished...")
 
     async def getAllContests(self):
+        HTTPX_CLIENT = httpx.AsyncClient(timeout=None, follow_redirects=1)
         x = [func(HTTPX_CLIENT) for func in self.platformFuncs.values()]
         print("Getting all contests")
 
@@ -85,10 +79,8 @@ class Contests:
         data = {
             "ok": True,
             "data": dict(zip(y, x)),
-            "lastUpdated": datetime.now().strftime("%d-%m-%Y %H:%M:%S UTC")
+            "lastUpdated": convertTime(datetime.now().strftime("%d-%m-%Y %H:%M:%S UTC"))
         }
-        # print(data)
-
         await self.dumpContests(data)
 
 

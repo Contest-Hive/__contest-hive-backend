@@ -4,9 +4,16 @@ import asyncio
 from bs4 import BeautifulSoup
 from datetime import datetime
 try:
-    from helpers.format_time import secondsToTime, timeToSeconds
+    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
 except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds
+    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
+
+
+
+def convert_start_time(startTime):
+    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
+    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
+    return formatted_time
 
 
 def extract_data(r):
@@ -30,11 +37,15 @@ def extract_data(r):
         startTime = datetime.strftime(
             datetime.utcfromtimestamp(startSec),
             "%d-%m-%Y %H:%M:%S") + " UTC"
+        startTime = convert_start_time(startTime)
         url = f"https://toph.co{endpoint}"
         contest = {
             "name": name,
             "url": url,
             "startTime": startTime,
+            "readableStartTime": humanReadableTime(startTime),
+            "startingIn": calculate_time_difference(startTime),
+            # duration are added afterwords
         }
         allContests.append(contest)
     return allContests

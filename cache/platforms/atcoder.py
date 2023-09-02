@@ -5,14 +5,20 @@ import asyncio
 from bs4 import BeautifulSoup
 from datetime import datetime
 try:
-    from helpers.format_time import secondsToTime, timeToSeconds
+    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
 except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds
+    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
 
 
 def extract_data(r):
     soup = BeautifulSoup(r, "lxml")
     return soup.select("#contest-table-upcoming tbody tr")
+
+
+def convert_start_time(startTime):
+    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
+    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
+    return formatted_time
 
 
 async def getContests(ses: httpx.AsyncClient):
@@ -37,6 +43,8 @@ async def getContests(ses: httpx.AsyncClient):
                     " ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(
                 pytz.utc).strftime("%d-%m-%Y %H:%M:%S") + " UTC"
 
+            startTime = convert_start_time(startTime)
+
             h, m = ele[2].text.split(':')
             durationSec = int(h) * 3600 + int(m) * 60
             duration = secondsToTime(durationSec)
@@ -45,6 +53,8 @@ async def getContests(ses: httpx.AsyncClient):
                 "name": name,
                 "url": url,
                 "startTime": startTime,
+                "readableStartTime": humanReadableTime(startTime),
+                "startingIn": calculate_time_difference(startTime),
                 "duration": duration,
                 "durationSeconds": durationSec
             }

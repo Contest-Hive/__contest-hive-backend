@@ -4,24 +4,21 @@
         {
             "name": "Rakathon 2023",
             "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
-            "startTime": "08-09-2023 05:30:00 UTC",
+            "startTime": "2023-09-08T05:30:00.000+00:00",
+            "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
+            "startingIn": "5 days",
             "duration": "1 day 8 hours 30 minutes",
             "durationSeconds": 117000
         },
         {
-            "name": "CharmHealth CodeRx Hackathon",
-            "url": "https://charmhealth.hackerearth.com/",
-            "startTime": "13-09-2023 16:00:00 UTC",
-            "duration": "73 days 15 hours 55 minutes",
-            "durationSeconds": 6364500
-        },
-        {
             "name": "CyientifIQ Innovation League",
             "url": "https://cyient.hackerearth.com/",
-            "startTime": "23-10-2023 17:00:00 UTC",
+            "startTime": "2023-10-23T17:00:00.000+00:00",
+            "readableStartTime": "23rd October, 2023 05:00:00 PM UTC",
+            "startingIn": "50 days",
             "duration": "27 days 8 hours",
             "durationSeconds": 2361600
         }
     ],
-    "lastUpdated": "02-09-2023 23:23:45 UTC"
+    "lastUpdated": "03-09-2023 05:37:36 UTC"
 }

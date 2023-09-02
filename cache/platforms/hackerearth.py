@@ -5,9 +5,16 @@ import asyncio
 
 from datetime import datetime
 try:
-    from helpers.format_time import secondsToTime, timeToSeconds
+    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
 except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds
+    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
+
+
+
+def convert_start_time(startTime):
+    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
+    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
+    return formatted_time
 
 
 async def getContests(ses: httpx.AsyncClient):
@@ -42,10 +49,13 @@ async def getContests(ses: httpx.AsyncClient):
                             5],
                         "%Y-%m-%d %H:%M:%S").strftime("%d-%m-%Y %H:%M:%S UTC")
 
+                    startTime = convert_start_time(startTime)
                     contest = {
                         "name": name,
                         "url": url,
                         "startTime": startTime,
+                        "readableStartTime": humanReadableTime(startTime),
+                        "startingIn": calculate_time_difference(startTime),
                         "duration": duration,
                         "durationSeconds": durationSec
                     }
