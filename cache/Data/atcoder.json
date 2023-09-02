@@ -2,13 +2,6 @@
     "ok": true,
     "data": [
         {
-            "name": "THIRD PROGRAMMING CONTEST 2023 ALGO（AtCoder Beginner Contest 318）",
-            "url": "https://atcoder.jp/contests/abc318",
-            "startTime": "02-09-2023 12:00:00 UTC",
-            "duration": "1 hour 40 minutes",
-            "durationSeconds": 6000
-        },
-        {
             "name": "10th Asprova Programming Contest（AtCoder Heuristic Contest 023）",
             "url": "https://atcoder.jp/contests/ahc023",
             "startTime": "03-09-2023 01:00:00 UTC",
@@ -79,5 +72,5 @@
             "durationSeconds": 14400
         }
     ],
-    "lastUpdated": "02-09-2023 11:51:51 UTC"
+    "lastUpdated": "02-09-2023 12:10:27 UTC"
 }
