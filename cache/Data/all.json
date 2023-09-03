@@ -43,7 +43,7 @@
                 "url": "https://atcoder.jp/contests/abc319",
                 "startTime": "2023-09-09T12:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 12:00:00 PM UTC",
-                "startingIn": "6 days",
+                "startingIn": "5 days",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -52,7 +52,7 @@
                 "url": "https://atcoder.jp/contests/abc320",
                 "startTime": "2023-09-16T12:00:00.000+00:00",
                 "readableStartTime": "16th September, 2023 12:00:00 PM UTC",
-                "startingIn": "13 days",
+                "startingIn": "12 days",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -61,7 +61,7 @@
                 "url": "https://atcoder.jp/contests/arc165",
                 "startTime": "2023-09-17T12:00:00.000+00:00",
                 "readableStartTime": "17th September, 2023 12:00:00 PM UTC",
-                "startingIn": "14 days",
+                "startingIn": "13 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -70,7 +70,7 @@
                 "url": "https://atcoder.jp/contests/abc321",
                 "startTime": "2023-09-23T12:00:00.000+00:00",
                 "readableStartTime": "23rd September, 2023 12:00:00 PM UTC",
-                "startingIn": "20 days",
+                "startingIn": "19 days",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -96,15 +96,6 @@
             }
         ],
         "codeforces": [
-            {
-                "name": "COMPFEST 15 - Preliminary Online Mirror (Unrated, ICPC Rules, Teams Preferred)",
-                "url": "https://codeforces.com/contests/1866",
-                "startTime": "2023-09-03T12:05:00.000+00:00",
-                "readableStartTime": "3rd September, 2023 12:05:00 PM UTC",
-                "startingIn": "14 minutes",
-                "duration": "5 hours",
-                "durationSeconds": 18000
-            },
             {
                 "name": "Codeforces Round 895 (Div. 3)",
                 "url": "https://codeforces.com/contests/1872",
@@ -222,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-03T11:50:25.000+00:00"
+    "lastUpdated": "2023-09-03T12:08:54.000+00:00"
 }
