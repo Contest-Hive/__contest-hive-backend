@@ -3,15 +3,6 @@
     "data": {
         "atcoder": [
             {
-                "name": "10th Asprova Programming Contest（AtCoder Heuristic Contest 023）",
-                "url": "https://atcoder.jp/contests/ahc023",
-                "startTime": "2023-09-03T01:00:00.000+00:00",
-                "readableStartTime": "3rd September, 2023 01:00:00 AM UTC",
-                "startingIn": "15 minutes",
-                "duration": "7 days 10 hours",
-                "durationSeconds": 640800
-            },
-            {
                 "name": "World Tour Finals 2023 Day1",
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
@@ -110,7 +101,7 @@
                 "url": "https://codeforces.com/contests/1866",
                 "startTime": "2023-09-03T12:05:00.000+00:00",
                 "readableStartTime": "3rd September, 2023 12:05:00 PM UTC",
-                "startingIn": "11 hours",
+                "startingIn": "10 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -205,7 +196,7 @@
                 "url": "https://leetcode.com/contest/weekly-contest-361",
                 "startTime": "2023-09-03T02:30:00.000+00:00",
                 "readableStartTime": "3rd September, 2023 02:30:00 AM UTC",
-                "startingIn": "1 hour",
+                "startingIn": "50 minutes",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -231,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-03T00:44:09.000+00:00"
+    "lastUpdated": "2023-09-03T01:39:40.000+00:00"
 }

@@ -2,15 +2,6 @@
     "ok": true,
     "data": [
         {
-            "name": "10th Asprova Programming Contest（AtCoder Heuristic Contest 023）",
-            "url": "https://atcoder.jp/contests/ahc023",
-            "startTime": "2023-09-03T01:00:00.000+00:00",
-            "readableStartTime": "3rd September, 2023 01:00:00 AM UTC",
-            "startingIn": "15 minutes",
-            "duration": "7 days 10 hours",
-            "durationSeconds": 640800
-        },
-        {
             "name": "World Tour Finals 2023 Day1",
             "url": "https://atcoder.jp/contests/wtf22-day1",
             "startTime": "2023-09-08T04:00:00.000+00:00",
@@ -92,5 +83,5 @@
             "durationSeconds": 14400
         }
     ],
-    "lastUpdated": "03-09-2023 00:44:09 UTC"
+    "lastUpdated": "03-09-2023 01:39:40 UTC"
 }
