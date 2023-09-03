@@ -2,11 +2,11 @@
     "ok": true,
     "data": [
         {
-            "name": "Weekly Contest 361",
-            "url": "https://leetcode.com/contest/weekly-contest-361",
-            "startTime": "2023-09-03T02:30:00.000+00:00",
-            "readableStartTime": "3rd September, 2023 02:30:00 AM UTC",
-            "startingIn": "22 hours",
+            "name": "Weekly Contest 362",
+            "url": "https://leetcode.com/contest/weekly-contest-362",
+            "startTime": "2023-09-10T02:30:00.000+00:00",
+            "readableStartTime": "10th September, 2023 02:30:00 AM UTC",
+            "startingIn": "6 days",
             "duration": "1 hour 30 minutes",
             "durationSeconds": 5400
         },
@@ -20,5 +20,5 @@
             "durationSeconds": 5400
         }
     ],
-    "lastUpdated": "03-09-2023 03:53:47 UTC"
+    "lastUpdated": "03-09-2023 04:12:54 UTC"
 }
