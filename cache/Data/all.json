@@ -90,7 +90,7 @@
                 "url": "https://www.codechef.com/SEP23",
                 "startTime": "2023-09-06T14:30:00.000+00:00",
                 "readableStartTime": "6th September, 2023 02:30:00 PM UTC",
-                "startingIn": "3 days",
+                "startingIn": "2 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -196,7 +196,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "13 days",
+                "startingIn": "12 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -213,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-03T14:22:06.000+00:00"
+    "lastUpdated": "2023-09-03T14:32:49.000+00:00"
 }
