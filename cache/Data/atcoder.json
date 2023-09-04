@@ -2,7 +2,7 @@
     "ok": true,
     "data": [
         {
-            "name": "World Tour Finals 2023 Day1",
+            "name": "World Tour Finals 2022 Day1",
             "url": "https://atcoder.jp/contests/wtf22-day1",
             "startTime": "2023-09-08T04:00:00.000+00:00",
             "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
@@ -11,7 +11,7 @@
             "durationSeconds": 18000
         },
         {
-            "name": "World Tour Finals 2023 Day1（Open Contest）",
+            "name": "World Tour Finals 2022 Day1（Open Contest）",
             "url": "https://atcoder.jp/contests/wtf22-day1-open",
             "startTime": "2023-09-08T04:00:00.000+00:00",
             "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
@@ -20,7 +20,7 @@
             "durationSeconds": 18000
         },
         {
-            "name": "World Tour Finals 2023 Day2",
+            "name": "World Tour Finals 2022 Day2",
             "url": "https://atcoder.jp/contests/wtf22-day2",
             "startTime": "2023-09-09T04:00:00.000+00:00",
             "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
@@ -29,7 +29,7 @@
             "durationSeconds": 18000
         },
         {
-            "name": "World Tour Finals 2023 Day2（Open Contest）",
+            "name": "World Tour Finals 2022 Day2（Open Contest）",
             "url": "https://atcoder.jp/contests/wtf22-day2-open",
             "startTime": "2023-09-09T04:00:00.000+00:00",
             "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
@@ -83,5 +83,5 @@
             "durationSeconds": 14400
         }
     ],
-    "lastUpdated": "04-09-2023 05:24:57 UTC"
+    "lastUpdated": "04-09-2023 05:39:05 UTC"
 }

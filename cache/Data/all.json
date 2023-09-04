@@ -3,7 +3,7 @@
     "data": {
         "atcoder": [
             {
-                "name": "World Tour Finals 2023 Day1",
+                "name": "World Tour Finals 2022 Day1",
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
@@ -12,7 +12,7 @@
                 "durationSeconds": 18000
             },
             {
-                "name": "World Tour Finals 2023 Day1（Open Contest）",
+                "name": "World Tour Finals 2022 Day1（Open Contest）",
                 "url": "https://atcoder.jp/contests/wtf22-day1-open",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
@@ -21,7 +21,7 @@
                 "durationSeconds": 18000
             },
             {
-                "name": "World Tour Finals 2023 Day2",
+                "name": "World Tour Finals 2022 Day2",
                 "url": "https://atcoder.jp/contests/wtf22-day2",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
@@ -30,7 +30,7 @@
                 "durationSeconds": 18000
             },
             {
-                "name": "World Tour Finals 2023 Day2（Open Contest）",
+                "name": "World Tour Finals 2022 Day2（Open Contest）",
                 "url": "https://atcoder.jp/contests/wtf22-day2-open",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
@@ -157,7 +157,7 @@
                 "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
                 "startTime": "2023-09-08T05:30:00.000+00:00",
                 "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
-                "startingIn": "4 days",
+                "startingIn": "3 days",
                 "duration": "1 day 8 hours 30 minutes",
                 "durationSeconds": 117000
             },
@@ -213,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-04T05:24:57.000+00:00"
+    "lastUpdated": "2023-09-04T05:39:05.000+00:00"
 }
