@@ -9,7 +9,16 @@
             "startingIn": "23 hours",
             "duration": "2 hours",
             "durationSeconds": 7200
+        },
+        {
+            "name": "Starters 100",
+            "url": "https://www.codechef.com/START100",
+            "startTime": "2023-09-13T14:30:00.000+00:00",
+            "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
+            "startingIn": "7 days",
+            "duration": "2 hours",
+            "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "05-09-2023 15:04:57 UTC"
+    "lastUpdated": "05-09-2023 15:22:42 UTC"
 }
