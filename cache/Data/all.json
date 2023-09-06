@@ -104,7 +104,62 @@
                 "durationSeconds": 7200
             }
         ],
-        "codeforces": [],
+        "codeforces": [
+            {
+                "name": "Codeforces Round 895 (Div. 3)",
+                "url": "https://codeforces.com/contests/1872",
+                "startTime": "2023-09-07T14:35:00.000+00:00",
+                "readableStartTime": "7th September, 2023 02:35:00 PM UTC",
+                "startingIn": "1 day",
+                "duration": "2 hours 15 minutes",
+                "durationSeconds": 8100
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1869",
+                "startTime": "2023-09-10T14:05:00.000+00:00",
+                "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
+                "startingIn": "4 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 1)",
+                "url": "https://codeforces.com/contests/1868",
+                "startTime": "2023-09-10T14:05:00.000+00:00",
+                "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
+                "startingIn": "4 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1867",
+                "startTime": "2023-09-11T14:35:00.000+00:00",
+                "readableStartTime": "11st September, 2023 02:35:00 PM UTC",
+                "startingIn": "5 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1871",
+                "startTime": "2023-09-18T14:35:00.000+00:00",
+                "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
+                "startingIn": "12 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "Codeforces Round (Div. 1)",
+                "url": "https://codeforces.com/contests/1870",
+                "startTime": "2023-09-18T14:35:00.000+00:00",
+                "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
+                "startingIn": "12 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            }
+        ],
         "hackerearth": [
             {
                 "name": "Rakathon 2023",
@@ -167,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-06T09:08:49.000+00:00"
+    "lastUpdated": "2023-09-06T09:22:32.000+00:00"
 }
