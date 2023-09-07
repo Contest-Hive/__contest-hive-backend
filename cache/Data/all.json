@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1-open",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -79,7 +79,7 @@
                 "url": "https://atcoder.jp/contests/ahc024",
                 "startTime": "2023-09-24T06:00:00.000+00:00",
                 "readableStartTime": "24th September, 2023 06:00:00 AM UTC",
-                "startingIn": "17 days",
+                "startingIn": "16 days",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             }
@@ -222,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-07T05:50:30.000+00:00"
+    "lastUpdated": "2023-09-07T06:08:01.000+00:00"
 }
