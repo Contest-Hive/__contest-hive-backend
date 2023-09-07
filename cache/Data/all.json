@@ -90,21 +90,12 @@
                 "url": "https://www.codechef.com/START100",
                 "startTime": "2023-09-13T14:30:00.000+00:00",
                 "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
-                "startingIn": "6 days",
+                "startingIn": "5 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
         ],
         "codeforces": [
-            {
-                "name": "Codeforces Round 895 (Div. 3)",
-                "url": "https://codeforces.com/contests/1872",
-                "startTime": "2023-09-07T14:35:00.000+00:00",
-                "readableStartTime": "7th September, 2023 02:35:00 PM UTC",
-                "startingIn": "10 minutes",
-                "duration": "2 hours 15 minutes",
-                "durationSeconds": 8100
-            },
             {
                 "name": "Codeforces Round 896 (Div. 2)",
                 "url": "https://codeforces.com/contests/1869",
@@ -128,7 +119,7 @@
                 "url": "https://codeforces.com/contests/1867",
                 "startTime": "2023-09-11T14:35:00.000+00:00",
                 "readableStartTime": "11st September, 2023 02:35:00 PM UTC",
-                "startingIn": "4 days",
+                "startingIn": "3 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -137,7 +128,7 @@
                 "url": "https://codeforces.com/contests/1871",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "11 days",
+                "startingIn": "10 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -146,7 +137,7 @@
                 "url": "https://codeforces.com/contests/1870",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "11 days",
+                "startingIn": "10 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -157,7 +148,7 @@
                 "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
                 "startTime": "2023-09-08T05:30:00.000+00:00",
                 "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
-                "startingIn": "15 hours",
+                "startingIn": "14 hours",
                 "duration": "1 day 8 hours 30 minutes",
                 "durationSeconds": 117000
             },
@@ -205,7 +196,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "9 days",
+                "startingIn": "8 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -231,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-07T14:24:52.000+00:00"
+    "lastUpdated": "2023-09-07T14:39:10.000+00:00"
 }
