@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "11 hours",
+                "startingIn": "10 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1-open",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "11 hours",
+                "startingIn": "10 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -175,7 +175,7 @@
                 "url": "https://cyient.hackerearth.com/",
                 "startTime": "2023-10-23T17:00:00.000+00:00",
                 "readableStartTime": "23rd October, 2023 05:00:00 PM UTC",
-                "startingIn": "46 days",
+                "startingIn": "45 days",
                 "duration": "27 days 8 hours",
                 "durationSeconds": 2361600
             }
@@ -222,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-07T16:40:20.000+00:00"
+    "lastUpdated": "2023-09-07T17:06:30.000+00:00"
 }
