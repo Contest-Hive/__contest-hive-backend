@@ -101,12 +101,12 @@
                 "url": "https://codeforces.com/contests/1872",
                 "startTime": "2023-09-07T14:35:00.000+00:00",
                 "readableStartTime": "7th September, 2023 02:35:00 PM UTC",
-                "startingIn": "3 hours",
+                "startingIn": "2 hours",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             },
             {
-                "name": "Codeforces Round (Div. 2)",
+                "name": "Codeforces Round 896 (Div. 2)",
                 "url": "https://codeforces.com/contests/1869",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
@@ -115,7 +115,7 @@
                 "durationSeconds": 9000
             },
             {
-                "name": "Codeforces Round (Div. 1)",
+                "name": "Codeforces Round 896 (Div. 1)",
                 "url": "https://codeforces.com/contests/1868",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
@@ -157,7 +157,7 @@
                 "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
                 "startTime": "2023-09-08T05:30:00.000+00:00",
                 "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
-                "startingIn": "18 hours",
+                "startingIn": "17 hours",
                 "duration": "1 day 8 hours 30 minutes",
                 "durationSeconds": 117000
             },
@@ -231,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-07T11:29:10.000+00:00"
+    "lastUpdated": "2023-09-07T11:39:57.000+00:00"
 }

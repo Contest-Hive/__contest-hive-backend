@@ -6,12 +6,12 @@
             "url": "https://codeforces.com/contests/1872",
             "startTime": "2023-09-07T14:35:00.000+00:00",
             "readableStartTime": "7th September, 2023 02:35:00 PM UTC",
-            "startingIn": "3 hours",
+            "startingIn": "2 hours",
             "duration": "2 hours 15 minutes",
             "durationSeconds": 8100
         },
         {
-            "name": "Codeforces Round (Div. 2)",
+            "name": "Codeforces Round 896 (Div. 2)",
             "url": "https://codeforces.com/contests/1869",
             "startTime": "2023-09-10T14:05:00.000+00:00",
             "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
@@ -20,7 +20,7 @@
             "durationSeconds": 9000
         },
         {
-            "name": "Codeforces Round (Div. 1)",
+            "name": "Codeforces Round 896 (Div. 1)",
             "url": "https://codeforces.com/contests/1868",
             "startTime": "2023-09-10T14:05:00.000+00:00",
             "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
@@ -56,5 +56,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "07-09-2023 11:29:10 UTC"
+    "lastUpdated": "07-09-2023 11:39:57 UTC"
 }
