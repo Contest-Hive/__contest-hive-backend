@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "15 hours",
+                "startingIn": "14 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1-open",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "15 hours",
+                "startingIn": "14 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -216,7 +216,7 @@
                 "url": "https://toph.co/c/mbstu-cse-inter-department-2023-r",
                 "startTime": "2023-09-09T13:05:00.000+00:00",
                 "readableStartTime": "9th September, 2023 01:05:00 PM UTC",
-                "startingIn": "2 days",
+                "startingIn": "1 day",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             },
@@ -231,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-07T12:45:28.000+00:00"
+    "lastUpdated": "2023-09-07T13:08:07.000+00:00"
 }
