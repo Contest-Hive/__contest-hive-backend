@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "38 minutes",
+                "startingIn": "27 minutes",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day1-open",
                 "startTime": "2023-09-08T04:00:00.000+00:00",
                 "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "38 minutes",
+                "startingIn": "27 minutes",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -148,7 +148,7 @@
                 "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
                 "startTime": "2023-09-08T05:30:00.000+00:00",
                 "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
-                "startingIn": "2 hours",
+                "startingIn": "1 hour",
                 "duration": "1 day 8 hours 30 minutes",
                 "durationSeconds": 117000
             },
@@ -222,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-08T03:21:08.000+00:00"
+    "lastUpdated": "2023-09-08T03:32:25.000+00:00"
 }
