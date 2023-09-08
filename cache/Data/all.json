@@ -126,15 +126,6 @@
         ],
         "hackerearth": [
             {
-                "name": "Rakathon 2023",
-                "url": "https://www.hackerearth.com/challenges/hackathon/rakathon2023/",
-                "startTime": "2023-09-08T05:30:00.000+00:00",
-                "readableStartTime": "8th September, 2023 05:30:00 AM UTC",
-                "startingIn": "5 minutes",
-                "duration": "1 day 8 hours 30 minutes",
-                "durationSeconds": 117000
-            },
-            {
                 "name": "DSA Coding Contest - September '23",
                 "url": "https://www.hackerearth.com/challenges/competitive/dsa-coding-contest-september-23/",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
@@ -204,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-08T05:24:35.000+00:00"
+    "lastUpdated": "2023-09-08T05:39:12.000+00:00"
 }
