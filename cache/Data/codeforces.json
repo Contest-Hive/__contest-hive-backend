@@ -20,7 +20,7 @@
             "durationSeconds": 9000
         },
         {
-            "name": "Codeforces Round (Div. 2)",
+            "name": "Codeforces Round 897 (Div. 2)",
             "url": "https://codeforces.com/contests/1867",
             "startTime": "2023-09-11T14:35:00.000+00:00",
             "readableStartTime": "11st September, 2023 02:35:00 PM UTC",
@@ -29,16 +29,7 @@
             "durationSeconds": 7200
         },
         {
-            "name": "Codeforces Round (Div. 2)",
-            "url": "https://codeforces.com/contests/1871",
-            "startTime": "2023-09-18T14:35:00.000+00:00",
-            "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-            "startingIn": "9 days",
-            "duration": "2 hours",
-            "durationSeconds": 7200
-        },
-        {
-            "name": "Codeforces Round (Div. 1)",
+            "name": "CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)",
             "url": "https://codeforces.com/contests/1870",
             "startTime": "2023-09-18T14:35:00.000+00:00",
             "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
@@ -47,5 +38,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "08-09-2023 17:23:15 UTC"
+    "lastUpdated": "08-09-2023 17:39:29 UTC"
 }
