@@ -3,29 +3,11 @@
     "data": {
         "atcoder": [
             {
-                "name": "World Tour Finals 2022 Day1",
-                "url": "https://atcoder.jp/contests/wtf22-day1",
-                "startTime": "2023-09-08T04:00:00.000+00:00",
-                "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "6 minutes",
-                "duration": "5 hours",
-                "durationSeconds": 18000
-            },
-            {
-                "name": "World Tour Finals 2022 Day1（Open Contest）",
-                "url": "https://atcoder.jp/contests/wtf22-day1-open",
-                "startTime": "2023-09-08T04:00:00.000+00:00",
-                "readableStartTime": "8th September, 2023 04:00:00 AM UTC",
-                "startingIn": "6 minutes",
-                "duration": "5 hours",
-                "durationSeconds": 18000
-            },
-            {
                 "name": "World Tour Finals 2022 Day2",
                 "url": "https://atcoder.jp/contests/wtf22-day2",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "1 day",
+                "startingIn": "23 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -34,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day2-open",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "1 day",
+                "startingIn": "23 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -157,7 +139,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/dsa-coding-contest-september-23/",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "1 day",
+                "startingIn": "23 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -222,5 +204,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-08T03:53:55.000+00:00"
+    "lastUpdated": "2023-09-08T04:13:31.000+00:00"
 }
