@@ -72,7 +72,7 @@
                 "url": "https://www.codechef.com/START100",
                 "startTime": "2023-09-13T14:30:00.000+00:00",
                 "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
-                "startingIn": "5 days",
+                "startingIn": "4 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -101,7 +101,7 @@
                 "url": "https://codeforces.com/contests/1867",
                 "startTime": "2023-09-11T14:35:00.000+00:00",
                 "readableStartTime": "11st September, 2023 02:35:00 PM UTC",
-                "startingIn": "3 days",
+                "startingIn": "2 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -110,7 +110,7 @@
                 "url": "https://codeforces.com/contests/1871",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "10 days",
+                "startingIn": "9 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -119,7 +119,7 @@
                 "url": "https://codeforces.com/contests/1870",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "10 days",
+                "startingIn": "9 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -169,7 +169,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "8 days",
+                "startingIn": "7 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -195,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-08T14:24:11.000+00:00"
+    "lastUpdated": "2023-09-08T14:39:05.000+00:00"
 }
