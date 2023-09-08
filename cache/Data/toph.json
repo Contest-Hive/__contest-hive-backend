@@ -6,7 +6,7 @@
             "url": "https://toph.co/c/mbstu-cse-inter-department-2023-r",
             "startTime": "2023-09-09T13:05:00.000+00:00",
             "readableStartTime": "9th September, 2023 01:05:00 PM UTC",
-            "startingIn": "21 hours",
+            "startingIn": "20 hours",
             "duration": "4 hours",
             "durationSeconds": 14400
         },
@@ -18,7 +18,16 @@
             "startingIn": "6 days",
             "duration": "40 minutes",
             "durationSeconds": 2400
+        },
+        {
+            "name": "Tough Dash, October 2023",
+            "url": "https://toph.co/c/tough-dash-october-2023",
+            "startTime": "2023-10-20T15:00:00.000+00:00",
+            "readableStartTime": "20th October, 2023 03:00:00 PM UTC",
+            "startingIn": "41 days",
+            "duration": "40 minutes",
+            "durationSeconds": 2400
         }
     ],
-    "lastUpdated": "08-09-2023 15:52:58 UTC"
+    "lastUpdated": "08-09-2023 16:12:19 UTC"
 }
