@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day2",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day2-open",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -61,7 +61,7 @@
                 "url": "https://atcoder.jp/contests/ahc024",
                 "startTime": "2023-09-24T06:00:00.000+00:00",
                 "readableStartTime": "24th September, 2023 06:00:00 AM UTC",
-                "startingIn": "16 days",
+                "startingIn": "15 days",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             }
@@ -130,7 +130,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/dsa-coding-contest-september-23/",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -195,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-08T05:50:11.000+00:00"
+    "lastUpdated": "2023-09-08T06:08:08.000+00:00"
 }
