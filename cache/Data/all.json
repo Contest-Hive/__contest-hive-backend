@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day2",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "17 minutes",
+                "startingIn": "6 minutes",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/wtf22-day2-open",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "17 minutes",
+                "startingIn": "6 minutes",
                 "duration": "5 hours",
                 "durationSeconds": 18000
             },
@@ -121,7 +121,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/dsa-coding-contest-september-23/",
                 "startTime": "2023-09-09T04:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-                "startingIn": "17 minutes",
+                "startingIn": "6 minutes",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -171,7 +171,7 @@
                 "url": "https://toph.co/c/mbstu-cse-inter-department-2023-r",
                 "startTime": "2023-09-09T13:45:00.000+00:00",
                 "readableStartTime": "9th September, 2023 01:45:00 PM UTC",
-                "startingIn": "10 hours",
+                "startingIn": "9 hours",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             },
@@ -195,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-09T03:42:56.000+00:00"
+    "lastUpdated": "2023-09-09T03:53:55.000+00:00"
 }
