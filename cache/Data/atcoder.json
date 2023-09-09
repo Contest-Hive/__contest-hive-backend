@@ -2,20 +2,11 @@
     "ok": true,
     "data": [
         {
-            "name": "AtCoder Beginner Contest 319",
-            "url": "https://atcoder.jp/contests/abc319",
-            "startTime": "2023-09-09T12:00:00.000+00:00",
-            "readableStartTime": "9th September, 2023 12:00:00 PM UTC",
-            "startingIn": "9 minutes",
-            "duration": "1 hour 40 minutes",
-            "durationSeconds": 6000
-        },
-        {
             "name": "Toyota Programming Contest 2023#5（AtCoder Beginner Contest 320）",
             "url": "https://atcoder.jp/contests/abc320",
             "startTime": "2023-09-16T12:00:00.000+00:00",
             "readableStartTime": "16th September, 2023 12:00:00 PM UTC",
-            "startingIn": "7 days",
+            "startingIn": "6 days",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         },
@@ -24,7 +15,7 @@
             "url": "https://atcoder.jp/contests/arc165",
             "startTime": "2023-09-17T12:00:00.000+00:00",
             "readableStartTime": "17th September, 2023 12:00:00 PM UTC",
-            "startingIn": "8 days",
+            "startingIn": "7 days",
             "duration": "2 hours",
             "durationSeconds": 7200
         },
@@ -33,7 +24,7 @@
             "url": "https://atcoder.jp/contests/abc321",
             "startTime": "2023-09-23T12:00:00.000+00:00",
             "readableStartTime": "23rd September, 2023 12:00:00 PM UTC",
-            "startingIn": "14 days",
+            "startingIn": "13 days",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         },
@@ -47,5 +38,5 @@
             "durationSeconds": 14400
         }
     ],
-    "lastUpdated": "09-09-2023 11:50:09 UTC"
+    "lastUpdated": "09-09-2023 12:08:50 UTC"
 }
