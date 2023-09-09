@@ -131,15 +131,6 @@
         ],
         "toph": [
             {
-                "name": "[ Replay ] Breaking Code'23 : Programming Contest by CSE, MBSTU",
-                "url": "https://toph.co/c/mbstu-cse-inter-department-2023-r",
-                "startTime": "2023-09-09T13:45:00.000+00:00",
-                "readableStartTime": "9th September, 2023 01:45:00 PM UTC",
-                "startingIn": "5 minutes",
-                "duration": "4 hours",
-                "durationSeconds": 14400
-            },
-            {
                 "name": "Tough Dash, September 2023",
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
@@ -159,5 +150,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-09T13:39:08.000+00:00"
+    "lastUpdated": "2023-09-09T13:50:21.000+00:00"
 }
