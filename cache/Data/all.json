@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/abc319",
                 "startTime": "2023-09-09T12:00:00.000+00:00",
                 "readableStartTime": "9th September, 2023 12:00:00 PM UTC",
-                "startingIn": "31 minutes",
+                "startingIn": "20 minutes",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -124,7 +124,7 @@
                 "url": "https://leetcode.com/contest/weekly-contest-362",
                 "startTime": "2023-09-10T02:30:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:30:00 AM UTC",
-                "startingIn": "15 hours",
+                "startingIn": "14 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -168,5 +168,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-09T11:28:14.000+00:00"
+    "lastUpdated": "2023-09-09T11:39:21.000+00:00"
 }
