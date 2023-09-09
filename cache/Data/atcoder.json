@@ -2,29 +2,11 @@
     "ok": true,
     "data": [
         {
-            "name": "World Tour Finals 2022 Day2",
-            "url": "https://atcoder.jp/contests/wtf22-day2",
-            "startTime": "2023-09-09T04:00:00.000+00:00",
-            "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-            "startingIn": "6 minutes",
-            "duration": "5 hours",
-            "durationSeconds": 18000
-        },
-        {
-            "name": "World Tour Finals 2022 Day2（Open Contest）",
-            "url": "https://atcoder.jp/contests/wtf22-day2-open",
-            "startTime": "2023-09-09T04:00:00.000+00:00",
-            "readableStartTime": "9th September, 2023 04:00:00 AM UTC",
-            "startingIn": "6 minutes",
-            "duration": "5 hours",
-            "durationSeconds": 18000
-        },
-        {
             "name": "AtCoder Beginner Contest 319",
             "url": "https://atcoder.jp/contests/abc319",
             "startTime": "2023-09-09T12:00:00.000+00:00",
             "readableStartTime": "9th September, 2023 12:00:00 PM UTC",
-            "startingIn": "8 hours",
+            "startingIn": "7 hours",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         },
@@ -65,5 +47,5 @@
             "durationSeconds": 14400
         }
     ],
-    "lastUpdated": "09-09-2023 03:53:55 UTC"
+    "lastUpdated": "09-09-2023 04:13:08 UTC"
 }
