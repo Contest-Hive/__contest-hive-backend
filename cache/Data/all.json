@@ -34,7 +34,7 @@
                 "url": "https://atcoder.jp/contests/ahc024",
                 "startTime": "2023-09-24T06:00:00.000+00:00",
                 "readableStartTime": "24th September, 2023 06:00:00 AM UTC",
-                "startingIn": "14 days",
+                "startingIn": "13 days",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             }
@@ -56,7 +56,7 @@
                 "url": "https://codeforces.com/contests/1869",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-                "startingIn": "8 hours",
+                "startingIn": "7 hours",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -65,7 +65,7 @@
                 "url": "https://codeforces.com/contests/1868",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-                "startingIn": "8 hours",
+                "startingIn": "7 hours",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -150,5 +150,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-10T05:50:27.000+00:00"
+    "lastUpdated": "2023-09-10T06:07:02.000+00:00"
 }
