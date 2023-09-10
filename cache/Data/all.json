@@ -135,7 +135,7 @@
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 03:00:00 PM UTC",
-                "startingIn": "5 days",
+                "startingIn": "4 days",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             },
@@ -144,11 +144,11 @@
                 "url": "https://toph.co/c/tough-dash-october-2023",
                 "startTime": "2023-10-20T15:00:00.000+00:00",
                 "readableStartTime": "20th October, 2023 03:00:00 PM UTC",
-                "startingIn": "40 days",
+                "startingIn": "39 days",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             }
         ]
     },
-    "lastUpdated": "2023-09-10T14:54:18.000+00:00"
+    "lastUpdated": "2023-09-10T15:10:56.000+00:00"
 }
