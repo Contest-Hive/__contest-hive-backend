@@ -56,7 +56,7 @@
                 "url": "https://codeforces.com/contests/1869",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-                "startingIn": "10 hours",
+                "startingIn": "9 hours",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -65,7 +65,7 @@
                 "url": "https://codeforces.com/contests/1868",
                 "startTime": "2023-09-10T14:05:00.000+00:00",
                 "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-                "startingIn": "10 hours",
+                "startingIn": "9 hours",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -111,11 +111,11 @@
         "hackerrank": [],
         "leetcode": [
             {
-                "name": "Weekly Contest 362",
-                "url": "https://leetcode.com/contest/weekly-contest-362",
-                "startTime": "2023-09-10T02:30:00.000+00:00",
-                "readableStartTime": "10th September, 2023 02:30:00 AM UTC",
-                "startingIn": "22 hours",
+                "name": "Weekly Contest 363",
+                "url": "https://leetcode.com/contest/weekly-contest-363",
+                "startTime": "2023-09-17T02:30:00.000+00:00",
+                "readableStartTime": "17th September, 2023 02:30:00 AM UTC",
+                "startingIn": "6 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -150,5 +150,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-10T03:50:32.000+00:00"
+    "lastUpdated": "2023-09-10T04:07:12.000+00:00"
 }
