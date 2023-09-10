@@ -2,24 +2,6 @@
     "ok": true,
     "data": [
         {
-            "name": "Codeforces Round 896 (Div. 2)",
-            "url": "https://codeforces.com/contests/1869",
-            "startTime": "2023-09-10T14:05:00.000+00:00",
-            "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-            "startingIn": "2 minutes",
-            "duration": "2 hours 30 minutes",
-            "durationSeconds": 9000
-        },
-        {
-            "name": "Codeforces Round 896 (Div. 1)",
-            "url": "https://codeforces.com/contests/1868",
-            "startTime": "2023-09-10T14:05:00.000+00:00",
-            "readableStartTime": "10th September, 2023 02:05:00 PM UTC",
-            "startingIn": "2 minutes",
-            "duration": "2 hours 30 minutes",
-            "durationSeconds": 9000
-        },
-        {
             "name": "Codeforces Round 897 (Div. 2)",
             "url": "https://codeforces.com/contests/1867",
             "startTime": "2023-09-11T14:35:00.000+00:00",
@@ -38,5 +20,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "10-09-2023 14:02:31 UTC"
+    "lastUpdated": "10-09-2023 14:21:56 UTC"
 }
