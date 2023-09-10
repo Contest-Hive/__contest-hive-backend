@@ -18,7 +18,16 @@
             "startingIn": "8 days",
             "duration": "2 hours",
             "durationSeconds": 7200
+        },
+        {
+            "name": "Codeforces Round 898 (Div. 4)",
+            "url": "https://codeforces.com/contests/1873",
+            "startTime": "2023-09-21T14:35:00.000+00:00",
+            "readableStartTime": "21st September, 2023 02:35:00 PM UTC",
+            "startingIn": "11 days",
+            "duration": "2 hours 30 minutes",
+            "durationSeconds": 9000
         }
     ],
-    "lastUpdated": "10-09-2023 14:21:56 UTC"
+    "lastUpdated": "10-09-2023 14:32:48 UTC"
 }

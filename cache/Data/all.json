@@ -54,7 +54,7 @@
                 "url": "https://www.codechef.com/START100",
                 "startTime": "2023-09-13T14:30:00.000+00:00",
                 "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
-                "startingIn": "3 days",
+                "startingIn": "2 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -77,6 +77,15 @@
                 "startingIn": "8 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
+            },
+            {
+                "name": "Codeforces Round 898 (Div. 4)",
+                "url": "https://codeforces.com/contests/1873",
+                "startTime": "2023-09-21T14:35:00.000+00:00",
+                "readableStartTime": "21st September, 2023 02:35:00 PM UTC",
+                "startingIn": "11 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
             }
         ],
         "hackerearth": [
@@ -115,7 +124,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "6 days",
+                "startingIn": "5 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -141,5 +150,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-10T14:21:56.000+00:00"
+    "lastUpdated": "2023-09-10T14:32:48.000+00:00"
 }
