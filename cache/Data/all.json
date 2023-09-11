@@ -46,6 +46,15 @@
                 "startingIn": "26 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
+            },
+            {
+                "name": "AtCoder Regular Contest 167",
+                "url": "https://atcoder.jp/contests/arc167",
+                "startTime": "2023-10-15T12:00:00.000+00:00",
+                "readableStartTime": "15th October, 2023 12:00:00 PM UTC",
+                "startingIn": "33 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
             }
         ],
         "codechef": [
@@ -65,7 +74,7 @@
                 "url": "https://codeforces.com/contests/1867",
                 "startTime": "2023-09-11T14:35:00.000+00:00",
                 "readableStartTime": "11st September, 2023 02:35:00 PM UTC",
-                "startingIn": "2 hours",
+                "startingIn": "1 hour",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -150,5 +159,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-11T12:11:57.000+00:00"
+    "lastUpdated": "2023-09-11T12:46:27.000+00:00"
 }
