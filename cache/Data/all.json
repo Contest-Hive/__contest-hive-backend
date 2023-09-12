@@ -59,7 +59,7 @@
         ],
         "codechef": [
             {
-                "name": "Starters 100",
+                "name": "Starters 100 (Rated for All)",
                 "url": "https://www.codechef.com/START100",
                 "startTime": "2023-09-13T14:30:00.000+00:00",
                 "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
@@ -150,5 +150,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-12T13:26:08.000+00:00"
+    "lastUpdated": "2023-09-12T13:39:24.000+00:00"
 }

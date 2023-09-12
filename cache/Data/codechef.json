@@ -2,7 +2,7 @@
     "ok": true,
     "data": [
         {
-            "name": "Starters 100",
+            "name": "Starters 100 (Rated for All)",
             "url": "https://www.codechef.com/START100",
             "startTime": "2023-09-13T14:30:00.000+00:00",
             "readableStartTime": "13rd September, 2023 02:30:00 PM UTC",
@@ -11,5 +11,5 @@
             "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "12-09-2023 13:26:08 UTC"
+    "lastUpdated": "12-09-2023 13:39:24 UTC"
 }
