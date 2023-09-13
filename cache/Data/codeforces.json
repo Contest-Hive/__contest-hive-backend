@@ -6,7 +6,7 @@
             "url": "https://codeforces.com/contests/1870",
             "startTime": "2023-09-18T14:35:00.000+00:00",
             "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-            "startingIn": "5 days",
+            "startingIn": "4 days",
             "duration": "2 hours",
             "durationSeconds": 7200
         },
@@ -15,7 +15,7 @@
             "url": "https://codeforces.com/contests/1873",
             "startTime": "2023-09-21T14:35:00.000+00:00",
             "readableStartTime": "21st September, 2023 02:35:00 PM UTC",
-            "startingIn": "8 days",
+            "startingIn": "7 days",
             "duration": "2 hours 30 minutes",
             "durationSeconds": 9000
         },
@@ -24,7 +24,7 @@
             "url": "https://codeforces.com/contests/1875",
             "startTime": "2023-09-30T14:35:00.000+00:00",
             "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-            "startingIn": "17 days",
+            "startingIn": "16 days",
             "duration": "2 hours 30 minutes",
             "durationSeconds": 9000
         },
@@ -33,7 +33,7 @@
             "url": "https://codeforces.com/contests/1874",
             "startTime": "2023-09-30T14:35:00.000+00:00",
             "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-            "startingIn": "17 days",
+            "startingIn": "16 days",
             "duration": "2 hours 30 minutes",
             "durationSeconds": 9000
         },
@@ -56,5 +56,5 @@
             "durationSeconds": 9000
         }
     ],
-    "lastUpdated": "13-09-2023 14:25:35 UTC"
+    "lastUpdated": "13-09-2023 14:39:08 UTC"
 }
