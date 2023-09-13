@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/abc320",
                 "startTime": "2023-09-16T12:00:00.000+00:00",
                 "readableStartTime": "16th September, 2023 12:00:00 PM UTC",
-                "startingIn": "3 days",
+                "startingIn": "2 days",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -16,7 +16,7 @@
                 "url": "https://atcoder.jp/contests/arc165",
                 "startTime": "2023-09-17T12:00:00.000+00:00",
                 "readableStartTime": "17th September, 2023 12:00:00 PM UTC",
-                "startingIn": "4 days",
+                "startingIn": "3 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -25,7 +25,7 @@
                 "url": "https://atcoder.jp/contests/abc321",
                 "startTime": "2023-09-23T12:00:00.000+00:00",
                 "readableStartTime": "23rd September, 2023 12:00:00 PM UTC",
-                "startingIn": "10 days",
+                "startingIn": "9 days",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -43,7 +43,7 @@
                 "url": "https://atcoder.jp/contests/arc166",
                 "startTime": "2023-10-08T12:00:00.000+00:00",
                 "readableStartTime": "8th October, 2023 12:00:00 PM UTC",
-                "startingIn": "25 days",
+                "startingIn": "24 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -52,7 +52,7 @@
                 "url": "https://atcoder.jp/contests/arc167",
                 "startTime": "2023-10-15T12:00:00.000+00:00",
                 "readableStartTime": "15th October, 2023 12:00:00 PM UTC",
-                "startingIn": "32 days",
+                "startingIn": "31 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -86,6 +86,42 @@
                 "startingIn": "8 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1875",
+                "startTime": "2023-09-30T14:35:00.000+00:00",
+                "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
+                "startingIn": "17 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 1)",
+                "url": "https://codeforces.com/contests/1874",
+                "startTime": "2023-09-30T14:35:00.000+00:00",
+                "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
+                "startingIn": "17 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 2)",
+                "url": "https://codeforces.com/contests/1877",
+                "startTime": "2023-10-08T09:05:00.000+00:00",
+                "readableStartTime": "8th October, 2023 09:05:00 AM UTC",
+                "startingIn": "24 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 1)",
+                "url": "https://codeforces.com/contests/1876",
+                "startTime": "2023-10-08T09:05:00.000+00:00",
+                "readableStartTime": "8th October, 2023 09:05:00 AM UTC",
+                "startingIn": "24 days",
+                "duration": "2 hours 30 minutes",
+                "durationSeconds": 9000
             }
         ],
         "hackerearth": [
@@ -94,7 +130,7 @@
                 "url": "https://charmhealth.hackerearth.com/",
                 "startTime": "2023-09-13T16:00:00.000+00:00",
                 "readableStartTime": "13rd September, 2023 04:00:00 PM UTC",
-                "startingIn": "4 hours",
+                "startingIn": "3 hours",
                 "duration": "73 days 15 hours 55 minutes",
                 "durationSeconds": 6364500
             },
@@ -150,5 +186,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-13T11:50:37.000+00:00"
+    "lastUpdated": "2023-09-13T12:11:27.000+00:00"
 }
