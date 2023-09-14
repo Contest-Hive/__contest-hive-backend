@@ -139,7 +139,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/september-circuits-23/",
                 "startTime": "2023-09-15T16:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 04:00:00 PM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "7 days",
                 "durationSeconds": 604800
             },
@@ -180,7 +180,7 @@
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 03:00:00 PM UTC",
-                "startingIn": "21 hours",
+                "startingIn": "20 hours",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             },
@@ -195,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-14T17:50:25.000+00:00"
+    "lastUpdated": "2023-09-14T18:07:38.000+00:00"
 }
