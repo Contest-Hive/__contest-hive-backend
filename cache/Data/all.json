@@ -63,7 +63,7 @@
                 "url": "https://www.codechef.com/START101",
                 "startTime": "2023-09-20T14:30:00.000+00:00",
                 "readableStartTime": "20th September, 2023 02:30:00 PM UTC",
-                "startingIn": "6 days",
+                "startingIn": "5 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -74,7 +74,7 @@
                 "url": "https://codeforces.com/contests/1870",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "4 days",
+                "startingIn": "3 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -83,7 +83,7 @@
                 "url": "https://codeforces.com/contests/1873",
                 "startTime": "2023-09-21T14:35:00.000+00:00",
                 "readableStartTime": "21st September, 2023 02:35:00 PM UTC",
-                "startingIn": "7 days",
+                "startingIn": "6 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -92,7 +92,7 @@
                 "url": "https://codeforces.com/contests/1878",
                 "startTime": "2023-09-26T14:35:00.000+00:00",
                 "readableStartTime": "26th September, 2023 02:35:00 PM UTC",
-                "startingIn": "12 days",
+                "startingIn": "11 days",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             },
@@ -101,7 +101,7 @@
                 "url": "https://codeforces.com/contests/1875",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-                "startingIn": "16 days",
+                "startingIn": "15 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -110,7 +110,7 @@
                 "url": "https://codeforces.com/contests/1874",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-                "startingIn": "16 days",
+                "startingIn": "15 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
             },
@@ -169,7 +169,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "2 days",
+                "startingIn": "1 day",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -195,5 +195,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-14T14:27:05.000+00:00"
+    "lastUpdated": "2023-09-14T14:39:07.000+00:00"
 }
