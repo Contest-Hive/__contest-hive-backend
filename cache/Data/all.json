@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/abc320",
                 "startTime": "2023-09-16T12:00:00.000+00:00",
                 "readableStartTime": "16th September, 2023 12:00:00 PM UTC",
-                "startingIn": "22 hours",
+                "startingIn": "21 hours",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -157,7 +157,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/september-circuits-23/",
                 "startTime": "2023-09-15T16:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 04:00:00 PM UTC",
-                "startingIn": "2 hours",
+                "startingIn": "1 hour",
                 "duration": "7 days",
                 "durationSeconds": 604800
             },
@@ -169,6 +169,15 @@
                 "startingIn": "38 days",
                 "duration": "27 days 8 hours",
                 "durationSeconds": 2361600
+            },
+            {
+                "name": "HackerEarth Select",
+                "url": "https://www.hackerearth.com/challenges/competitive/hackerearth-select/",
+                "startTime": "2023-11-04T04:00:00.000+00:00",
+                "readableStartTime": "4th November, 2023 04:00:00 AM UTC",
+                "startingIn": "49 days",
+                "duration": "2 days 14 hours 29 minutes",
+                "durationSeconds": 224940
             }
         ],
         "hackerrank": [],
@@ -198,7 +207,7 @@
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 03:00:00 PM UTC",
-                "startingIn": "1 hour",
+                "startingIn": "56 minutes",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             },
@@ -222,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-15T13:44:26.000+00:00"
+    "lastUpdated": "2023-09-15T14:03:46.000+00:00"
 }
