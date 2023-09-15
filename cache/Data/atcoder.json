@@ -54,7 +54,16 @@
             "startingIn": "30 days",
             "duration": "2 hours",
             "durationSeconds": 7200
+        },
+        {
+            "name": "Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）",
+            "url": "https://atcoder.jp/contests/abc326",
+            "startTime": "2023-10-28T12:00:00.000+00:00",
+            "readableStartTime": "28th October, 2023 12:00:00 PM UTC",
+            "startingIn": "43 days",
+            "duration": "1 hour 40 minutes",
+            "durationSeconds": 6000
         }
     ],
-    "lastUpdated": "15-09-2023 00:52:40 UTC"
+    "lastUpdated": "15-09-2023 01:44:03 UTC"
 }
