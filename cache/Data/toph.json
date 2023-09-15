@@ -4,9 +4,9 @@
         {
             "name": "CoU-BRACNet Inter University Programming Contest 2023 Mock",
             "url": "https://toph.co/c/cou-bracnet-inter-university-2023-mock",
-            "startTime": "2023-09-15T10:00:00.000+00:00",
-            "readableStartTime": "15th September, 2023 10:00:00 AM UTC",
-            "startingIn": "20 minutes",
+            "startTime": "2023-09-15T10:30:00.000+00:00",
+            "readableStartTime": "15th September, 2023 10:30:00 AM UTC",
+            "startingIn": "39 minutes",
             "duration": "1 hour 30 minutes",
             "durationSeconds": 5400
         },
@@ -38,5 +38,5 @@
             "durationSeconds": 2400
         }
     ],
-    "lastUpdated": "15-09-2023 09:39:21 UTC"
+    "lastUpdated": "15-09-2023 09:50:24 UTC"
 }
