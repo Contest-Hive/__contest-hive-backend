@@ -157,7 +157,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/september-circuits-23/",
                 "startTime": "2023-09-15T16:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 04:00:00 PM UTC",
-                "startingIn": "6 hours",
+                "startingIn": "5 hours",
                 "duration": "7 days",
                 "durationSeconds": 604800
             },
@@ -198,7 +198,7 @@
                 "url": "https://toph.co/c/cou-bracnet-inter-university-2023-mock",
                 "startTime": "2023-09-15T10:30:00.000+00:00",
                 "readableStartTime": "15th September, 2023 10:30:00 AM UTC",
-                "startingIn": "39 minutes",
+                "startingIn": "24 minutes",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -207,7 +207,7 @@
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 03:00:00 PM UTC",
-                "startingIn": "5 hours",
+                "startingIn": "4 hours",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             },
@@ -231,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-15T09:50:24.000+00:00"
+    "lastUpdated": "2023-09-15T10:05:52.000+00:00"
 }
