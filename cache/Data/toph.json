@@ -2,15 +2,6 @@
     "ok": true,
     "data": [
         {
-            "name": "CoU-BRACNet Inter University Programming Contest 2023 Mock",
-            "url": "https://toph.co/c/cou-bracnet-inter-university-2023-mock",
-            "startTime": "2023-09-15T10:30:00.000+00:00",
-            "readableStartTime": "15th September, 2023 10:30:00 AM UTC",
-            "startingIn": "2 minutes",
-            "duration": "1 hour 30 minutes",
-            "durationSeconds": 5400
-        },
-        {
             "name": "Tough Dash, September 2023",
             "url": "https://toph.co/c/tough-dash-september-2023",
             "startTime": "2023-09-15T15:00:00.000+00:00",
@@ -24,7 +15,7 @@
             "url": "https://toph.co/c/cou-bracnet-inter-university-2023",
             "startTime": "2023-09-16T03:30:00.000+00:00",
             "readableStartTime": "16th September, 2023 03:30:00 AM UTC",
-            "startingIn": "17 hours",
+            "startingIn": "16 hours",
             "duration": "4 hours",
             "durationSeconds": 14400
         },
@@ -38,5 +29,5 @@
             "durationSeconds": 2400
         }
     ],
-    "lastUpdated": "15-09-2023 10:27:15 UTC"
+    "lastUpdated": "15-09-2023 10:39:09 UTC"
 }
