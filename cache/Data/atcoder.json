@@ -47,6 +47,15 @@
             "durationSeconds": 7200
         },
         {
+            "name": "Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)",
+            "url": "https://atcoder.jp/contests/abc324",
+            "startTime": "2023-10-14T12:00:00.000+00:00",
+            "readableStartTime": "14th October, 2023 12:00:00 PM UTC",
+            "startingIn": "29 days",
+            "duration": "1 hour 40 minutes",
+            "durationSeconds": 6000
+        },
+        {
             "name": "AtCoder Regular Contest 167",
             "url": "https://atcoder.jp/contests/arc167",
             "startTime": "2023-10-15T12:00:00.000+00:00",
@@ -65,5 +74,5 @@
             "durationSeconds": 6000
         }
     ],
-    "lastUpdated": "15-09-2023 06:50:17 UTC"
+    "lastUpdated": "15-09-2023 07:04:05 UTC"
 }

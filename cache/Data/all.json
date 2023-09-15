@@ -48,6 +48,15 @@
                 "durationSeconds": 7200
             },
             {
+                "name": "Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)",
+                "url": "https://atcoder.jp/contests/abc324",
+                "startTime": "2023-10-14T12:00:00.000+00:00",
+                "readableStartTime": "14th October, 2023 12:00:00 PM UTC",
+                "startingIn": "29 days",
+                "duration": "1 hour 40 minutes",
+                "durationSeconds": 6000
+            },
+            {
                 "name": "AtCoder Regular Contest 167",
                 "url": "https://atcoder.jp/contests/arc167",
                 "startTime": "2023-10-15T12:00:00.000+00:00",
@@ -148,7 +157,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/september-circuits-23/",
                 "startTime": "2023-09-15T16:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 04:00:00 PM UTC",
-                "startingIn": "9 hours",
+                "startingIn": "8 hours",
                 "duration": "7 days",
                 "durationSeconds": 604800
             },
@@ -189,7 +198,7 @@
                 "url": "https://toph.co/c/cou-bracnet-inter-university-2023-mock",
                 "startTime": "2023-09-15T10:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 10:00:00 AM UTC",
-                "startingIn": "3 hours",
+                "startingIn": "2 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -198,7 +207,7 @@
                 "url": "https://toph.co/c/tough-dash-september-2023",
                 "startTime": "2023-09-15T15:00:00.000+00:00",
                 "readableStartTime": "15th September, 2023 03:00:00 PM UTC",
-                "startingIn": "8 hours",
+                "startingIn": "7 hours",
                 "duration": "40 minutes",
                 "durationSeconds": 2400
             },
@@ -207,7 +216,7 @@
                 "url": "https://toph.co/c/cou-bracnet-inter-university-2023",
                 "startTime": "2023-09-16T04:00:00.000+00:00",
                 "readableStartTime": "16th September, 2023 04:00:00 AM UTC",
-                "startingIn": "21 hours",
+                "startingIn": "20 hours",
                 "duration": "4 hours",
                 "durationSeconds": 14400
             },
@@ -222,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-15T06:50:17.000+00:00"
+    "lastUpdated": "2023-09-15T07:04:05.000+00:00"
 }
