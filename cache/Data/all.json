@@ -196,7 +196,7 @@
                 "url": "https://leetcode.com/contest/weekly-contest-363",
                 "startTime": "2023-09-17T02:30:00.000+00:00",
                 "readableStartTime": "17th September, 2023 02:30:00 AM UTC",
-                "startingIn": "18 hours",
+                "startingIn": "17 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -205,7 +205,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-113",
                 "startTime": "2023-09-16T14:30:00.000+00:00",
                 "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-                "startingIn": "6 hours",
+                "startingIn": "5 hours",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -222,5 +222,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-16T08:24:23.000+00:00"
+    "lastUpdated": "2023-09-16T08:39:22.000+00:00"
 }
