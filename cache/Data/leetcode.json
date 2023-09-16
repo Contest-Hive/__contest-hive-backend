@@ -11,14 +11,14 @@
             "durationSeconds": 5400
         },
         {
-            "name": "Biweekly Contest 113",
-            "url": "https://leetcode.com/contest/biweekly-contest-113",
-            "startTime": "2023-09-16T14:30:00.000+00:00",
-            "readableStartTime": "16th September, 2023 02:30:00 PM UTC",
-            "startingIn": "22 hours",
+            "name": "Biweekly Contest 114",
+            "url": "https://leetcode.com/contest/biweekly-contest-114",
+            "startTime": "2023-09-30T14:30:00.000+00:00",
+            "readableStartTime": "30th September, 2023 02:30:00 PM UTC",
+            "startingIn": "13 days",
             "duration": "1 hour 30 minutes",
             "durationSeconds": 5400
         }
     ],
-    "lastUpdated": "16-09-2023 15:50:28 UTC"
+    "lastUpdated": "16-09-2023 16:05:52 UTC"
 }
