@@ -21,15 +21,6 @@
         },
         {
             "name": "Educational Codeforces Round 155 (Rated for Div. 2)",
-            "url": "https://codeforces.com/contests/1880",
-            "startTime": "2023-09-24T14:35:00.000+00:00",
-            "readableStartTime": "24th September, 2023 02:35:00 PM UTC",
-            "startingIn": "8 days",
-            "duration": "2 hours",
-            "durationSeconds": 7200
-        },
-        {
-            "name": "Educational Codeforces Round 155 (Rated for Div. 2)",
             "url": "https://codeforces.com/contests/1879",
             "startTime": "2023-09-24T14:35:00.000+00:00",
             "readableStartTime": "24th September, 2023 02:35:00 PM UTC",
@@ -83,5 +74,5 @@
             "durationSeconds": 9000
         }
     ],
-    "lastUpdated": "16-09-2023 08:50:02 UTC"
+    "lastUpdated": "16-09-2023 09:02:27 UTC"
 }

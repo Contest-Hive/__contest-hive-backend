@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/abc320",
                 "startTime": "2023-09-16T12:00:00.000+00:00",
                 "readableStartTime": "16th September, 2023 12:00:00 PM UTC",
-                "startingIn": "3 hours",
+                "startingIn": "2 hours",
                 "duration": "1 hour 40 minutes",
                 "durationSeconds": 6000
             },
@@ -104,15 +104,6 @@
                 "startingIn": "5 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
-            },
-            {
-                "name": "Educational Codeforces Round 155 (Rated for Div. 2)",
-                "url": "https://codeforces.com/contests/1880",
-                "startTime": "2023-09-24T14:35:00.000+00:00",
-                "readableStartTime": "24th September, 2023 02:35:00 PM UTC",
-                "startingIn": "8 days",
-                "duration": "2 hours",
-                "durationSeconds": 7200
             },
             {
                 "name": "Educational Codeforces Round 155 (Rated for Div. 2)",
@@ -222,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-16T08:50:02.000+00:00"
+    "lastUpdated": "2023-09-16T09:02:27.000+00:00"
 }
