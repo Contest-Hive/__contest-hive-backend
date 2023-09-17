@@ -140,6 +140,15 @@
                 "startingIn": "20 days",
                 "duration": "2 hours 30 minutes",
                 "durationSeconds": 9000
+            },
+            {
+                "name": "Codeforces Round (Div. 3)",
+                "url": "https://codeforces.com/contests/1881",
+                "startTime": "2023-10-22T09:35:00.000+00:00",
+                "readableStartTime": "22nd October, 2023 09:35:00 AM UTC",
+                "startingIn": "34 days",
+                "duration": "2 hours 15 minutes",
+                "durationSeconds": 8100
             }
         ],
         "hackerearth": [
@@ -195,5 +204,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-17T14:02:42.000+00:00"
+    "lastUpdated": "2023-09-17T14:21:52.000+00:00"
 }
