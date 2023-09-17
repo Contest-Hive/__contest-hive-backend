@@ -6,7 +6,7 @@
             "url": "https://atcoder.jp/contests/arc165",
             "startTime": "2023-09-17T12:00:00.000+00:00",
             "readableStartTime": "17th September, 2023 12:00:00 PM UTC",
-            "startingIn": "6 hours",
+            "startingIn": "5 hours",
             "duration": "2 hours",
             "durationSeconds": 7200
         },
@@ -24,7 +24,7 @@
             "url": "https://atcoder.jp/contests/ahc024",
             "startTime": "2023-09-24T06:00:00.000+00:00",
             "readableStartTime": "24th September, 2023 06:00:00 AM UTC",
-            "startingIn": "7 days",
+            "startingIn": "6 days",
             "duration": "4 hours",
             "durationSeconds": 14400
         },
@@ -65,5 +65,5 @@
             "durationSeconds": 6000
         }
     ],
-    "lastUpdated": "17-09-2023 05:50:06 UTC"
+    "lastUpdated": "17-09-2023 06:07:13 UTC"
 }
