@@ -7,7 +7,7 @@
                 "url": "https://atcoder.jp/contests/arc165",
                 "startTime": "2023-09-17T12:00:00.000+00:00",
                 "readableStartTime": "17th September, 2023 12:00:00 PM UTC",
-                "startingIn": "8 hours",
+                "startingIn": "7 hours",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -166,7 +166,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/hackerearth-select/",
                 "startTime": "2023-11-04T04:00:00.000+00:00",
                 "readableStartTime": "4th November, 2023 04:00:00 AM UTC",
-                "startingIn": "48 days",
+                "startingIn": "47 days",
                 "duration": "2 days 14 hours 29 minutes",
                 "durationSeconds": 224940
             }
@@ -174,11 +174,11 @@
         "hackerrank": [],
         "leetcode": [
             {
-                "name": "Weekly Contest 363",
-                "url": "https://leetcode.com/contest/weekly-contest-363",
-                "startTime": "2023-09-17T02:30:00.000+00:00",
-                "readableStartTime": "17th September, 2023 02:30:00 AM UTC",
-                "startingIn": "22 hours",
+                "name": "Weekly Contest 364",
+                "url": "https://leetcode.com/contest/weekly-contest-364",
+                "startTime": "2023-09-24T02:30:00.000+00:00",
+                "readableStartTime": "24th September, 2023 02:30:00 AM UTC",
+                "startingIn": "6 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -204,5 +204,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-17T03:50:25.000+00:00"
+    "lastUpdated": "2023-09-17T04:06:57.000+00:00"
 }
