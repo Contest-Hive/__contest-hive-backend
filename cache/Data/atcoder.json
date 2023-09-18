@@ -6,7 +6,7 @@
             "url": "https://atcoder.jp/contests/abc321",
             "startTime": "2023-09-23T12:00:00.000+00:00",
             "readableStartTime": "23rd September, 2023 12:00:00 PM UTC",
-            "startingIn": "5 days",
+            "startingIn": "4 days",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         },
@@ -24,7 +24,7 @@
             "url": "https://atcoder.jp/contests/arc166",
             "startTime": "2023-10-08T12:00:00.000+00:00",
             "readableStartTime": "8th October, 2023 12:00:00 PM UTC",
-            "startingIn": "20 days",
+            "startingIn": "19 days",
             "duration": "2 hours",
             "durationSeconds": 7200
         },
@@ -33,7 +33,7 @@
             "url": "https://atcoder.jp/contests/abc324",
             "startTime": "2023-10-14T12:00:00.000+00:00",
             "readableStartTime": "14th October, 2023 12:00:00 PM UTC",
-            "startingIn": "26 days",
+            "startingIn": "25 days",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         },
@@ -42,7 +42,7 @@
             "url": "https://atcoder.jp/contests/arc167",
             "startTime": "2023-10-15T12:00:00.000+00:00",
             "readableStartTime": "15th October, 2023 12:00:00 PM UTC",
-            "startingIn": "27 days",
+            "startingIn": "26 days",
             "duration": "2 hours",
             "durationSeconds": 7200
         },
@@ -51,10 +51,10 @@
             "url": "https://atcoder.jp/contests/abc326",
             "startTime": "2023-10-28T12:00:00.000+00:00",
             "readableStartTime": "28th October, 2023 12:00:00 PM UTC",
-            "startingIn": "40 days",
+            "startingIn": "39 days",
             "duration": "1 hour 40 minutes",
             "durationSeconds": 6000
         }
     ],
-    "lastUpdated": "18-09-2023 11:51:16 UTC"
+    "lastUpdated": "18-09-2023 12:14:13 UTC"
 }
