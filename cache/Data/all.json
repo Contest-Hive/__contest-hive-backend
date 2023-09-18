@@ -74,7 +74,7 @@
                 "url": "https://codeforces.com/contests/1870",
                 "startTime": "2023-09-18T14:35:00.000+00:00",
                 "readableStartTime": "18th September, 2023 02:35:00 PM UTC",
-                "startingIn": "5 hours",
+                "startingIn": "4 hours",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             },
@@ -146,7 +146,7 @@
                 "url": "https://codeforces.com/contests/1881",
                 "startTime": "2023-10-22T09:35:00.000+00:00",
                 "readableStartTime": "22nd October, 2023 09:35:00 AM UTC",
-                "startingIn": "34 days",
+                "startingIn": "33 days",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             }
@@ -204,5 +204,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-18T09:23:21.000+00:00"
+    "lastUpdated": "2023-09-18T09:39:20.000+00:00"
 }
