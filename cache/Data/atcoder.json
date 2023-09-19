@@ -38,6 +38,15 @@
             "durationSeconds": 7200
         },
         {
+            "name": "AtCoder Heuristic Contest 025",
+            "url": "https://atcoder.jp/contests/ahc025",
+            "startTime": "2023-10-14T03:00:00.000+00:00",
+            "readableStartTime": "14th October, 2023 03:00:00 AM UTC",
+            "startingIn": "24 days",
+            "duration": "8 days 7 hours",
+            "durationSeconds": 716400
+        },
+        {
             "name": "Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)",
             "url": "https://atcoder.jp/contests/abc324",
             "startTime": "2023-10-14T12:00:00.000+00:00",
@@ -65,5 +74,5 @@
             "durationSeconds": 6000
         }
     ],
-    "lastUpdated": "19-09-2023 07:06:06 UTC"
+    "lastUpdated": "19-09-2023 07:19:58 UTC"
 }
