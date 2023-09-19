@@ -21,6 +21,15 @@
                 "durationSeconds": 14400
             },
             {
+                "name": "UNIQUE VISION Programming Contest 2023 Autumn(AtCoder Beginner Contest 323)",
+                "url": "https://atcoder.jp/contests/abc323",
+                "startTime": "2023-10-07T12:00:00.000+00:00",
+                "readableStartTime": "7th October, 2023 12:00:00 PM UTC",
+                "startingIn": "18 days",
+                "duration": "1 hour 40 minutes",
+                "durationSeconds": 6000
+            },
+            {
                 "name": "AtCoder Regular Contest 166",
                 "url": "https://atcoder.jp/contests/arc166",
                 "startTime": "2023-10-08T12:00:00.000+00:00",
@@ -195,5 +204,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-19T04:50:30.000+00:00"
+    "lastUpdated": "2023-09-19T05:04:53.000+00:00"
 }
