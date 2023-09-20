@@ -81,7 +81,7 @@
                 "url": "https://www.codechef.com/START101",
                 "startTime": "2023-09-20T14:30:00.000+00:00",
                 "readableStartTime": "20th September, 2023 02:30:00 PM UTC",
-                "startingIn": "5 hours",
+                "startingIn": "4 hours",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -155,7 +155,7 @@
                 "url": "https://codeforces.com/contests/1881",
                 "startTime": "2023-10-22T09:35:00.000+00:00",
                 "readableStartTime": "22nd October, 2023 09:35:00 AM UTC",
-                "startingIn": "32 days",
+                "startingIn": "31 days",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             }
@@ -213,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-20T09:23:41.000+00:00"
+    "lastUpdated": "2023-09-20T09:39:16.000+00:00"
 }
