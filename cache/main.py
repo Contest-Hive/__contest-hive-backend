@@ -28,7 +28,7 @@ class Contests:
         "5": "hackerrank",
         "6": "leetcode",
         "7": "toph",
-        "8": "codeforcesGym"
+        "8": "codeforces_gym"
     }
 
     platformFuncs = {
