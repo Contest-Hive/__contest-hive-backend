@@ -75,7 +75,17 @@
                 "durationSeconds": 6000
             }
         ],
-        "codechef": [],
+        "codechef": [
+            {
+                "name": "Starters 102",
+                "url": "https://www.codechef.com/START102",
+                "startTime": "2023-09-27T14:30:00.000+00:00",
+                "readableStartTime": "27th September, 2023 02:30:00 PM UTC",
+                "startingIn": "5 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            }
+        ],
         "codeforces": [
             {
                 "name": "Educational Codeforces Round 155 (Rated for Div. 2)",
@@ -203,5 +213,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-22T07:05:48.000+00:00"
+    "lastUpdated": "2023-09-22T07:19:32.000+00:00"
 }

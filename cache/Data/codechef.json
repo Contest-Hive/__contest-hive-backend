@@ -1,5 +1,15 @@
 {
     "ok": true,
-    "data": [],
-    "lastUpdated": "22-09-2023 07:05:48 UTC"
+    "data": [
+        {
+            "name": "Starters 102",
+            "url": "https://www.codechef.com/START102",
+            "startTime": "2023-09-27T14:30:00.000+00:00",
+            "readableStartTime": "27th September, 2023 02:30:00 PM UTC",
+            "startingIn": "5 days",
+            "duration": "2 hours",
+            "durationSeconds": 7200
+        }
+    ],
+    "lastUpdated": "22-09-2023 07:19:32 UTC"
 }
