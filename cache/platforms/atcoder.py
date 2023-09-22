@@ -2,69 +2,52 @@ import pytz
 import httpx
 import asyncio
 
-from bs4 import BeautifulSoup
 from datetime import datetime
-try:
-    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
-except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
+from bs4 import BeautifulSoup
+from typing import List
 
 
-def extract_data(r):
-    soup = BeautifulSoup(r, "lxml")
-    return soup.select("#contest-table-upcoming tbody tr")
+def extractData(r: httpx.Response) -> List[List[str]]:
+    """
+    Extracts contest data from a At webpage and returns it as a list of lists.
 
+    Args:
+        r (httpx.Response): The HTTP response object containing the HTML content of the At contests webpage.
 
-def convert_start_time(startTime):
-    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
-    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-    return formatted_time
+    Returns:
+        List[List[str]]: A list of lists representing the contest data. Each inner list contains the following information:
+            - Name of the contest
+            - URL of the contest
+            - Start time of the contest in ISO 8601 format
+            - Duration of the contest in seconds
+    """
+    data = []
+    soup = BeautifulSoup(r.content, "lxml")
+    contests = soup.select("#contest-table-upcoming tbody tr")
+
+    for con in contests:
+        ele = con.find_all("td")
+        text = ele[1].text.strip()
+        name = text[text.find("\n") + 1:].strip().split()[1:]
+        name = " ".join(name)
+        url = ele[1].select("a")[0].get("href")[10:]
+        startTime = datetime.strptime(
+            ele[0].text.replace(
+                " ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(
+            pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        h, m = ele[2].text.split(':')
+        durationSec = int(h) * 3600 + int(m) * 60
+        contest_list = [name, url, startTime, durationSec]
+        data.append(contest_list)
+
+    return data
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://atcoder.jp/contests/")
-    allContests = []
+    response = await ses.get("https://atcoder.jp/contests/")
     loop = asyncio.get_event_loop()
-    if r.status_code == 200:
-        contests = await loop.run_in_executor(None, extract_data, r.content)
-
-        for con in contests:
-            ele = con.find_all("td")
-            name = " ".join(
-                ele[1].text.strip()[
-                    ele[1].text.strip().index("\n") +
-                    1:].strip().split()[
-                    1:])
-
-            url = "https://atcoder.jp" + ele[1].select("a")[0].get("href")
-
-            startTime = datetime.strptime(
-                ele[0].text.replace(
-                    " ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(
-                pytz.utc).strftime("%d-%m-%Y %H:%M:%S") + " UTC"
-
-            startTime = convert_start_time(startTime)
-
-            h, m = ele[2].text.split(':')
-            durationSec = int(h) * 3600 + int(m) * 60
-            duration = secondsToTime(durationSec)
-
-            contest = {
-                "name": name,
-                "url": url,
-                "startTime": startTime,
-                "readableStartTime": humanReadableTime(startTime),
-                "startingIn": calculate_time_difference(startTime),
-                "duration": duration,
-                "durationSeconds": durationSec
-            }
-
-            allContests.append(contest)
-    return allContests
-
+    return await loop.run_in_executor(None, extractData, response)
 
 if __name__ == "__main__":
-    print("Only running one file.\n")
-    a = asyncio.run(getContests(httpx.AsyncClient(timeout=13)))
-    for j in a:
-        print(j)
+    from pprint import pprint
+    pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))

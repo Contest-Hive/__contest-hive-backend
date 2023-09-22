@@ -1,74 +1,56 @@
-import json
-import pytz
 import httpx
 import asyncio
-
 from datetime import datetime
-try:
-    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
-except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
+from typing import List
 
 
-def convert_start_time(startTime):
-    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
-    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
-    return formatted_time
+def extractData(r: httpx.Response) -> List[List[str]]:
+    """
+    Extracts contest data from a HackerEarth webpage and returns it as a list of lists.
+
+    Args:
+        r (httpx.Response): The HTTP response object containing the HTML content of the HackerEarth contests webpage.
+
+    Returns:
+        List[List[str]]: A list of lists representing the contest data. Each inner list contains the following information:
+            - Name of the contest
+            - URL of the contest
+            - Start time of the contest in ISO 8601 format
+            - Duration of the contest in seconds
+    """
+
+    data = []
+
+    if r.status_code != 200:
+        return []
+
+    jr = r.json()
+    contests = jr.get("response")
+    for i in contests:
+        status = i["status"]
+        if status != "UPCOMING":
+            continue
+        name = i["title"]
+        url = i["url"]
+        startTime = datetime.strptime(i["start_utc_tz"], "%Y-%m-%d %H:%M:%S%z")
+        endTime = datetime.strptime(i["end_utc_tz"], "%Y-%m-%d %H:%M:%S%z")
+        durationSec = int((endTime - startTime).total_seconds())
+        startTime = startTime.strftime("%Y-%m-%dT%H:%M:%SZ")
+        url = url[8:]
+        if url[-1] == "/":
+            url = url[:-1]
+        
+        contest_list = [name, url, startTime, durationSec]
+        data.append(contest_list)
+
+    return data
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://www.hackerearth.com/chrome-extension/events/")
-    allContests = []
-    if r.status_code == 200:
-        jr = json.loads(r.text)
-        contests = jr.get("response")
-        for con in contests:
-            plat = "HackerEarth"
-            if con["status"] == "UPCOMING":
-                name = con["title"]
-                url = con["url"]
-                start = con["start_tz"][: con["start_tz"].rindex(
-                    ':')] + con["start_tz"][con["start_tz"].rindex(':') + 1:]
-                start = start.replace(" ", "T")
-                end = con["end_tz"].replace(" ", "T")
-                try:
-                    startTime = datetime.strptime(
-                        start, '%Y-%m-%dT%H:%M:%S%z').astimezone(pytz.utc).strftime('%Y-%m-%dT%H:%M:%S%z')
-                    td = datetime.strptime(
-                        end, '%Y-%m-%dT%H:%M:%S%z') - datetime.strptime(start, '%Y-%m-%dT%H:%M:%S%z')
-                    durationSec = int(td.total_seconds())
-                    duration = secondsToTime(durationSec)
-
-                    startTime = datetime.strptime(
-                        startTime.replace(
-                            'T',
-                            ' ')[
-                            :-
-                            5],
-                        "%Y-%m-%d %H:%M:%S").strftime("%d-%m-%Y %H:%M:%S UTC")
-
-                    startTime = convert_start_time(startTime)
-                    contest = {
-                        "name": name,
-                        "url": url,
-                        "startTime": startTime,
-                        "readableStartTime": humanReadableTime(startTime),
-                        "startingIn": calculate_time_difference(startTime),
-                        "duration": duration,
-                        "durationSeconds": durationSec
-                    }
-
-                    allContests.append(contest)
-
-                except Exception as e:
-                    print(e)
-                    continue
-
-    return allContests
-
+    response = await ses.get("https://www.hackerearth.com/chrome-extension/events/")
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(None, extractData, response)
 
 if __name__ == "__main__":
-    print("Only running one file.\n")
-    a = asyncio.run(getContests(httpx.AsyncClient(timeout=13)))
-    for j in a:
-        print(j)
+    from pprint import pprint
+    pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=13))))

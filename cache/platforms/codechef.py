@@ -32,7 +32,6 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         name = i["contest_name"]
         url = i["contest_code"]
         startIso = i["contest_start_date_iso"]
-        print(startIso)
         startTime = datetime.fromisoformat(startIso).astimezone(
             pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         durationSec = int(i["contest_duration"]) * 60
