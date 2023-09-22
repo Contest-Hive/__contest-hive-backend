@@ -26,12 +26,11 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git checkout -b cache
           git add .
           git commit -m "Auto Dumped Data"
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          branch: cache
+          # branch: cache
           github_token: ${{ secrets.GITHUB_TOKEN }}
