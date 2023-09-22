@@ -1,9 +1,9 @@
 name: Cache Data
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
   schedule:
     - cron: "*/11 * * * *"
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: cache
+          ref: main
           fetch-depth: 1
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -35,7 +35,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add cache/Data
-          git commit -m "Auto Dumped Data"
+          git commit -m "Auto Dumped Data at $(date)"
 
       - name: Force Push changes
         uses: ad-m/github-push-action@master
