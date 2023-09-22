@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git checkout -b cache
           git add cache/Data
           git commit -m "Auto Dumped Data at $(date)"
 
@@ -42,4 +43,3 @@ jobs:
         with:
           force_with_lease: true
           branch: cache
-          github_token: ${{ secrets.GITHUB_TOKEN }}
