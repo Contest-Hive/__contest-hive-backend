@@ -2,35 +2,37 @@ name: Cache Data
 
 on:
   schedule:
-    - cron: "*/11 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   dumpData:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-    
-    - working-directory: cache
-      name: Install dependencies and Run script
-      run: |
-        pip install -r requirements.txt
-        python main.py
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
 
-    - name: Commit changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "Auto Dumped Data"
-        
-    - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        branch: ${{ github.ref }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - working-directory: cache
+        name: Install dependencies
+        run: pip install -U pip && pip install -r requirements.txt
 
+      - working-directory: cache
+        name: Dump Data
+        run: python main.py
+
+      - name: Commit changes to cache branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b cache
+          git add .
+          git commit -m "Auto Dumped Data"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: ${{ github.ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
