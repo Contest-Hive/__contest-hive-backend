@@ -81,7 +81,7 @@
                 "url": "https://www.codechef.com/START102",
                 "startTime": "2023-09-27T14:30:00.000+00:00",
                 "readableStartTime": "27th September, 2023 02:30:00 PM UTC",
-                "startingIn": "5 days",
+                "startingIn": "4 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -90,7 +90,7 @@
                 "url": "https://www.codechef.com/STARTSQL",
                 "startTime": "2023-10-04T14:30:00.000+00:00",
                 "readableStartTime": "4th October, 2023 02:30:00 PM UTC",
-                "startingIn": "12 days",
+                "startingIn": "11 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -99,7 +99,7 @@
                 "url": "https://www.codechef.com/START103",
                 "startTime": "2023-10-11T14:30:00.000+00:00",
                 "readableStartTime": "11st October, 2023 02:30:00 PM UTC",
-                "startingIn": "19 days",
+                "startingIn": "18 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -108,7 +108,7 @@
                 "url": "https://www.codechef.com/START104",
                 "startTime": "2023-10-18T14:30:00.000+00:00",
                 "readableStartTime": "18th October, 2023 02:30:00 PM UTC",
-                "startingIn": "26 days",
+                "startingIn": "25 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -117,7 +117,7 @@
                 "url": "https://www.codechef.com/START105",
                 "startTime": "2023-10-25T14:30:00.000+00:00",
                 "readableStartTime": "25th October, 2023 02:30:00 PM UTC",
-                "startingIn": "33 days",
+                "startingIn": "32 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             }
@@ -128,7 +128,7 @@
                 "url": "https://codeforces.com/contests/1879",
                 "startTime": "2023-09-24T14:35:00.000+00:00",
                 "readableStartTime": "24th September, 2023 02:35:00 PM UTC",
-                "startingIn": "2 days",
+                "startingIn": "1 day",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -137,7 +137,7 @@
                 "url": "https://codeforces.com/contests/1882",
                 "startTime": "2023-09-25T14:35:00.000+00:00",
                 "readableStartTime": "25th September, 2023 02:35:00 PM UTC",
-                "startingIn": "3 days",
+                "startingIn": "2 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
             },
@@ -146,7 +146,7 @@
                 "url": "https://codeforces.com/contests/1878",
                 "startTime": "2023-09-26T14:35:00.000+00:00",
                 "readableStartTime": "26th September, 2023 02:35:00 PM UTC",
-                "startingIn": "4 days",
+                "startingIn": "3 days",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
             },
@@ -155,7 +155,7 @@
                 "url": "https://codeforces.com/contests/1875",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-                "startingIn": "8 days",
+                "startingIn": "7 days",
                 "duration": "3 hours",
                 "durationSeconds": 10800
             },
@@ -164,7 +164,7 @@
                 "url": "https://codeforces.com/contests/1874",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
-                "startingIn": "8 days",
+                "startingIn": "7 days",
                 "duration": "3 hours",
                 "durationSeconds": 10800
             },
@@ -232,7 +232,7 @@
                 "url": "https://leetcode.com/contest/biweekly-contest-114",
                 "startTime": "2023-09-30T14:30:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:30:00 PM UTC",
-                "startingIn": "8 days",
+                "startingIn": "7 days",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             }
@@ -249,5 +249,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-22T14:24:46.000+00:00"
+    "lastUpdated": "2023-09-22T14:39:01.000+00:00"
 }
