@@ -43,7 +43,7 @@
                 "url": "https://atcoder.jp/contests/ahc025",
                 "startTime": "2023-10-14T03:00:00.000+00:00",
                 "readableStartTime": "14th October, 2023 03:00:00 AM UTC",
-                "startingIn": "22 days",
+                "startingIn": "21 days",
                 "duration": "8 days 7 hours",
                 "durationSeconds": 716400
             },
@@ -87,6 +87,15 @@
                 "durationSeconds": 7200
             },
             {
+                "name": "Codeforces Round 899 (Div. 2)",
+                "url": "https://codeforces.com/contests/1882",
+                "startTime": "2023-09-25T14:35:00.000+00:00",
+                "readableStartTime": "25th September, 2023 02:35:00 PM UTC",
+                "startingIn": "3 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
                 "name": "Codeforces Round (Div. 3)",
                 "url": "https://codeforces.com/contests/1878",
                 "startTime": "2023-09-26T14:35:00.000+00:00",
@@ -96,7 +105,7 @@
                 "durationSeconds": 8100
             },
             {
-                "name": "Codeforces Round (Div. 2)",
+                "name": "Codeforces Round 900 (Div. 2)",
                 "url": "https://codeforces.com/contests/1875",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
@@ -105,7 +114,7 @@
                 "durationSeconds": 10800
             },
             {
-                "name": "Codeforces Round (Div. 1)",
+                "name": "Codeforces Round 900 (Div. 1)",
                 "url": "https://codeforces.com/contests/1874",
                 "startTime": "2023-09-30T14:35:00.000+00:00",
                 "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
@@ -134,8 +143,8 @@
             {
                 "name": "Codeforces Round (Div. 3)",
                 "url": "https://codeforces.com/contests/1881",
-                "startTime": "2023-10-22T09:35:00.000+00:00",
-                "readableStartTime": "22nd October, 2023 09:35:00 AM UTC",
+                "startTime": "2023-10-22T12:05:00.000+00:00",
+                "readableStartTime": "22nd October, 2023 12:05:00 PM UTC",
                 "startingIn": "30 days",
                 "duration": "2 hours 15 minutes",
                 "durationSeconds": 8100
@@ -147,7 +156,7 @@
                 "url": "https://cyient.hackerearth.com/",
                 "startTime": "2023-10-23T17:00:00.000+00:00",
                 "readableStartTime": "23rd October, 2023 05:00:00 PM UTC",
-                "startingIn": "32 days",
+                "startingIn": "31 days",
                 "duration": "27 days 8 hours",
                 "durationSeconds": 2361600
             },
@@ -168,7 +177,7 @@
                 "url": "https://leetcode.com/contest/weekly-contest-364",
                 "startTime": "2023-09-24T02:30:00.000+00:00",
                 "readableStartTime": "24th September, 2023 02:30:00 AM UTC",
-                "startingIn": "2 days",
+                "startingIn": "1 day",
                 "duration": "1 hour 30 minutes",
                 "durationSeconds": 5400
             },
@@ -182,17 +191,7 @@
                 "durationSeconds": 5400
             }
         ],
-        "toph": [
-            {
-                "name": "Tough Dash, October 2023",
-                "url": "https://toph.co/c/tough-dash-october-2023",
-                "startTime": "2023-10-20T15:00:00.000+00:00",
-                "readableStartTime": "20th October, 2023 03:00:00 PM UTC",
-                "startingIn": "28 days",
-                "duration": "40 minutes",
-                "durationSeconds": 2400
-            }
-        ]
+        "toph": []
     },
-    "lastUpdated": "2023-09-21T16:07:22.000+00:00"
+    "lastUpdated": "2023-09-22T03:23:17.000+00:00"
 }
