@@ -57,7 +57,7 @@ class Contests:
             json.dump(data, f, ensure_ascii=False)
 
     def dumpAllJson(self):
-        # First Dump all
+        # First Dump `all``
         allData = {
             "ok": True,
             "data": self.cachedData,
