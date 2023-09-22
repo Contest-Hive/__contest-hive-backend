@@ -27,7 +27,16 @@
             "startingIn": "26 days",
             "duration": "2 hours",
             "durationSeconds": 7200
+        },
+        {
+            "name": "Starters 105",
+            "url": "https://www.codechef.com/START105",
+            "startTime": "2023-10-25T14:30:00.000+00:00",
+            "readableStartTime": "25th October, 2023 02:30:00 PM UTC",
+            "startingIn": "33 days",
+            "duration": "2 hours",
+            "durationSeconds": 7200
         }
     ],
-    "lastUpdated": "22-09-2023 07:30:08 UTC"
+    "lastUpdated": "22-09-2023 07:41:03 UTC"
 }
