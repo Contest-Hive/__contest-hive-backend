@@ -20,7 +20,7 @@
             "durationSeconds": 7200
         },
         {
-            "name": "Codeforces Round (Div. 3)",
+            "name": "Codeforces Round 900 (Div. 3)",
             "url": "https://codeforces.com/contests/1878",
             "startTime": "2023-09-26T14:35:00.000+00:00",
             "readableStartTime": "26th September, 2023 02:35:00 PM UTC",
@@ -29,7 +29,7 @@
             "durationSeconds": 8100
         },
         {
-            "name": "Codeforces Round 900 (Div. 2)",
+            "name": "Codeforces Round 901 (Div. 2)",
             "url": "https://codeforces.com/contests/1875",
             "startTime": "2023-09-30T14:35:00.000+00:00",
             "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
@@ -38,7 +38,7 @@
             "durationSeconds": 10800
         },
         {
-            "name": "Codeforces Round 900 (Div. 1)",
+            "name": "Codeforces Round 901 (Div. 1)",
             "url": "https://codeforces.com/contests/1874",
             "startTime": "2023-09-30T14:35:00.000+00:00",
             "readableStartTime": "30th September, 2023 02:35:00 PM UTC",
@@ -74,5 +74,5 @@
             "durationSeconds": 8100
         }
     ],
-    "lastUpdated": "22-09-2023 10:13:21 UTC"
+    "lastUpdated": "22-09-2023 10:31:44 UTC"
 }
