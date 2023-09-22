@@ -84,6 +84,24 @@
                 "startingIn": "5 days",
                 "duration": "2 hours",
                 "durationSeconds": 7200
+            },
+            {
+                "name": "Starters 103",
+                "url": "https://www.codechef.com/START103",
+                "startTime": "2023-10-11T14:30:00.000+00:00",
+                "readableStartTime": "11st October, 2023 02:30:00 PM UTC",
+                "startingIn": "19 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
+            },
+            {
+                "name": "Starters 104",
+                "url": "https://www.codechef.com/START104",
+                "startTime": "2023-10-18T14:30:00.000+00:00",
+                "readableStartTime": "18th October, 2023 02:30:00 PM UTC",
+                "startingIn": "26 days",
+                "duration": "2 hours",
+                "durationSeconds": 7200
             }
         ],
         "codeforces": [
@@ -213,5 +231,5 @@
             }
         ]
     },
-    "lastUpdated": "2023-09-22T07:19:32.000+00:00"
+    "lastUpdated": "2023-09-22T07:30:08.000+00:00"
 }
