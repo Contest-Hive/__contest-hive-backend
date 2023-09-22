@@ -31,12 +31,12 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull origin cache
           git add cache/Data
           git commit -m "Auto Dumped Data"
 
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+      - name: Force Push changes
+        uses: ad-m/github-push-action@master
         with:
+          force_with_lease: true
           branch: cache
           github_token: ${{ secrets.GITHUB_TOKEN }}
