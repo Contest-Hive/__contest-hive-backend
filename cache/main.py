@@ -75,6 +75,7 @@ class Contests:
             self.dumpJson(i, data)
 
         print("Dumped all data to json files")
+        print(os.listdir("Data"))
 
     async def getAllContests(self):
         ses = httpx.AsyncClient(timeout=None, follow_redirects=1)
