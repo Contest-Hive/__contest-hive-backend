@@ -165,7 +165,7 @@
                 "url": "https://www.hackerearth.com/challenges/competitive/hackerearth-select/",
                 "startTime": "2023-11-04T04:00:00.000+00:00",
                 "readableStartTime": "4th November, 2023 04:00:00 AM UTC",
-                "startingIn": "43 days",
+                "startingIn": "42 days",
                 "duration": "2 days 14 hours 29 minutes",
                 "durationSeconds": 224940
             }
@@ -191,7 +191,17 @@
                 "durationSeconds": 5400
             }
         ],
-        "toph": []
+        "toph": [
+            {
+                "name": "Tough Dash, October 2023",
+                "url": "https://toph.co/c/tough-dash-october-2023",
+                "startTime": "2023-10-20T15:00:00.000+00:00",
+                "readableStartTime": "20th October, 2023 03:00:00 PM UTC",
+                "startingIn": "28 days",
+                "duration": "40 minutes",
+                "durationSeconds": 2400
+            }
+        ]
     },
-    "lastUpdated": "2023-09-22T03:50:23.000+00:00"
+    "lastUpdated": "2023-09-22T04:07:15.000+00:00"
 }

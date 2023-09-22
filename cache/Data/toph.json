@@ -1,5 +1,15 @@
 {
     "ok": true,
-    "data": [],
-    "lastUpdated": "22-09-2023 03:50:23 UTC"
+    "data": [
+        {
+            "name": "Tough Dash, October 2023",
+            "url": "https://toph.co/c/tough-dash-october-2023",
+            "startTime": "2023-10-20T15:00:00.000+00:00",
+            "readableStartTime": "20th October, 2023 03:00:00 PM UTC",
+            "startingIn": "28 days",
+            "duration": "40 minutes",
+            "durationSeconds": 2400
+        }
+    ],
+    "lastUpdated": "22-09-2023 04:07:15 UTC"
 }
