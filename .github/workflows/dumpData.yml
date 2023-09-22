@@ -37,9 +37,8 @@ jobs:
           git checkout -b cache
           git add cache/Data
           git commit -m "Auto Dumped Data at $(date)"
-          git push --set-upstream origin cache
+          git push --set-upstream origin cache -f
 
-          
       # - name: Force Push changes
       #   uses: ad-m/github-push-action@master
       #   with:
