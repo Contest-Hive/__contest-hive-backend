@@ -1,4 +1,4 @@
-import json
+import pytz
 import httpx
 import asyncio
 
@@ -9,10 +9,10 @@ from typing import List
 
 def extractData(r: httpx.Response) -> List[List[str]]:
     """
-    Extracts contest data from a LeetCode webpage and returns it as a list of lists.
+    Extracts contest data from a AtCoder webpage and returns it as a list of lists.
 
     Args:
-        r (httpx.Response): The HTTP response object containing the HTML content of the LeetCode contests webpage.
+        r (httpx.Response): The HTTP response object containing the HTML content of the AtCoder contests webpage.
 
     Returns:
         List[List[str]]: A list of lists representing the contest data. Each inner list contains the following information:
@@ -23,16 +23,20 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     """
     data = []
     soup = BeautifulSoup(r.content, "lxml")
-    a = json.loads(soup.find("script", id="__NEXT_DATA__").text)
-    contests = a["props"]["pageProps"]["dehydratedState"]["queries"][-1]["state"]["data"]["topTwoContests"]
+    contests = soup.select("#contest-table-upcoming tbody tr")
 
-    for i in contests:
-        name = i["title"]
-        url = i["titleSlug"]
-        startSec = i["startTime"]
-        startTime = datetime.strftime(datetime.utcfromtimestamp(startSec), "%Y-%m-%dT%H:%M:%SZ")
-
-        durationSec = i["duration"]
+    for con in contests:
+        ele = con.find_all("td")
+        text = ele[1].text.strip()
+        name = text[text.find("\n") + 1:].strip().split()[1:]
+        name = " ".join(name)
+        url = ele[1].select("a")[0].get("href")[10:]
+        startTime = datetime.strptime(
+            ele[0].text.replace(
+                " ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(
+            pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        h, m = ele[2].text.split(':')
+        durationSec = int(h) * 3600 + int(m) * 60
         contest_list = [name, url, startTime, durationSec]
         data.append(contest_list)
 
@@ -40,10 +44,9 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://leetcode.com/contest/")
+    response = await ses.get("https://atcoder.jp/contests/")
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
-
 
 if __name__ == "__main__":
     from pprint import pprint

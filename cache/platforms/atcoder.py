@@ -17,7 +17,7 @@ def extract_data(r):
 
 def convert_start_time(startTime):
     dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
-    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
+    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     return formatted_time
 
 

@@ -18,7 +18,6 @@ from platforms import (
 )
 
 
-
 class Contests:
     cachedData = {}
     keywordPlatforms = {

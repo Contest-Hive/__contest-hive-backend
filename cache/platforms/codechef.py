@@ -3,57 +3,52 @@ import httpx
 import asyncio
 
 from datetime import datetime
-try:
-    from helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
-except ImportError:
-    from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
+from typing import List
 
 
+def extractData(r: httpx.Response) -> List[List[str]]:
+    """
+    Extracts contest data from a CodeChef webpage and returns it as a list of lists.
 
-def convert_start_time(startTime):
-    dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
-    formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
-    return formatted_time
+    Args:
+        r (httpx.Response): The HTTP response object containing the HTML content of the CodeChef contests webpage.
 
-
-async def getContests(ses: httpx.AsyncClient):
-    r = (await ses.get('https://www.codechef.com/api/list/contests/all')).json()
+    Returns:
+        List[List[str]]: A list of lists representing the contest data. Each inner list contains the following information:
+            - Name of the contest
+            - URL of the contest
+            - Start time of the contest in ISO 8601 format
+            - Duration of the contest in seconds
+    """
+    r = r.json()
 
     if r.get("status") != "success":
         return []
 
-    allContests = []
+    data = []
     contests = r["future_contests"]
 
     for i in contests:
         name = i["contest_name"]
-        url = f"https://www.codechef.com/{i['contest_code']}"
+        url = i["contest_code"]
         startIso = i["contest_start_date_iso"]
+        print(startIso)
         startTime = datetime.fromisoformat(startIso).astimezone(
-            pytz.utc).strftime("%d-%m-%Y %H:%M:%S UTC")
+            pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        durationSec = int(i["contest_duration"]) * 60
+        contest_list = [name, url, startTime, durationSec]
 
-        startTime = convert_start_time(startTime)
+        data.append(contest_list)
 
-        durationMin = i["contest_duration"] + " minutes"
-        durationSec = timeToSeconds(durationMin)
-        duration = secondsToTime(durationSec)
+    return data
 
-        contest = {
-            "name": name,
-            "url": url,
-            "startTime": startTime,
-            "readableStartTime": humanReadableTime(startTime),
-            "startingIn": calculate_time_difference(startTime),
-            "duration": duration,
-            "durationSeconds": durationSec
-        }
 
-        allContests.append(contest)
+async def getContests(ses: httpx.AsyncClient):
+    response = await ses.get("https://www.codechef.com/api/list/contests/all")
+    loop = asyncio.get_event_loop()
 
-    return allContests
+    return await loop.run_in_executor(None, extractData, response)
 
 if __name__ == "__main__":
-    print("Only running one file.\n")
-    a = asyncio.run(getContests(httpx.AsyncClient(timeout=13)))
-    for j in a:
-        print(j)
+    from pprint import pprint
+    pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))

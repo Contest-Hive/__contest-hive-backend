@@ -10,7 +10,6 @@ except ImportError:
     from .helpers.format_time import secondsToTime, timeToSeconds, humanReadableTime, calculate_time_difference
 
 
-
 def convert_start_time(startTime):
     dt = datetime.strptime(startTime, "%d-%m-%Y %H:%M:%S UTC")
     formatted_time = dt.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
@@ -18,8 +17,7 @@ def convert_start_time(startTime):
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get(
-        "https://www.hackerearth.com/chrome-extension/events/")
+    r = await ses.get("https://www.hackerearth.com/chrome-extension/events/")
     allContests = []
     if r.status_code == 200:
         jr = json.loads(r.text)
