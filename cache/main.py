@@ -14,6 +14,7 @@ from platforms import (
     HackerRank,
     LeetCode,
     Toph,
+    CodeForcesGym
 )
 
 
@@ -26,7 +27,8 @@ class Contests:
         "4": "hackerearth",
         "5": "hackerrank",
         "6": "leetcode",
-        "7": "toph"
+        "7": "toph",
+        "8": "codeforcesGym"
     }
 
     platformFuncs = {
@@ -36,7 +38,8 @@ class Contests:
         "4": HackerEarth,
         "5": HackerRank,
         "6": LeetCode,
-        "7": Toph
+        "7": Toph,
+        "8": CodeForcesGym
     }
 
     def __init__(self):

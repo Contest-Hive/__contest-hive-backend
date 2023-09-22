@@ -1,4 +1,3 @@
-import pytz
 import httpx
 import asyncio
 
@@ -9,10 +8,10 @@ from typing import List
 
 def extractData(r: httpx.Response) -> List[List[str]]:
     """
-    Extracts contest data from a At webpage and returns it as a list of lists.
+    Extracts contest data from a Codeforces webpage and returns it as a list of lists.
 
     Args:
-        r (httpx.Response): The HTTP response object containing the HTML content of the At contests webpage.
+        r (httpx.Response): The HTTP response object containing the HTML content of the Codeforces contests webpage.
 
     Returns:
         List[List[str]]: A list of lists representing the contest data. Each inner list contains the following information:
@@ -23,19 +22,24 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     """
     data = []
     soup = BeautifulSoup(r.content, "lxml")
-    contests = soup.select("#contest-table-upcoming tbody tr")
+    contests = soup.find("div", class_="datatable").find_all("tr")[1:]
 
-    for con in contests:
-        ele = con.find_all("td")
-        text = ele[1].text.strip()
-        name = text[text.find("\n") + 1:].strip().split()[1:]
-        name = " ".join(name)
-        url = ele[1].select("a")[0].get("href")[10:]
-        text = ele[0].text.strip()
-        print(name, text)
-        startTime = datetime.strptime(text.replace(" ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        h, m = ele[2].text.split(':')
-        durationSec = int(h) * 3600 + int(m) * 60
+    for contest in contests:
+        contest_id = contest.get("data-contestid")
+        contest_data = contest.find_all("td")
+        status = contest_data[3].text.strip().lower()
+
+        if not status.startswith("before"):
+            break
+
+        name = contest_data[0].text.strip()
+        url = f"{contest_id}"
+        startTime = datetime.strptime(contest_data[1].text.strip(
+        ), "%b/%d/%Y %H:%M").strftime("%Y-%m-%dT%H:%M:%SZ")
+        duration = contest_data[2].text.strip()
+        hh, mm = duration.split(":")
+        durationSec = int(hh) * 3600 + int(mm) * 60
+
         contest_list = [name, url, startTime, durationSec]
         data.append(contest_list)
 
@@ -43,7 +47,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://atcoder.jp/contests/")
+    response = await ses.get("https://codeforces.com/gyms")
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
