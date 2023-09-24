@@ -28,12 +28,21 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         contest_id = contest.get("data-contestid")
         contest_data = contest.find_all("td")
         status = contest_data[3].text.strip().lower()
-
         if not status.startswith("before"):
-            break
+            break # the contests are sorted by time, so we can break here
 
         name = contest_data[0].text.strip()
-        url = f"{contest_id}"
+        anchor = contest_data[0].find("a")
+        # The name contains weird things sometimes, <a> tag!
+        for i in ("\r\n", "\n", "\r", "\t"):
+            name = name.replace(i, '')
+        if anchor:
+            name = name.replace(anchor.text.strip(), '')
+
+        name = name.replace("   ", ' ').replace("  ", ' ').strip()
+
+        url = contest_id
+
         startTime = datetime.strptime(contest_data[1].text.strip(
         ), "%b/%d/%Y %H:%M").strftime("%Y-%m-%dT%H:%M:%SZ")
         duration = contest_data[2].text.strip()
@@ -47,7 +56,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://codeforces.com/gyms")
+    response = await ses.get("https://codeforces.com/gyms?complete=true")
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 

@@ -27,11 +27,25 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     for contest in contests:
         contest_id = contest.get("data-contestid")
         contest_data = contest.find_all("td")
-
         name = contest_data[0].text.strip()
-        url = f"{contest_id}"
-        startTime = datetime.strptime(contest_data[2].text.strip(
-        ), "%b/%d/%Y %H:%M").strftime("%Y-%m-%dT%H:%M:%SZ")
+        anchor = contest_data[0].find("a")
+
+        # The name contains weird things sometimes, <a> tag!
+        for i in ("\r\n", "\n", "\r", "\t"):
+            name = name.replace(i, '')
+        if anchor:
+            name = name.replace(anchor.text.strip(), '')
+        
+        name = name.replace("   ", ' ').replace("  ", ' ').strip()
+
+        url = contest_id
+
+        # the time format is in Moscow time, so we need to add +0300 to it to convert it to UTC
+        startDate = contest_data[2].text.strip() + " +0300"
+        startTime = datetime.strptime(
+            startDate, "%b/%d/%Y %H:%M %z").utctimetuple()
+        startTime = datetime(*startTime[:6]).isoformat()+"Z"
+
         duration = contest_data[3].text.strip()
         hh, mm = duration.split(":")
         durationSec = int(hh) * 3600 + int(mm) * 60
@@ -43,7 +57,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://codeforces.com/contests")
+    response = await ses.get("https://codeforces.com/contests?complete=true")
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
