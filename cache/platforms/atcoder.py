@@ -9,7 +9,7 @@ from typing import List
 
 def extractData(r: httpx.Response) -> List[List[str]]:
     """
-    Extracts contest data from a At webpage and returns it as a list of lists.
+    Extracts contest data from a AtCoder and returns it as a list of lists.
 
     Args:
         r (httpx.Response): The HTTP response object containing the HTML content of the At contests webpage.
