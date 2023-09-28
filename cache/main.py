@@ -80,7 +80,7 @@ class Contests:
         print("Dumped all data to json files")
 
     async def getAllContests(self):
-        ses = httpx.AsyncClient(timeout=5 * 60, follow_redirects=1)
+        ses = httpx.AsyncClient(timeout=33, follow_redirects=1)
 
         print("Getting all contests...")
         x = [func(ses) for func in self.platformFuncs.values()]
