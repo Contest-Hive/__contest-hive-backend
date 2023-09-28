@@ -60,7 +60,7 @@ class Contests:
             json.dump(data, f, ensure_ascii=False)
 
     def dumpAllJson(self):
-        # First Dump `all``
+        # First Dump `all.json`
         allData = {
             "ok": True,
             "data": self.cachedData,
@@ -80,7 +80,7 @@ class Contests:
         print("Dumped all data to json files")
 
     async def getAllContests(self):
-        ses = httpx.AsyncClient(timeout=None, follow_redirects=1)
+        ses = httpx.AsyncClient(timeout=5 * 60, follow_redirects=1)
 
         print("Getting all contests...")
         x = [func(ses) for func in self.platformFuncs.values()]

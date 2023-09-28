@@ -33,7 +33,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         url = ele[1].select("a")[0].get("href")[10:]
         text = ele[0].text.strip()
         print(name, text)
-        startTime = datetime.strptime(text.replace(" ", "T"), '%Y-%m-%dT%H:%M:%S%z').astimezone(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        startTime = datetime.strptime(text, "%Y-%m-%d %H:%M:%S%z").astimezone(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         h, m = ele[2].text.split(':')
         durationSec = int(h) * 3600 + int(m) * 60
         contest_list = [name, url, startTime, durationSec]
