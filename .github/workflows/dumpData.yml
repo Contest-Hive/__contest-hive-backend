@@ -6,8 +6,8 @@ on:
       - main
   workflow_dispatch:
 
-  schedule:
-    - cron: "*/7 * * * *"
+  # schedule:
+  #   - cron: "*/7 * * * *"
 
 jobs:
   dumpData:
