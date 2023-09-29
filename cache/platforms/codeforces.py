@@ -35,7 +35,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
             name = name.replace(i, '')
         if anchor:
             name = name.replace(anchor.text.strip(), '')
-        
+
         name = name.replace("   ", ' ').replace("  ", ' ').strip()
 
         url = contest_id
@@ -57,9 +57,16 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://codeforces.com/contests?complete=true")
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, extractData, response)
+    try:
+        response = await ses.get("https://codeforces.com/contests?complete=true")
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, extractData, response)
+    except Exception as e:
+        print("Codeforces Main Failed, trying mirror...")
+        response = await ses.get("https://mirror.codeforces.com/contests?complete=true")
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, extractData, response)
+
 
 if __name__ == "__main__":
     from pprint import pprint
