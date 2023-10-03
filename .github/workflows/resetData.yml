@@ -21,5 +21,4 @@ jobs:
 
       - name: Dump Data
         run: |
-          echo "{name}={value}" >> $GITHUB_ENV
-          python3 resetStat.py
+          python3 resetStat.py ${{ secrets.MONGO_URI }}
