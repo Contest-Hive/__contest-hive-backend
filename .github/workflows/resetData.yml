@@ -19,8 +19,7 @@ jobs:
       - name: Install dependencies
         run: pip install -U pip && pip install -r requirements.txt
 
-      - name: Dump Data
+      - name: Reset Data
         run: |
           python3 resetStat.py ${{ secrets.MONGO_URI }}
 
-          
