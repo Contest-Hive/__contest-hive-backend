@@ -1,0 +1,25 @@
+name: Reset Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dumpData:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -U pip && pip install -r requirements.txt
+
+      - name: Dump Data
+        run: |
+          echo "{name}={value}" >> $GITHUB_ENV
+          python3 resetStat.py
