@@ -22,3 +22,5 @@ jobs:
       - name: Dump Data
         run: |
           python3 resetStat.py ${{ secrets.MONGO_URI }}
+
+          
