@@ -108,7 +108,7 @@ Starting in: {relativeStartTime}
 <br/><br/>
 Contest Name: {title}
 <br/>
-Link: {url}
+Link: <a href="{url}">{url}</a>
 <br/>
 Platform: {platform}
 <br/>
