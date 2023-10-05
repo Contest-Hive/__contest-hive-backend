@@ -73,6 +73,7 @@ currentTime = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S GMT")
 
 
 def secondsToTime(s):
+    s = int(s)
     m, s = divmod(s, 60)
     h, m = divmod(m, 60)
     d, h = divmod(h, 24)
@@ -99,9 +100,18 @@ for i in contests:
 <item>
     <title>{title}</title>
     <link>{url}</link>
-    <description>Contest in {platform}</description>
+    <description>
+Contest in {platform}
+
+Starting in: {relativeStartTime}
+
+Contest Name: {title}
+Link: {url}
+Platform: {platform}
+Start Time: {startTime}
+Duration: {duration}    
+    </description>
     <guid>{url}</guid>
-    <duration>{duration}</duration>
     <category>Contest</category>  
     <pubDate>{startTime}</pubDate>
 </item>
@@ -110,9 +120,12 @@ for i in contests:
     i["title"] = i["title"].replace("&", "&amp;")
     i["url"] = i["url"].replace("&", "&amp;")
     i["platform"] = i["platform"].replace("&", "&amp;")
+    timeLeft = datetime.datetime.strptime(
+        i["startTime"], "%a, %d %b %Y %H:%M:%S GMT") - datetime.datetime.now()
+    i["relativeStartTime"] = secondsToTime(timeLeft.total_seconds())
+
     itemTemplate = itemTemplate.format(**i)
     allItems.append(itemTemplate)
-    # rssTemplate = rssTemplate.format(buildTime=currentTime, items=itemTemplate)
 
 rssTemplate = rssTemplate.format(
     buildTime=currentTime, items="\n".join(allItems))

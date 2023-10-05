@@ -1,19 +1,27 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Upcoming Contests</title>
-    <link>http://www.example.com/contests</link>
+    <title>Contest Hive RSS Feed</title>
+    <link>http://contest-hive.vercel.app</link>
     <description>Stay updated with the latest coding contests.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2023 16:59:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2023 21:46:09 GMT</lastBuildDate>
     
 <item>
     <title>UTPC Contest 09-22-23 Div. 1</title>
     <link>https://codeforces.com/gymRegistration/104618</link>
-    <description>Contest in CodeForces Gym</description>
+    <description>
+Contest in CodeForces Gym
+
+Starting in: 4 hours 13 minutes 51 seconds
+
+Contest Name: UTPC Contest 09-22-23 Div. 1
+Link: https://codeforces.com/gymRegistration/104618
+Platform: CodeForces Gym
+Start Time: Sat, 23 Sep 2023 02:00:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://codeforces.com/gymRegistration/104618</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Sat, 23 Sep 2023 02:00:00 GMT</pubDate>
 </item>
@@ -22,9 +30,18 @@
 <item>
     <title>UTPC Contest 09-22-23 Div. 2 (Beginner)</title>
     <link>https://codeforces.com/gymRegistration/104617</link>
-    <description>Contest in CodeForces Gym</description>
+    <description>
+Contest in CodeForces Gym
+
+Starting in: 4 hours 13 minutes 51 seconds
+
+Contest Name: UTPC Contest 09-22-23 Div. 2 (Beginner)
+Link: https://codeforces.com/gymRegistration/104617
+Platform: CodeForces Gym
+Start Time: Sat, 23 Sep 2023 02:00:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://codeforces.com/gymRegistration/104617</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Sat, 23 Sep 2023 02:00:00 GMT</pubDate>
 </item>
@@ -33,9 +50,18 @@
 <item>
     <title>SuntoryProgrammingContest2023（AtCoder Beginner Contest 321）</title>
     <link>https://atcoder.jp/contests/abc321</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 14 hours 13 minutes 51 seconds
+
+Contest Name: SuntoryProgrammingContest2023（AtCoder Beginner Contest 321）
+Link: https://atcoder.jp/contests/abc321
+Platform: AtCoder
+Start Time: Sat, 23 Sep 2023 12:00:00 GMT
+Duration: 1 hour 40 minutes    
+    </description>
     <guid>https://atcoder.jp/contests/abc321</guid>
-    <duration>1 hour 40 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 23 Sep 2023 12:00:00 GMT</pubDate>
 </item>
@@ -44,9 +70,18 @@
 <item>
     <title>Weekly Contest 364</title>
     <link>https://leetcode.com/contest/weekly-contest-364</link>
-    <description>Contest in LeetCode</description>
+    <description>
+Contest in LeetCode
+
+Starting in: 4 hours 43 minutes 51 seconds
+
+Contest Name: Weekly Contest 364
+Link: https://leetcode.com/contest/weekly-contest-364
+Platform: LeetCode
+Start Time: Sun, 24 Sep 2023 02:30:00 GMT
+Duration: 1 hour 30 minutes    
+    </description>
     <guid>https://leetcode.com/contest/weekly-contest-364</guid>
-    <duration>1 hour 30 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sun, 24 Sep 2023 02:30:00 GMT</pubDate>
 </item>
@@ -55,9 +90,18 @@
 <item>
     <title>Marubeni Programming Contest 2023 (AtCoder Heuristic Contest 024)</title>
     <link>https://atcoder.jp/contests/ahc024</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 8 hours 13 minutes 51 seconds
+
+Contest Name: Marubeni Programming Contest 2023 (AtCoder Heuristic Contest 024)
+Link: https://atcoder.jp/contests/ahc024
+Platform: AtCoder
+Start Time: Sun, 24 Sep 2023 06:00:00 GMT
+Duration: 4 hours    
+    </description>
     <guid>https://atcoder.jp/contests/ahc024</guid>
-    <duration>4 hours</duration>
     <category>Contest</category>  
     <pubDate>Sun, 24 Sep 2023 06:00:00 GMT</pubDate>
 </item>
@@ -66,9 +110,18 @@
 <item>
     <title>Educational Codeforces Round 155 (Rated for Div. 2)</title>
     <link>https://codeforces.com/contests/1879</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 19 hours 48 minutes 51 seconds
+
+Contest Name: Educational Codeforces Round 155 (Rated for Div. 2)
+Link: https://codeforces.com/contests/1879
+Platform: CodeForces
+Start Time: Sun, 24 Sep 2023 17:35:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://codeforces.com/contests/1879</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Sun, 24 Sep 2023 17:35:00 GMT</pubDate>
 </item>
@@ -77,9 +130,18 @@
 <item>
     <title>Codeforces Round 899 (Div. 2)</title>
     <link>https://codeforces.com/contests/1882</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 19 hours 48 minutes 51 seconds
+
+Contest Name: Codeforces Round 899 (Div. 2)
+Link: https://codeforces.com/contests/1882
+Platform: CodeForces
+Start Time: Mon, 25 Sep 2023 17:35:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://codeforces.com/contests/1882</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Mon, 25 Sep 2023 17:35:00 GMT</pubDate>
 </item>
@@ -88,9 +150,18 @@
 <item>
     <title>Codeforces Round 900 (Div. 3)</title>
     <link>https://codeforces.com/contests/1878</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 19 hours 48 minutes 51 seconds
+
+Contest Name: Codeforces Round 900 (Div. 3)
+Link: https://codeforces.com/contests/1878
+Platform: CodeForces
+Start Time: Tue, 26 Sep 2023 17:35:00 GMT
+Duration: 2 hours 15 minutes    
+    </description>
     <guid>https://codeforces.com/contests/1878</guid>
-    <duration>2 hours 15 minutes</duration>
     <category>Contest</category>  
     <pubDate>Tue, 26 Sep 2023 17:35:00 GMT</pubDate>
 </item>
@@ -99,9 +170,18 @@
 <item>
     <title>Starters 102</title>
     <link>https://www.codechef.com/START102</link>
-    <description>Contest in CodeChef</description>
+    <description>
+Contest in CodeChef
+
+Starting in: 16 hours 43 minutes 51 seconds
+
+Contest Name: Starters 102
+Link: https://www.codechef.com/START102
+Platform: CodeChef
+Start Time: Wed, 27 Sep 2023 14:30:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://www.codechef.com/START102</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Wed, 27 Sep 2023 14:30:00 GMT</pubDate>
 </item>
@@ -110,9 +190,18 @@
 <item>
     <title>Biweekly Contest 114</title>
     <link>https://leetcode.com/contest/biweekly-contest-114</link>
-    <description>Contest in LeetCode</description>
+    <description>
+Contest in LeetCode
+
+Starting in: 16 hours 43 minutes 51 seconds
+
+Contest Name: Biweekly Contest 114
+Link: https://leetcode.com/contest/biweekly-contest-114
+Platform: LeetCode
+Start Time: Sat, 30 Sep 2023 14:30:00 GMT
+Duration: 1 hour 30 minutes    
+    </description>
     <guid>https://leetcode.com/contest/biweekly-contest-114</guid>
-    <duration>1 hour 30 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 30 Sep 2023 14:30:00 GMT</pubDate>
 </item>
@@ -121,9 +210,18 @@
 <item>
     <title>Codeforces Round 901 (Div. 1)</title>
     <link>https://codeforces.com/contests/1874</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 19 hours 48 minutes 51 seconds
+
+Contest Name: Codeforces Round 901 (Div. 1)
+Link: https://codeforces.com/contests/1874
+Platform: CodeForces
+Start Time: Sat, 30 Sep 2023 17:35:00 GMT
+Duration: 3 hours    
+    </description>
     <guid>https://codeforces.com/contests/1874</guid>
-    <duration>3 hours</duration>
     <category>Contest</category>  
     <pubDate>Sat, 30 Sep 2023 17:35:00 GMT</pubDate>
 </item>
@@ -132,9 +230,18 @@
 <item>
     <title>Codeforces Round 901 (Div. 2)</title>
     <link>https://codeforces.com/contests/1875</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 19 hours 48 minutes 51 seconds
+
+Contest Name: Codeforces Round 901 (Div. 2)
+Link: https://codeforces.com/contests/1875
+Platform: CodeForces
+Start Time: Sat, 30 Sep 2023 17:35:00 GMT
+Duration: 3 hours    
+    </description>
     <guid>https://codeforces.com/contests/1875</guid>
-    <duration>3 hours</duration>
     <category>Contest</category>  
     <pubDate>Sat, 30 Sep 2023 17:35:00 GMT</pubDate>
 </item>
@@ -143,9 +250,18 @@
 <item>
     <title>SQL Contest (Unrated)</title>
     <link>https://www.codechef.com/STARTSQL</link>
-    <description>Contest in CodeChef</description>
+    <description>
+Contest in CodeChef
+
+Starting in: 16 hours 43 minutes 51 seconds
+
+Contest Name: SQL Contest (Unrated)
+Link: https://www.codechef.com/STARTSQL
+Platform: CodeChef
+Start Time: Wed, 04 Oct 2023 14:30:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://www.codechef.com/STARTSQL</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Wed, 04 Oct 2023 14:30:00 GMT</pubDate>
 </item>
@@ -154,9 +270,18 @@
 <item>
     <title>UNIQUE VISION Programming Contest 2023 Autumn(AtCoder Beginner Contest 323)</title>
     <link>https://atcoder.jp/contests/abc323</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 1 day 14 hours 13 minutes 50 seconds
+
+Contest Name: UNIQUE VISION Programming Contest 2023 Autumn(AtCoder Beginner Contest 323)
+Link: https://atcoder.jp/contests/abc323
+Platform: AtCoder
+Start Time: Sat, 07 Oct 2023 12:00:00 GMT
+Duration: 1 hour 40 minutes    
+    </description>
     <guid>https://atcoder.jp/contests/abc323</guid>
-    <duration>1 hour 40 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 07 Oct 2023 12:00:00 GMT</pubDate>
 </item>
@@ -165,9 +290,18 @@
 <item>
     <title>AtCoder Regular Contest 166</title>
     <link>https://atcoder.jp/contests/arc166</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 2 days 14 hours 13 minutes 50 seconds
+
+Contest Name: AtCoder Regular Contest 166
+Link: https://atcoder.jp/contests/arc166
+Platform: AtCoder
+Start Time: Sun, 08 Oct 2023 12:00:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://atcoder.jp/contests/arc166</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Sun, 08 Oct 2023 12:00:00 GMT</pubDate>
 </item>
@@ -176,9 +310,18 @@
 <item>
     <title>Codeforces Round (Div. 1)</title>
     <link>https://codeforces.com/contests/1876</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 2 days 14 hours 18 minutes 50 seconds
+
+Contest Name: Codeforces Round (Div. 1)
+Link: https://codeforces.com/contests/1876
+Platform: CodeForces
+Start Time: Sun, 08 Oct 2023 12:05:00 GMT
+Duration: 2 hours 30 minutes    
+    </description>
     <guid>https://codeforces.com/contests/1876</guid>
-    <duration>2 hours 30 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sun, 08 Oct 2023 12:05:00 GMT</pubDate>
 </item>
@@ -187,9 +330,18 @@
 <item>
     <title>Codeforces Round (Div. 2)</title>
     <link>https://codeforces.com/contests/1877</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 2 days 14 hours 18 minutes 50 seconds
+
+Contest Name: Codeforces Round (Div. 2)
+Link: https://codeforces.com/contests/1877
+Platform: CodeForces
+Start Time: Sun, 08 Oct 2023 12:05:00 GMT
+Duration: 2 hours 30 minutes    
+    </description>
     <guid>https://codeforces.com/contests/1877</guid>
-    <duration>2 hours 30 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sun, 08 Oct 2023 12:05:00 GMT</pubDate>
 </item>
@@ -198,9 +350,18 @@
 <item>
     <title>Starters 103</title>
     <link>https://www.codechef.com/START103</link>
-    <description>Contest in CodeChef</description>
+    <description>
+Contest in CodeChef
+
+Starting in: 5 days 16 hours 43 minutes 50 seconds
+
+Contest Name: Starters 103
+Link: https://www.codechef.com/START103
+Platform: CodeChef
+Start Time: Wed, 11 Oct 2023 14:30:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://www.codechef.com/START103</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Wed, 11 Oct 2023 14:30:00 GMT</pubDate>
 </item>
@@ -209,9 +370,18 @@
 <item>
     <title>Codeforces Round (Div. 3)</title>
     <link>https://codeforces.com/contests/1881</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 6 days 19 hours 48 minutes 50 seconds
+
+Contest Name: Codeforces Round (Div. 3)
+Link: https://codeforces.com/contests/1881
+Platform: CodeForces
+Start Time: Thu, 12 Oct 2023 17:35:00 GMT
+Duration: 2 hours 15 minutes    
+    </description>
     <guid>https://codeforces.com/contests/1881</guid>
-    <duration>2 hours 15 minutes</duration>
     <category>Contest</category>  
     <pubDate>Thu, 12 Oct 2023 17:35:00 GMT</pubDate>
 </item>
@@ -220,9 +390,18 @@
 <item>
     <title>AtCoder Heuristic Contest 025</title>
     <link>https://atcoder.jp/contests/ahc025</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 8 days 5 hours 13 minutes 50 seconds
+
+Contest Name: AtCoder Heuristic Contest 025
+Link: https://atcoder.jp/contests/ahc025
+Platform: AtCoder
+Start Time: Sat, 14 Oct 2023 03:00:00 GMT
+Duration: 8 days 7 hours    
+    </description>
     <guid>https://atcoder.jp/contests/ahc025</guid>
-    <duration>8 days 7 hours</duration>
     <category>Contest</category>  
     <pubDate>Sat, 14 Oct 2023 03:00:00 GMT</pubDate>
 </item>
@@ -231,9 +410,18 @@
 <item>
     <title>Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)</title>
     <link>https://atcoder.jp/contests/abc324</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 8 days 14 hours 13 minutes 50 seconds
+
+Contest Name: Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)
+Link: https://atcoder.jp/contests/abc324
+Platform: AtCoder
+Start Time: Sat, 14 Oct 2023 12:00:00 GMT
+Duration: 1 hour 40 minutes    
+    </description>
     <guid>https://atcoder.jp/contests/abc324</guid>
-    <duration>1 hour 40 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 14 Oct 2023 12:00:00 GMT</pubDate>
 </item>
@@ -242,9 +430,18 @@
 <item>
     <title>AtCoder Regular Contest 167</title>
     <link>https://atcoder.jp/contests/arc167</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 9 days 14 hours 13 minutes 50 seconds
+
+Contest Name: AtCoder Regular Contest 167
+Link: https://atcoder.jp/contests/arc167
+Platform: AtCoder
+Start Time: Sun, 15 Oct 2023 12:00:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://atcoder.jp/contests/arc167</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Sun, 15 Oct 2023 12:00:00 GMT</pubDate>
 </item>
@@ -253,9 +450,18 @@
 <item>
     <title>Starters 104</title>
     <link>https://www.codechef.com/START104</link>
-    <description>Contest in CodeChef</description>
+    <description>
+Contest in CodeChef
+
+Starting in: 12 days 16 hours 43 minutes 50 seconds
+
+Contest Name: Starters 104
+Link: https://www.codechef.com/START104
+Platform: CodeChef
+Start Time: Wed, 18 Oct 2023 14:30:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://www.codechef.com/START104</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Wed, 18 Oct 2023 14:30:00 GMT</pubDate>
 </item>
@@ -264,9 +470,18 @@
 <item>
     <title>Tough Dash, October 2023</title>
     <link>https://toph.co/c/tough-dash-october-2023</link>
-    <description>Contest in Toph</description>
+    <description>
+Contest in Toph
+
+Starting in: 14 days 17 hours 13 minutes 50 seconds
+
+Contest Name: Tough Dash, October 2023
+Link: https://toph.co/c/tough-dash-october-2023
+Platform: Toph
+Start Time: Fri, 20 Oct 2023 15:00:00 GMT
+Duration: 40 minutes    
+    </description>
     <guid>https://toph.co/c/tough-dash-october-2023</guid>
-    <duration>40 minutes</duration>
     <category>Contest</category>  
     <pubDate>Fri, 20 Oct 2023 15:00:00 GMT</pubDate>
 </item>
@@ -275,9 +490,18 @@
 <item>
     <title>Codeforces Round (Div. 3)</title>
     <link>https://codeforces.com/contests/1883</link>
-    <description>Contest in CodeForces</description>
+    <description>
+Contest in CodeForces
+
+Starting in: 16 days 17 hours 18 minutes 50 seconds
+
+Contest Name: Codeforces Round (Div. 3)
+Link: https://codeforces.com/contests/1883
+Platform: CodeForces
+Start Time: Sun, 22 Oct 2023 15:05:00 GMT
+Duration: 2 hours 15 minutes    
+    </description>
     <guid>https://codeforces.com/contests/1883</guid>
-    <duration>2 hours 15 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sun, 22 Oct 2023 15:05:00 GMT</pubDate>
 </item>
@@ -286,9 +510,18 @@
 <item>
     <title>CyientifIQ Innovation League</title>
     <link>https://cyient.hackerearth.com</link>
-    <description>Contest in HackerEarth</description>
+    <description>
+Contest in HackerEarth
+
+Starting in: 17 days 19 hours 13 minutes 50 seconds
+
+Contest Name: CyientifIQ Innovation League
+Link: https://cyient.hackerearth.com
+Platform: HackerEarth
+Start Time: Mon, 23 Oct 2023 17:00:00 GMT
+Duration: 27 days 8 hours    
+    </description>
     <guid>https://cyient.hackerearth.com</guid>
-    <duration>27 days 8 hours</duration>
     <category>Contest</category>  
     <pubDate>Mon, 23 Oct 2023 17:00:00 GMT</pubDate>
 </item>
@@ -297,9 +530,18 @@
 <item>
     <title>Starters 105</title>
     <link>https://www.codechef.com/START105</link>
-    <description>Contest in CodeChef</description>
+    <description>
+Contest in CodeChef
+
+Starting in: 19 days 16 hours 43 minutes 50 seconds
+
+Contest Name: Starters 105
+Link: https://www.codechef.com/START105
+Platform: CodeChef
+Start Time: Wed, 25 Oct 2023 14:30:00 GMT
+Duration: 2 hours    
+    </description>
     <guid>https://www.codechef.com/START105</guid>
-    <duration>2 hours</duration>
     <category>Contest</category>  
     <pubDate>Wed, 25 Oct 2023 14:30:00 GMT</pubDate>
 </item>
@@ -308,9 +550,18 @@
 <item>
     <title>Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）</title>
     <link>https://atcoder.jp/contests/abc326</link>
-    <description>Contest in AtCoder</description>
+    <description>
+Contest in AtCoder
+
+Starting in: 22 days 14 hours 13 minutes 50 seconds
+
+Contest Name: Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）
+Link: https://atcoder.jp/contests/abc326
+Platform: AtCoder
+Start Time: Sat, 28 Oct 2023 12:00:00 GMT
+Duration: 1 hour 40 minutes    
+    </description>
     <guid>https://atcoder.jp/contests/abc326</guid>
-    <duration>1 hour 40 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 28 Oct 2023 12:00:00 GMT</pubDate>
 </item>
@@ -319,9 +570,18 @@
 <item>
     <title>HackerEarth Select</title>
     <link>https://www.hackerearth.com/challenges/competitive/hackerearth-select</link>
-    <description>Contest in HackerEarth</description>
+    <description>
+Contest in HackerEarth
+
+Starting in: 29 days 6 hours 13 minutes 50 seconds
+
+Contest Name: HackerEarth Select
+Link: https://www.hackerearth.com/challenges/competitive/hackerearth-select
+Platform: HackerEarth
+Start Time: Sat, 04 Nov 2023 04:00:00 GMT
+Duration: 2 days 14 hours 29 minutes    
+    </description>
     <guid>https://www.hackerearth.com/challenges/competitive/hackerearth-select</guid>
-    <duration>2 days 14 hours 29 minutes</duration>
     <category>Contest</category>  
     <pubDate>Sat, 04 Nov 2023 04:00:00 GMT</pubDate>
 </item>
