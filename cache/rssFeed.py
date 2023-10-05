@@ -55,12 +55,12 @@ for i in range(len(contests)):
     ).strftime("%a, %d %b %Y %H:%M:%S GMT")
 
 
-rssTemplate = """
+rssTemplate = """\
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Upcoming Contests</title>
-    <link>http://www.example.com/contests</link>
+    <title>Contest Hive RSS Feed</title>
+    <link>http://contest-hive.vercel.app</link>
     <description>Stay updated with the latest coding contests.</description>
     <language>en-us</language>
     <lastBuildDate>{buildTime}</lastBuildDate>
@@ -118,4 +118,4 @@ rssTemplate = rssTemplate.format(
     buildTime=currentTime, items="\n".join(allItems))
 
 with open("Data/rss.xml", "w", encoding="utf-8") as f:
-    f.write(rssTemplate)
+    f.write(rssTemplate.strip())
