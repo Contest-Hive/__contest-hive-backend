@@ -101,20 +101,22 @@ for i in contests:
     <title>{title}</title>
     <link>{url}</link>
     <description>
+<![CDATA[
 Contest in {platform}
-&#10;&#10;
+<br/><br/>
 Starting in: {relativeStartTime}
-&#10;&#10;
+<br/><br/>
 Contest Name: {title}
-&#10;
+<br/>
 Link: {url}
-&#10;
+<br/>
 Platform: {platform}
-&#10;
+<br/>
 Start Time: {startTime}
-&#10;
+<br/>
 Duration: {duration}    
-&#10;
+<br/>
+]]>
     </description>
     <guid>{url}</guid>
     <category>Contest</category>  
