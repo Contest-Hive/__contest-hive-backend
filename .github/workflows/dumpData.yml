@@ -29,6 +29,10 @@ jobs:
         name: Dump Data
         run: python3 main.py
 
+      - working-directory: cache
+        name: Generate Rss Feed
+        run: python3 rssFeed.py
+
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
