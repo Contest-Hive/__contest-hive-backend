@@ -102,14 +102,19 @@ for i in contests:
     <link>{url}</link>
     <description>
 Contest in {platform}
-
+&#xA;&#xA;
 Starting in: {relativeStartTime}
-
+&#xA;&#xA;
 Contest Name: {title}
+&#xA;
 Link: {url}
+&#xA;
 Platform: {platform}
+&#xA;
 Start Time: {startTime}
+&#xA;
 Duration: {duration}    
+&#xA;
     </description>
     <guid>{url}</guid>
     <category>Contest</category>  
