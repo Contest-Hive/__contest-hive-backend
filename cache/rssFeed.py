@@ -104,17 +104,11 @@ for i in contests:
 <![CDATA[
 Contest in {platform}
 <br/><br/>
-Starting in: {relativeStartTime}
-<br/><br/>
-Contest Name: {title}
+<b>Contest Name</b>: {title}
 <br/>
-Link: <a href="{url}">{url}</a>
+<b>Link</b>: <a href="{url}">{url}</a>
 <br/>
-Platform: {platform}
-<br/>
-Start Time: {startTime}
-<br/>
-Duration: {duration}    
+<b>Duration</b>: {duration}    
 <br/>
 ]]>
     </description>
