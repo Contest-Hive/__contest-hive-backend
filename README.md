@@ -16,7 +16,7 @@ It uses Github Actions to run a python script that scrapes contest information f
 - [LeetCode](https://leetcode.com/)
 - [Toph](https://toph.co/)
 
-This runs every 11 minutes and pushes the data to itself. The data is then accessed by the frontend.
+This runs every 5 minutes and pushes the data to itself. The data is then accessed by the frontend.
 
 ## Warning
 
