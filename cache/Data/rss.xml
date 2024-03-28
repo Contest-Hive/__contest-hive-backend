@@ -5,71 +5,8 @@
     <link>http://contest-hive.vercel.app</link>
     <description>Stay updated with the latest coding contests.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Oct 2023 05:59:25 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 22:10:29 GMT</lastBuildDate>
     
-<item>
-    <title>UTPC Contest 09-22-23 Div. 1</title>
-    <link>https://codeforces.com/gymRegistration/104618</link>
-    <description>
-<![CDATA[
-Contest in CodeForces Gym
-<br/><br/>
-<b>Contest Name</b>: UTPC Contest 09-22-23 Div. 1
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/gymRegistration/104618">https://codeforces.com/gymRegistration/104618</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/gymRegistration/104618</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 23 Sep 2023 02:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>UTPC Contest 09-22-23 Div. 2 (Beginner)</title>
-    <link>https://codeforces.com/gymRegistration/104617</link>
-    <description>
-<![CDATA[
-Contest in CodeForces Gym
-<br/><br/>
-<b>Contest Name</b>: UTPC Contest 09-22-23 Div. 2 (Beginner)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/gymRegistration/104617">https://codeforces.com/gymRegistration/104617</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/gymRegistration/104617</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 23 Sep 2023 02:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>SuntoryProgrammingContest2023（AtCoder Beginner Contest 321）</title>
-    <link>https://atcoder.jp/contests/abc321</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: SuntoryProgrammingContest2023（AtCoder Beginner Contest 321）
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/abc321">https://atcoder.jp/contests/abc321</a>
-<br/>
-<b>Duration</b>: 1 hour 40 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/abc321</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 23 Sep 2023 12:00:00 GMT</pubDate>
-</item>
-    
-
 <item>
     <title>Weekly Contest 364</title>
     <link>https://leetcode.com/contest/weekly-contest-364</link>
@@ -88,111 +25,6 @@ Contest in LeetCode
     <guid>https://leetcode.com/contest/weekly-contest-364</guid>
     <category>Contest</category>  
     <pubDate>Sun, 24 Sep 2023 02:30:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Marubeni Programming Contest 2023 (AtCoder Heuristic Contest 024)</title>
-    <link>https://atcoder.jp/contests/ahc024</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: Marubeni Programming Contest 2023 (AtCoder Heuristic Contest 024)
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/ahc024">https://atcoder.jp/contests/ahc024</a>
-<br/>
-<b>Duration</b>: 4 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/ahc024</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 24 Sep 2023 06:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Educational Codeforces Round 155 (Rated for Div. 2)</title>
-    <link>https://codeforces.com/contests/1879</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Educational Codeforces Round 155 (Rated for Div. 2)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1879">https://codeforces.com/contests/1879</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1879</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 24 Sep 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round 899 (Div. 2)</title>
-    <link>https://codeforces.com/contests/1882</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round 899 (Div. 2)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1882">https://codeforces.com/contests/1882</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1882</guid>
-    <category>Contest</category>  
-    <pubDate>Mon, 25 Sep 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round 900 (Div. 3)</title>
-    <link>https://codeforces.com/contests/1878</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round 900 (Div. 3)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1878">https://codeforces.com/contests/1878</a>
-<br/>
-<b>Duration</b>: 2 hours 15 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1878</guid>
-    <category>Contest</category>  
-    <pubDate>Tue, 26 Sep 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Starters 102</title>
-    <link>https://www.codechef.com/START102</link>
-    <description>
-<![CDATA[
-Contest in CodeChef
-<br/><br/>
-<b>Contest Name</b>: Starters 102
-<br/>
-<b>Link</b>: <a href="https://www.codechef.com/START102">https://www.codechef.com/START102</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://www.codechef.com/START102</guid>
-    <category>Contest</category>  
-    <pubDate>Wed, 27 Sep 2023 14:30:00 GMT</pubDate>
 </item>
     
 
@@ -218,279 +50,6 @@ Contest in LeetCode
     
 
 <item>
-    <title>Codeforces Round 901 (Div. 1)</title>
-    <link>https://codeforces.com/contests/1874</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round 901 (Div. 1)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1874">https://codeforces.com/contests/1874</a>
-<br/>
-<b>Duration</b>: 3 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1874</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 30 Sep 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round 901 (Div. 2)</title>
-    <link>https://codeforces.com/contests/1875</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round 901 (Div. 2)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1875">https://codeforces.com/contests/1875</a>
-<br/>
-<b>Duration</b>: 3 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1875</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 30 Sep 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>SQL Contest (Unrated)</title>
-    <link>https://www.codechef.com/STARTSQL</link>
-    <description>
-<![CDATA[
-Contest in CodeChef
-<br/><br/>
-<b>Contest Name</b>: SQL Contest (Unrated)
-<br/>
-<b>Link</b>: <a href="https://www.codechef.com/STARTSQL">https://www.codechef.com/STARTSQL</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://www.codechef.com/STARTSQL</guid>
-    <category>Contest</category>  
-    <pubDate>Wed, 04 Oct 2023 14:30:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>UNIQUE VISION Programming Contest 2023 Autumn(AtCoder Beginner Contest 323)</title>
-    <link>https://atcoder.jp/contests/abc323</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: UNIQUE VISION Programming Contest 2023 Autumn(AtCoder Beginner Contest 323)
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/abc323">https://atcoder.jp/contests/abc323</a>
-<br/>
-<b>Duration</b>: 1 hour 40 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/abc323</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 07 Oct 2023 12:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>AtCoder Regular Contest 166</title>
-    <link>https://atcoder.jp/contests/arc166</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: AtCoder Regular Contest 166
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/arc166">https://atcoder.jp/contests/arc166</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/arc166</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 08 Oct 2023 12:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round (Div. 1)</title>
-    <link>https://codeforces.com/contests/1876</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round (Div. 1)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1876">https://codeforces.com/contests/1876</a>
-<br/>
-<b>Duration</b>: 2 hours 30 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1876</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 08 Oct 2023 12:05:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round (Div. 2)</title>
-    <link>https://codeforces.com/contests/1877</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round (Div. 2)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1877">https://codeforces.com/contests/1877</a>
-<br/>
-<b>Duration</b>: 2 hours 30 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1877</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 08 Oct 2023 12:05:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Starters 103</title>
-    <link>https://www.codechef.com/START103</link>
-    <description>
-<![CDATA[
-Contest in CodeChef
-<br/><br/>
-<b>Contest Name</b>: Starters 103
-<br/>
-<b>Link</b>: <a href="https://www.codechef.com/START103">https://www.codechef.com/START103</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://www.codechef.com/START103</guid>
-    <category>Contest</category>  
-    <pubDate>Wed, 11 Oct 2023 14:30:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Codeforces Round (Div. 3)</title>
-    <link>https://codeforces.com/contests/1881</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round (Div. 3)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1881">https://codeforces.com/contests/1881</a>
-<br/>
-<b>Duration</b>: 2 hours 15 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1881</guid>
-    <category>Contest</category>  
-    <pubDate>Thu, 12 Oct 2023 17:35:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>AtCoder Heuristic Contest 025</title>
-    <link>https://atcoder.jp/contests/ahc025</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: AtCoder Heuristic Contest 025
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/ahc025">https://atcoder.jp/contests/ahc025</a>
-<br/>
-<b>Duration</b>: 8 days 7 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/ahc025</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 14 Oct 2023 03:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)</title>
-    <link>https://atcoder.jp/contests/abc324</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: Japan Registry Services (JPRS) Programming Contest 2023 (AtCoder Beginner Contest 324)
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/abc324">https://atcoder.jp/contests/abc324</a>
-<br/>
-<b>Duration</b>: 1 hour 40 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/abc324</guid>
-    <category>Contest</category>  
-    <pubDate>Sat, 14 Oct 2023 12:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>AtCoder Regular Contest 167</title>
-    <link>https://atcoder.jp/contests/arc167</link>
-    <description>
-<![CDATA[
-Contest in AtCoder
-<br/><br/>
-<b>Contest Name</b>: AtCoder Regular Contest 167
-<br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/arc167">https://atcoder.jp/contests/arc167</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://atcoder.jp/contests/arc167</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 15 Oct 2023 12:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Starters 104</title>
-    <link>https://www.codechef.com/START104</link>
-    <description>
-<![CDATA[
-Contest in CodeChef
-<br/><br/>
-<b>Contest Name</b>: Starters 104
-<br/>
-<b>Link</b>: <a href="https://www.codechef.com/START104">https://www.codechef.com/START104</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://www.codechef.com/START104</guid>
-    <category>Contest</category>  
-    <pubDate>Wed, 18 Oct 2023 14:30:00 GMT</pubDate>
-</item>
-    
-
-<item>
     <title>Tough Dash, October 2023</title>
     <link>https://toph.co/c/tough-dash-october-2023</link>
     <description>
@@ -512,107 +71,317 @@ Contest in Toph
     
 
 <item>
-    <title>Codeforces Round (Div. 3)</title>
-    <link>https://codeforces.com/contests/1883</link>
-    <description>
-<![CDATA[
-Contest in CodeForces
-<br/><br/>
-<b>Contest Name</b>: Codeforces Round (Div. 3)
-<br/>
-<b>Link</b>: <a href="https://codeforces.com/contests/1883">https://codeforces.com/contests/1883</a>
-<br/>
-<b>Duration</b>: 2 hours 15 minutes    
-<br/>
-]]>
-    </description>
-    <guid>https://codeforces.com/contests/1883</guid>
-    <category>Contest</category>  
-    <pubDate>Sun, 22 Oct 2023 15:05:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>CyientifIQ Innovation League</title>
-    <link>https://cyient.hackerearth.com</link>
-    <description>
-<![CDATA[
-Contest in HackerEarth
-<br/><br/>
-<b>Contest Name</b>: CyientifIQ Innovation League
-<br/>
-<b>Link</b>: <a href="https://cyient.hackerearth.com">https://cyient.hackerearth.com</a>
-<br/>
-<b>Duration</b>: 27 days 8 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://cyient.hackerearth.com</guid>
-    <category>Contest</category>  
-    <pubDate>Mon, 23 Oct 2023 17:00:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Starters 105</title>
-    <link>https://www.codechef.com/START105</link>
-    <description>
-<![CDATA[
-Contest in CodeChef
-<br/><br/>
-<b>Contest Name</b>: Starters 105
-<br/>
-<b>Link</b>: <a href="https://www.codechef.com/START105">https://www.codechef.com/START105</a>
-<br/>
-<b>Duration</b>: 2 hours    
-<br/>
-]]>
-    </description>
-    <guid>https://www.codechef.com/START105</guid>
-    <category>Contest</category>  
-    <pubDate>Wed, 25 Oct 2023 14:30:00 GMT</pubDate>
-</item>
-    
-
-<item>
-    <title>Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）</title>
-    <link>https://atcoder.jp/contests/abc326</link>
+    <title>AtCoder Beginner Contest 347</title>
+    <link>https://atcoder.jp/contests/abc347</link>
     <description>
 <![CDATA[
 Contest in AtCoder
 <br/><br/>
-<b>Contest Name</b>: Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）
+<b>Contest Name</b>: AtCoder Beginner Contest 347
 <br/>
-<b>Link</b>: <a href="https://atcoder.jp/contests/abc326">https://atcoder.jp/contests/abc326</a>
+<b>Link</b>: <a href="https://atcoder.jp/contests/abc347">https://atcoder.jp/contests/abc347</a>
 <br/>
 <b>Duration</b>: 1 hour 40 minutes    
 <br/>
 ]]>
     </description>
-    <guid>https://atcoder.jp/contests/abc326</guid>
+    <guid>https://atcoder.jp/contests/abc347</guid>
     <category>Contest</category>  
-    <pubDate>Sat, 28 Oct 2023 12:00:00 GMT</pubDate>
+    <pubDate>Sat, 30 Mar 2024 12:00:00 GMT</pubDate>
 </item>
     
 
 <item>
-    <title>HackerEarth Select</title>
-    <link>https://www.hackerearth.com/challenges/competitive/hackerearth-select</link>
+    <title>CodeTON Round 8 (Div. 1 + Div. 2, Rated, Prizes!)</title>
+    <link>https://codeforces.com/contests/1942</link>
     <description>
 <![CDATA[
-Contest in HackerEarth
+Contest in CodeForces
 <br/><br/>
-<b>Contest Name</b>: HackerEarth Select
+<b>Contest Name</b>: CodeTON Round 8 (Div. 1 + Div. 2, Rated, Prizes!)
 <br/>
-<b>Link</b>: <a href="https://www.hackerearth.com/challenges/competitive/hackerearth-select">https://www.hackerearth.com/challenges/competitive/hackerearth-select</a>
+<b>Link</b>: <a href="https://codeforces.com/contests/1942">https://codeforces.com/contests/1942</a>
 <br/>
-<b>Duration</b>: 2 days 14 hours 29 minutes    
+<b>Duration</b>: 3 hours    
 <br/>
 ]]>
     </description>
-    <guid>https://www.hackerearth.com/challenges/competitive/hackerearth-select</guid>
+    <guid>https://codeforces.com/contests/1942</guid>
     <category>Contest</category>  
-    <pubDate>Sat, 04 Nov 2023 04:00:00 GMT</pubDate>
+    <pubDate>Sat, 30 Mar 2024 14:35:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Grand Contest 066</title>
+    <link>https://atcoder.jp/contests/agc066</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Grand Contest 066
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/agc066">https://atcoder.jp/contests/agc066</a>
+<br/>
+<b>Duration</b>: 3 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/agc066</guid>
+    <category>Contest</category>  
+    <pubDate>Sun, 31 Mar 2024 12:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>April Fools Day Contest 2024</title>
+    <link>https://codeforces.com/contests/1952</link>
+    <description>
+<![CDATA[
+Contest in CodeForces
+<br/><br/>
+<b>Contest Name</b>: April Fools Day Contest 2024
+<br/>
+<b>Link</b>: <a href="https://codeforces.com/contests/1952">https://codeforces.com/contests/1952</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://codeforces.com/contests/1952</guid>
+    <category>Contest</category>  
+    <pubDate>Mon, 01 Apr 2024 14:35:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Starters 128</title>
+    <link>https://www.codechef.com/START128</link>
+    <description>
+<![CDATA[
+Contest in CodeChef
+<br/><br/>
+<b>Contest Name</b>: Starters 128
+<br/>
+<b>Link</b>: <a href="https://www.codechef.com/START128">https://www.codechef.com/START128</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://www.codechef.com/START128</guid>
+    <category>Contest</category>  
+    <pubDate>Wed, 03 Apr 2024 14:30:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Toyota Programming Contest 2024#4（AtCoder Beginner Contest 348）</title>
+    <link>https://atcoder.jp/contests/abc348</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: Toyota Programming Contest 2024#4（AtCoder Beginner Contest 348）
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/abc348">https://atcoder.jp/contests/abc348</a>
+<br/>
+<b>Duration</b>: 1 hour 40 minutes    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/abc348</guid>
+    <category>Contest</category>  
+    <pubDate>Sat, 06 Apr 2024 12:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Codeforces Round (Div. 1 + Div. 2)</title>
+    <link>https://codeforces.com/contests/1951</link>
+    <description>
+<![CDATA[
+Contest in CodeForces
+<br/><br/>
+<b>Contest Name</b>: Codeforces Round (Div. 1 + Div. 2)
+<br/>
+<b>Link</b>: <a href="https://codeforces.com/contests/1951">https://codeforces.com/contests/1951</a>
+<br/>
+<b>Duration</b>: 3 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://codeforces.com/contests/1951</guid>
+    <category>Contest</category>  
+    <pubDate>Sat, 06 Apr 2024 14:35:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Heuristic Contest 032</title>
+    <link>https://atcoder.jp/contests/ahc032</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Heuristic Contest 032
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/ahc032">https://atcoder.jp/contests/ahc032</a>
+<br/>
+<b>Duration</b>: 4 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/ahc032</guid>
+    <category>Contest</category>  
+    <pubDate>Sun, 07 Apr 2024 10:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Starters 129</title>
+    <link>https://www.codechef.com/START129</link>
+    <description>
+<![CDATA[
+Contest in CodeChef
+<br/><br/>
+<b>Contest Name</b>: Starters 129
+<br/>
+<b>Link</b>: <a href="https://www.codechef.com/START129">https://www.codechef.com/START129</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://www.codechef.com/START129</guid>
+    <category>Contest</category>  
+    <pubDate>Wed, 10 Apr 2024 14:30:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Beginner Contest 349</title>
+    <link>https://atcoder.jp/contests/abc349</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Beginner Contest 349
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/abc349">https://atcoder.jp/contests/abc349</a>
+<br/>
+<b>Duration</b>: 1 hour 40 minutes    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/abc349</guid>
+    <category>Contest</category>  
+    <pubDate>Sat, 13 Apr 2024 12:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Starters 130</title>
+    <link>https://www.codechef.com/START130</link>
+    <description>
+<![CDATA[
+Contest in CodeChef
+<br/><br/>
+<b>Contest Name</b>: Starters 130
+<br/>
+<b>Link</b>: <a href="https://www.codechef.com/START130">https://www.codechef.com/START130</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://www.codechef.com/START130</guid>
+    <category>Contest</category>  
+    <pubDate>Wed, 17 Apr 2024 14:30:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Beginner Contest 350</title>
+    <link>https://atcoder.jp/contests/abc350</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Beginner Contest 350
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/abc350">https://atcoder.jp/contests/abc350</a>
+<br/>
+<b>Duration</b>: 1 hour 40 minutes    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/abc350</guid>
+    <category>Contest</category>  
+    <pubDate>Sat, 20 Apr 2024 12:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Regular Contest 176</title>
+    <link>https://atcoder.jp/contests/arc176</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Regular Contest 176
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/arc176">https://atcoder.jp/contests/arc176</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/arc176</guid>
+    <category>Contest</category>  
+    <pubDate>Sun, 21 Apr 2024 12:00:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>Starters 131</title>
+    <link>https://www.codechef.com/START131</link>
+    <description>
+<![CDATA[
+Contest in CodeChef
+<br/><br/>
+<b>Contest Name</b>: Starters 131
+<br/>
+<b>Link</b>: <a href="https://www.codechef.com/START131">https://www.codechef.com/START131</a>
+<br/>
+<b>Duration</b>: 2 hours    
+<br/>
+]]>
+    </description>
+    <guid>https://www.codechef.com/START131</guid>
+    <category>Contest</category>  
+    <pubDate>Wed, 24 Apr 2024 14:30:00 GMT</pubDate>
+</item>
+    
+
+<item>
+    <title>AtCoder Beginner Contest 351</title>
+    <link>https://atcoder.jp/contests/abc351</link>
+    <description>
+<![CDATA[
+Contest in AtCoder
+<br/><br/>
+<b>Contest Name</b>: AtCoder Beginner Contest 351
+<br/>
+<b>Link</b>: <a href="https://atcoder.jp/contests/abc351">https://atcoder.jp/contests/abc351</a>
+<br/>
+<b>Duration</b>: 1 hour 40 minutes    
+<br/>
+]]>
+    </description>
+    <guid>https://atcoder.jp/contests/abc351</guid>
+    <category>Contest</category>  
+    <pubDate>Sat, 27 Apr 2024 12:00:00 GMT</pubDate>
 </item>
     
   </channel>
