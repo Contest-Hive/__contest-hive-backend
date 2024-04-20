@@ -34,8 +34,6 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     data = []
     soup = BeautifulSoup(r.content, "lxml")
     contests = soup.find("div", class_="datatable").find_all("tr")[1:]
-    with open("test.txt", "w", encoding="utf-8") as f:
-        f.write(str(contests[0]))
 
     for contest in contests:
         contest_id = contest.get("data-contestid")
