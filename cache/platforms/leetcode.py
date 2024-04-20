@@ -2,9 +2,14 @@ import json
 import httpx
 import asyncio
 
+from typing import List
 from datetime import datetime
 from bs4 import BeautifulSoup
-from typing import List
+
+
+
+
+
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -40,7 +45,10 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://leetcode.com/contest/")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+    }
+    response = await ses.get("https://leetcode.com/contest/", headers=headers)
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
