@@ -1,9 +1,20 @@
 import httpx
 import asyncio
 
+from typing import List
 from datetime import datetime
 from bs4 import BeautifulSoup
-from typing import List
+
+
+def parseDuration(duration: str) -> int:
+    duration = duration.split(":")
+    duration = list(map(int, duration))
+    durationSeconds = 0
+    length = len(duration)
+    for i in range(length):
+        durationSeconds += duration[i] * (60 ** (length - i - 1))
+
+    return durationSeconds
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -23,6 +34,8 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     data = []
     soup = BeautifulSoup(r.content, "lxml")
     contests = soup.find("div", class_="datatable").find_all("tr")[1:]
+    with open("test.txt", "w", encoding="utf-8") as f:
+        f.write(str(contests[0]))
 
     for contest in contests:
         contest_id = contest.get("data-contestid")
@@ -32,23 +45,21 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
         # The name contains weird things sometimes, <a> tag!
         for i in ("\r\n", "\n", "\r", "\t"):
-            name = name.replace(i, '')
+            name = name.replace(i, "")
         if anchor:
-            name = name.replace(anchor.text.strip(), '')
+            name = name.replace(anchor.text.strip(), "")
 
-        name = name.replace("   ", ' ').replace("  ", ' ').strip()
+        name = name.replace("   ", " ").replace("  ", " ").strip()
 
-        url = contest_id
+        url = contest_id  # f"https://codeforces.com/contest/{contest_id}"
 
         # the time format is in Moscow time, so we need to add +0300 to it to convert it to UTC
         startDate = contest_data[2].text.strip() + " +0300"
-        startTime = datetime.strptime(
-            startDate, "%b/%d/%Y %H:%M %z").utctimetuple()
-        startTime = datetime(*startTime[:6]).isoformat()+"Z"
+        startTime = datetime.strptime(startDate, "%b/%d/%Y %H:%M %z").utctimetuple()
+        startTime = datetime(*startTime[:6]).isoformat() + "Z"
 
-        duration = contest_data[3].text.strip()
-        hh, mm = duration.split(":")
-        durationSec = int(hh) * 3600 + int(mm) * 60
+        duration = contest_data[-3].text.strip()
+        durationSec = parseDuration(duration)
 
         contest_list = [name, url, startTime, durationSec]
         data.append(contest_list)
@@ -70,4 +81,5 @@ async def getContests(ses: httpx.AsyncClient):
 
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))
