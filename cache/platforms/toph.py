@@ -1,9 +1,9 @@
 import httpx
 import asyncio
 
+from typing import List
 from bs4 import BeautifulSoup
 from datetime import datetime
-from typing import List
 
 
 def timeToSeconds(duration):
@@ -21,8 +21,7 @@ def timeToSeconds(duration):
 
     # When I wrote this, God & I only knew what it did.
     # Now, only God knows what it does. :P
-    total = sum(int(parts[i - 1]) * units[parts[i]]
-                for i in range(1, len(parts), 2))
+    total = sum(int(parts[i - 1]) * units[parts[i]] for i in range(1, len(parts), 2))
 
     return total
 
@@ -47,7 +46,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     soup = BeautifulSoup(r.content, "lxml")
     contests = soup.find("table", class_="table").findAll("tr")
     data = []
-    contestUrls = []
+
     for i in contests:
         if not i.find("span", class_="timestamp"):
             continue
@@ -55,8 +54,9 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         name = x.text
         url = x["href"]
         timestamp = i.find("span", class_="timestamp")["data-timestamp"]
-        startTime = datetime.strftime(datetime.utcfromtimestamp(
-            int(timestamp)), "%Y-%m-%dT%H:%M:%SZ")
+        startTime = datetime.strftime(
+            datetime.utcfromtimestamp(int(timestamp)), "%Y-%m-%dT%H:%M:%SZ"
+        )
         contest_list = [name, url[3:], startTime]
         data.append(contest_list)
 
@@ -77,9 +77,8 @@ def extractDuration(r: httpx.Response) -> int:
         int: The duration of the contest in seconds.
     """
     soup = BeautifulSoup(r.content, "lxml")
-    duration = soup.find("span", class_="timestamp").parent.findAll(
-        "strong")[-1].text
-    return timeToSeconds(duration)
+    span = soup.find("span", {"data-timestamp-type": "proper"}).parent.findAll("strong")[-1].text
+    return timeToSeconds(span)
 
 
 async def getContests(ses: httpx.AsyncClient):
@@ -89,12 +88,17 @@ async def getContests(ses: httpx.AsyncClient):
 
     tasks = await asyncio.gather(*[ses.get(i) for i in Pending.urls])
     for i, r in enumerate(tasks):
-        duration = extractDuration(r)
-        data[i].append(duration)
+        try:
+            duration = extractDuration(r)
+            data[i].append(duration)
+        except Exception as e:
+            data[i].append(-1)
+            print(f"Error in Toph: {i} - {e}")
 
     return data
 
 
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))
