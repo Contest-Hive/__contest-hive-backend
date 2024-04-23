@@ -1,3 +1,4 @@
+import os
 import json
 import httpx
 import asyncio
@@ -5,11 +6,9 @@ import asyncio
 from typing import List
 from datetime import datetime
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
-
-
-
-
+# load_dotenv()
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -29,13 +28,17 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     data = []
     soup = BeautifulSoup(r.content, "lxml")
     a = json.loads(soup.find("script", id="__NEXT_DATA__").text)
-    contests = a["props"]["pageProps"]["dehydratedState"]["queries"][-1]["state"]["data"]["topTwoContests"]
+    contests = a["props"]["pageProps"]["dehydratedState"]["queries"][-1]["state"][
+        "data"
+    ]["topTwoContests"]
 
     for i in contests:
         name = i["title"]
         url = i["titleSlug"]
         startSec = i["startTime"]
-        startTime = datetime.strftime(datetime.utcfromtimestamp(startSec), "%Y-%m-%dT%H:%M:%SZ")
+        startTime = datetime.strftime(
+            datetime.utcfromtimestamp(startSec), "%Y-%m-%dT%H:%M:%SZ"
+        )
 
         durationSec = i["duration"]
         contest_list = [name, url, startTime, durationSec]
@@ -46,13 +49,27 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 async def getContests(ses: httpx.AsyncClient):
     headers = {
-        "User-Agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
     }
+    proxy = os.environ.get("PROXY")
+
+    if proxy:
+        proxies = {"http://": proxy, "https://": proxy}
+        ses = httpx.AsyncClient(proxies=proxies, timeout=33, follow_redirects=True)
+    else:
+        print("No proxy found")
+
     response = await ses.get("https://leetcode.com/contest/", headers=headers)
+    if response.status_code != 200:
+        print(f"Failed to fetch LeetCode contests: {response.status_code}")
+        return []
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
 
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))
