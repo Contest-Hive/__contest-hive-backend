@@ -14,7 +14,8 @@ def parseDuration(duration: str) -> int:
     for i in range(length):
         durationSeconds += duration[i] * (60 ** (length - i - 1))
 
-    return durationSeconds
+    # 02:00 -> 2 hours, not 2 minutes
+    return durationSeconds * 60 
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
