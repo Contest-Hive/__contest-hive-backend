@@ -82,7 +82,7 @@ def extractDuration(r: httpx.Response) -> int:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://toph.co/contests/current")
+    r = await ses.get("https://toph.co/contests")
     loop = asyncio.get_event_loop()
     data = await loop.run_in_executor(None, extractData, r)
 
