@@ -3,7 +3,7 @@ import asyncio
 
 from typing import List
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def timeToSeconds(duration):
@@ -44,18 +44,20 @@ def extractData(r: httpx.Response) -> List[List[str]]:
             - Start time of the contest in ISO 8601 format
     """
     soup = BeautifulSoup(r.content, "lxml")
-    contests = soup.find("table", class_="table").findAll("tr")
+    contests = soup.find("div", class_="col-md-9")
     data = []
+    with open("toph.html", "w") as f:
+        f.write(str(contests.prettify()))
 
     for i in contests:
         if not i.find("span", class_="timestamp"):
             continue
         x = i.find("a")
-        name = x.text
+        name = i.find("h2").text
         url = x["href"]
         timestamp = i.find("span", class_="timestamp")["data-timestamp"]
         startTime = datetime.strftime(
-            datetime.utcfromtimestamp(int(timestamp)), "%Y-%m-%dT%H:%M:%SZ"
+            datetime.fromtimestamp(int(timestamp), timezone.utc), "%Y-%m-%dT%H:%M:%SZ"
         )
         contest_list = [name, url[3:], startTime]
         data.append(contest_list)
@@ -77,7 +79,11 @@ def extractDuration(r: httpx.Response) -> int:
         int: The duration of the contest in seconds.
     """
     soup = BeautifulSoup(r.content, "lxml")
-    span = soup.find("span", {"data-timestamp-type": "proper"}).parent.findAll("strong")[-1].text
+    span = (
+        soup.find("span", {"data-timestamp-type": "proper"})
+        .parent.findAll("strong")[-1]
+        .text
+    )
     return timeToSeconds(span)
 
 

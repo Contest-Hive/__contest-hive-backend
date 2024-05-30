@@ -15,7 +15,7 @@ def parseDuration(duration: str) -> int:
         durationSeconds += duration[i] * (60 ** (length - i - 1))
 
     # 02:00 -> 2 hours, not 2 minutes
-    return durationSeconds * 60 
+    return durationSeconds * 60
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -66,16 +66,53 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     return data
 
 
-async def getContests(ses: httpx.AsyncClient):
+async def getContestsFromAPI(ses: httpx.AsyncClient):
+    url = "https://codeforces.com/api/contest.list"
+    mirror = "https://mirror.codeforces.com/api/contest.list"
     try:
-        response = await ses.get("https://codeforces.com/contests?complete=true")
-        loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(None, extractData, response)
+        response = await ses.get(url)
     except Exception as e:
-        print("Codeforces Main Failed, trying mirror...")
-        response = await ses.get("https://mirror.codeforces.com/contests?complete=true")
-        loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(None, extractData, response)
+        print("Codeforces API Failed, trying mirror...")
+        response = await ses.get(mirror)
+
+    contests = response.json()["result"]
+    data = []
+    for contest in contests:
+        if contest["phase"] == "BEFORE":
+            name = contest["name"]
+            url = f"https://codeforces.com/contest/{contest['id']}"
+            startTime = contest["startTimeSeconds"]
+            duration = contest["durationSeconds"]
+            data.append([name, url, startTime, duration])
+
+    return data
+
+
+async def getContests(ses: httpx.AsyncClient):
+    url = "https://codeforces.com/contests?complete=true"
+    mirror = "https://mirror.codeforces.com/contests?complete=true"
+
+    stages = {
+        1: ses.get(url),
+        2: ses.get(mirror),
+        3: getContestsFromAPI(ses),
+    }
+    count = 1
+    while count <= 3:
+        try:
+            if count == 3:  # API
+                print("Using Codeforces API...")
+                return await stages[count]
+
+            response = await stages[count]
+            loop = asyncio.get_event_loop()
+            return await loop.run_in_executor(None, extractData, response)
+        except Exception as e:
+            print(f"Codeforces {count} Failed, trying next stage...")
+            count += 1
+
+    print("Codeforces failed, returning empty list")
+    return []
 
 
 if __name__ == "__main__":

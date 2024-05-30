@@ -1,9 +1,9 @@
 import httpx
 import asyncio
 
+from typing import List
 from datetime import datetime
 from bs4 import BeautifulSoup
-from typing import List
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -29,22 +29,23 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         contest_data = contest.find_all("td")
         status = contest_data[3].text.strip().lower()
         if not status.startswith("before"):
-            break # the contests are sorted by time, so we can break here
+            break  # the contests are sorted by time, so we can break here
 
         name = contest_data[0].text.strip()
         anchor = contest_data[0].find("a")
         # The name contains weird things sometimes, <a> tag!
         for i in ("\r\n", "\n", "\r", "\t"):
-            name = name.replace(i, '')
+            name = name.replace(i, "")
         if anchor:
-            name = name.replace(anchor.text.strip(), '')
+            name = name.replace(anchor.text.strip(), "")
 
-        name = name.replace("   ", ' ').replace("  ", ' ').strip()
+        name = name.replace("   ", " ").replace("  ", " ").strip()
 
         url = contest_id
 
-        startTime = datetime.strptime(contest_data[1].text.strip(
-        ), "%b/%d/%Y %H:%M").strftime("%Y-%m-%dT%H:%M:%SZ")
+        startTime = datetime.strptime(
+            contest_data[1].text.strip(), "%b/%d/%Y %H:%M"
+        ).strftime("%Y-%m-%dT%H:%M:%SZ")
         duration = contest_data[2].text.strip()
         hh, mm = duration.split(":")
         durationSec = int(hh) * 3600 + int(mm) * 60
@@ -55,11 +56,56 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     return data
 
 
+async def getContestsFromAPI(ses: httpx.AsyncClient):
+    url = "https://codeforces.com/api/contest.list?gym=true"
+    mirror = "https://mirror.codeforces.com/api/contest.list?gym=true"
+    try:
+        response = await ses.get(url)
+    except Exception as e:
+        print("Codeforces GYM API Failed, trying mirror...")
+        response = await ses.get(mirror)
+
+    contests = response.json()["result"]
+    data = []
+    for contest in contests:
+        if contest["phase"] == "BEFORE":
+            name = contest["name"]
+            url = f"https://codeforces.com/contest/{contest['id']}"
+            startTime = contest["startTimeSeconds"]
+            duration = contest["durationSeconds"]
+            data.append([name, url, startTime, duration])
+
+    return data
+
+
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://codeforces.com/gyms?complete=true")
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, extractData, response)
+    url = "https://codeforces.com/gyms?complete=true"
+    mirror = "https://mirror.codeforces.com/gyms?complete=true"
+
+    stages = {
+        1: ses.get(url),
+        2: ses.get(mirror),
+        3: getContestsFromAPI(ses),
+    }
+    count = 1
+    while count <= 3:
+        try:
+            if count == 3:  # API
+                print("Using Codeforces GYM API...")
+                return await stages[count]
+
+            response = await stages[count]
+            loop = asyncio.get_event_loop()
+            return await loop.run_in_executor(None, extractData, response)
+        except Exception as e:
+            print(f"Codeforces GYM {count} Failed, trying next stage...")
+            count += 1
+
+    print("Codeforces GYM failed, returning empty list")
+    return []
+
 
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))
