@@ -46,19 +46,28 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     soup = BeautifulSoup(r.content, "lxml")
     contests = soup.find("div", class_="col-md-9")
     data = []
-    with open("toph.html", "w") as f:
-        f.write(str(contests.prettify()))
+    # with open("toph.html", "w") as f:
+    #     f.write(str(contests.prettify()))
+
+    contests = contests.findAll("tr")
 
     for i in contests:
-        if not i.find("span", class_="timestamp"):
+        timeData = i.find("span", class_="timestamp")
+        if not timeData:
             continue
+
         x = i.find("a")
-        name = i.find("h2").text
+        name = x.text
         url = x["href"]
-        timestamp = i.find("span", class_="timestamp")["data-timestamp"]
+        timestamp = timeData["data-timestamp"]
         startTime = datetime.strftime(
             datetime.fromtimestamp(int(timestamp), timezone.utc), "%Y-%m-%dT%H:%M:%SZ"
         )
+        if datetime.now(timezone.utc) > datetime.fromtimestamp(
+            int(timestamp), timezone.utc
+        ):
+            continue
+
         contest_list = [name, url[3:], startTime]
         data.append(contest_list)
 
@@ -88,7 +97,7 @@ def extractDuration(r: httpx.Response) -> int:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://toph.co/contests")
+    r = await ses.get("https://toph.co/contests/all")
     loop = asyncio.get_event_loop()
     data = await loop.run_in_executor(None, extractData, r)
 
