@@ -1,6 +1,7 @@
 bs4>=0.0.1
 pytz==2022.7
 lxml>=4.9.2
+urllib3
 httpx
 pymongo
 python-telegram-bot==13.15
