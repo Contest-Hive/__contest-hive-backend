@@ -116,7 +116,7 @@ Sent by <a href="https://contest-hive.vercel.app/">Contest Hive</a>
             "text": message,
             "parse_mode": "HTML",
             # "disable_notification": True,
-            "disable_web_page_preview": platform.lower() == "codechef",
+            # "disable_web_page_preview": platform.lower() == "codechef",
             # "reply_markup": '{"inline_keyboard": [[{"text": "Go to Contest", "url": "😀"}]]}'.replace(
             #     "😀", f"https://{url}"
             # ),
