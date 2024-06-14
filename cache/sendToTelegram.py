@@ -13,9 +13,9 @@ from pymongo import MongoClient
 load_dotenv()
 
 db = MongoClient(os.environ.get("MONGO_URI"))["Projects"]["contests"]
-db.delete_many({})  # Clear the database
-db.update_one({"_id": 1}, {"$set": {"count": 1}}, upsert=True)
-
+# db.delete_many({})  # Clear the database
+# db.update_one({"_id": 1}, {"$set": {"count": 1}}, upsert=True)
+# exit()
 
 channelID = -1002089353416  # @ContestHive
 bot_token = os.environ.get("BOT_TOKEN")
@@ -79,22 +79,31 @@ for platform, contests in data.items():
         if url.endswith("/"):
             url = url[:-1]
 
-        if db.find_one({"_id": url}):  # using the url as the id
+        if db.find_one({"_id": url}) or duration <= 0:  # using the url as the id
             continue
 
-        contestCount = db.find_one({"_id": 1})["count"] 
+        contestCount = db.find_one({"_id": 1})["count"]
         title = cleanText(title)
         duration = readableTime(duration)
         utcStartTime = startTime
-        startTime = datetime.datetime.strptime(
-            startTime, "%Y-%m-%dT%H:%M:%SZ"
-        ).strftime("%d %B %Y, %I:%M %p")
+        then = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=datetime.timezone.utc
+        )
+        now = datetime.datetime.now(datetime.UTC)
+        if now > then:
+            continue
+
+        startTime = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ")
+        localTimeUrl = f"https://www.timeanddate.com/worldclock/fixedtime.html?iso={then.strftime('%Y%m%dT%H%M')}"
+        print(localTimeUrl)
+
+        startTime = startTime.strftime("%d %B %Y, %I:%M %p")
 
         message = f"""
 🎉 <b>Contest <i>{contestCount}</i></b> at #<b>{platform.capitalize()}</b>
-
-🗓 <b>{title}</b>
-⏱ <b>{startTime} <i>UTC</i></b>
+<a href="https://{url}"> </a>
+📮 <b>{title}</b>
+⏱ <b>{startTime} <a href="{localTimeUrl}"><i>UTC</i></a></b>
 ⏳ <b>{duration}</b>
 🔗 <b><a href="https://{url}">Register now</a></b>
 

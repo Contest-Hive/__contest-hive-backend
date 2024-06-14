@@ -32,8 +32,7 @@ jobs:
       - working-directory: cache
         name: Send Data to Telegram Channel and save in MongoDB
         run: |
-          # python3 sendToTelegram.py
-          echo "Hello"
+          python3 sendToTelegram.py
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
