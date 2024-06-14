@@ -1,18 +1,27 @@
-# send message in the telegram channel when a new contest is added
+# sends message in the telegram channel when a new contest is added
 
 import os
 import json
+import httpx
+import string
 import datetime
+
 
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from telegram import Bot, constants, InlineKeyboardButton, InlineKeyboardMarkup
 
 load_dotenv()
 
 db = MongoClient(os.environ.get("MONGO_URI"))["Projects"]["contests"]
-bot = Bot(token=os.environ.get("BOT_TOKEN"))
+db.delete_many({})  # Clear the database
+db.update_one({"_id": 1}, {"$set": {"count": 1}}, upsert=True)
+
+
 channelID = -1002089353416  # @ContestHive
+bot_token = os.environ.get("BOT_TOKEN")
+messageUrl = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+session = httpx.Client(timeout=30, follow_redirects=True)
+
 
 with open("Data/all.json") as f:
     data = json.load(f)["data"]
@@ -50,6 +59,11 @@ def readableTime(seconds: int) -> str:
     return time.strip()
 
 
+def cleanText(text: str) -> str:
+    printable = string.printable
+    return "".join(filter(lambda x: x in printable, text))
+
+
 for platform, contests in data.items():
     for contest in contests:
         """
@@ -68,40 +82,50 @@ for platform, contests in data.items():
         if db.find_one({"_id": url}):  # using the url as the id
             continue
 
-        db.insert_one(
-            {
-                "_id": url,
-                "title": title,
-                "platform": platform,
-                "startTime": startTime,
-                "duration": duration,
-                "addedAt": datetime.datetime.now(datetime.UTC),
-            }
-        )
-
+        contestCount = db.find_one({"_id": 1})["count"] 
+        title = cleanText(title)
+        duration = readableTime(duration)
+        utcStartTime = startTime
         startTime = datetime.datetime.strptime(
             startTime, "%Y-%m-%dT%H:%M:%SZ"
         ).strftime("%d %B %Y, %I:%M %p")
 
         message = f"""
-🏆 <b>{platform.capitalize()}</b>
+🎉 <b>Contest <i>{contestCount}</i></b> at #<b>{platform.capitalize()}</b>
 
-📅 <b>{title}</b>
-🕒 <b>Start Time:</b> {startTime}
-⏰ <b>Duration:</b> {duration // 60} minutes
-🔗 [Link]({url})
+🗓 <b>{title}</b>
+⏱ <b>{startTime} <i>UTC</i></b>
+⏳ <b>{duration}</b>
+🔗 <b><a href="https://{url}">Register now</a></b>
 
-🤖 [Contest Hive](https://contest-hive.vercel.app/)
+Sent by <a href="https://contest-hive.vercel.app/">Contest Hive</a>
 """
-        buttons = [[InlineKeyboardButton("Go to Contest", url=f"https://{url}")]]
 
-        bot.sendMessage(
-            channelID,
-            message,
-            parse_mode=constants.ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(buttons),
-            disable_web_page_preview=True,
-            disable_notification=True,
-            timeout=30,
+        # Define the payload
+        payload = {
+            "chat_id": channelID,
+            "text": message,
+            "parse_mode": "HTML",
+            "disable_notification": True,
+            "disable_web_page_preview": platform.lower() == "codechef",
+            # "reply_markup": '{"inline_keyboard": [[{"text": "Go to Contest", "url": "😀"}]]}'.replace(
+            #     "😀", f"https://{url}"
+            # ),
+        }
+
+        # Send the POST request
+        response = session.post(messageUrl, data=payload)
+
+        db.insert_one(
+            {
+                "_id": url,
+                "title": title,
+                "platform": platform,
+                "startTime": utcStartTime,
+                "duration": duration,
+                "addedAt": datetime.datetime.now(datetime.UTC),
+            }
         )
+        db.update_one({"_id": 1}, {"$inc": {"count": 1}})
+
         print(f"Added {title} from {platform} to the database.")
