@@ -88,8 +88,12 @@ def extractDuration(r: httpx.Response) -> int:
         int: The duration of the contest in seconds.
     """
     soup = BeautifulSoup(r.content, "lxml")
+
+    with open("toph.html", "w") as f:
+        f.write(str(soup.prettify()))
+    
     span = (
-        soup.find("span", {"data-timestamp-type": "proper"})
+        soup.findAll("span", {"data-timestamp-type": "proper"})[-1]
         .parent.findAll("strong")[-1]
         .text
     )
