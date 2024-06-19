@@ -7,14 +7,14 @@ import httpx
 
 # Platforms
 from platforms import (
+    Toph,
     AtCoder,
     CodeChef,
-    CodeForces,
-    HackerEarth,
-    HackerRank,
     LeetCode,
-    Toph,
-    CodeForcesGym
+    CodeForces,
+    HackerRank,
+    HackerEarth,
+    CodeForcesGym,
 )
 
 
@@ -28,7 +28,7 @@ class Contests:
         "5": "hackerrank",
         "6": "leetcode",
         "7": "toph",
-        "8": "codeforces_gym"
+        "8": "codeforces-gym"
     }
 
     platformFuncs = {

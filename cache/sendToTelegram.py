@@ -30,7 +30,7 @@ urlData = {
     "atcoder": "atcoder.jp/contests/",
     "codechef": "www.codechef.com/",
     "codeforces": "codeforces.com/contests/",
-    "codeforces_gym": "codeforces.com/gymRegistration/",
+    "codeforces-gym": "codeforces.com/gymRegistration/",
     "hackerearth": "",  # No predefined URL format
     "hackerrank": "www.hackerrank.com/contests/",
     "leetcode": "leetcode.com/contest/",
