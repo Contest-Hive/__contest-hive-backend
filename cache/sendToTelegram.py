@@ -86,6 +86,10 @@ for platform, contests in data.items():
         title = cleanText(title)
         duration = readableTime(duration)
         utcStartTime = startTime
+        if isinstance(startTime, int):
+            print(f"Invalid start time for {title} from {platform} {startTime}.")
+            continue
+    
         then = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ").replace(
             tzinfo=datetime.timezone.utc
         )
