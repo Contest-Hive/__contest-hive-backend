@@ -99,6 +99,7 @@ for platform, contests in data.items():
 
         startTime = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ")
         localTimeUrl = f"https://www.timeanddate.com/worldclock/fixedtime.html?iso={then.strftime('%Y%m%dT%H%M')}"
+        platform = platform.replace('-', '_')
         print(localTimeUrl)
 
         startTime = startTime.strftime("%d %B %Y, %I:%M %p")
