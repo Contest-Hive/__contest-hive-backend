@@ -110,10 +110,10 @@ for platform, contests in data.items():
 📮 <b>{title}</b>
 ⏱ <b>{startTime} <a href="{localTimeUrl}"><i>UTC</i></a></b>
 ⏳ <b>{duration}</b>
-🔗 <b><a href="https://{url}">Register now</a></b>
 
 Sent by <a href="https://contest-hive.vercel.app/">Contest Hive</a>
 """
+# 🔗 <b><a href="https://{url}">Register now</a></b>
 
         # Define the payload
         payload = {
