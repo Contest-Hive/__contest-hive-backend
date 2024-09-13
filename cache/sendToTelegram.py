@@ -31,6 +31,7 @@ urlData = {
     "codechef": "www.codechef.com/",
     "codeforces": "codeforces.com/contests/",
     "codeforces-gym": "codeforces.com/gymRegistration/",
+	"codeforces_gym": "codeforces.com/gymRegistration/",
     "hackerearth": "",  # No predefined URL format
     "hackerrank": "www.hackerrank.com/contests/",
     "leetcode": "leetcode.com/contest/",
