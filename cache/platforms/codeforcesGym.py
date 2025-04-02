@@ -71,7 +71,9 @@ async def getContestsFromAPI(ses: httpx.AsyncClient):
         if contest["phase"] == "BEFORE":
             name = contest["name"]
             url = f"https://codeforces.com/contest/{contest['id']}"
-            startTime = contest["startTimeSeconds"]
+            
+            startTimeStamp = contest["startTimeSeconds"] # timestamp eg. 1743847200
+            startTime = datetime.fromtimestamp(startTimeStamp).isoformat() + "Z"
             duration = contest["durationSeconds"]
             data.append([name, url, startTime, duration])
 
@@ -87,7 +89,10 @@ async def getContests(ses: httpx.AsyncClient):
         2: ses.get(mirror),
         3: getContestsFromAPI(ses),
     }
-    count = 1
+
+    # TODO: Change later if codeforces removes the cloudflare protection
+    count = 3  # Start from the API
+    
     while count <= 3:
         try:
             if count == 3:  # API

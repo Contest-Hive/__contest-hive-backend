@@ -14,7 +14,7 @@ def parseDuration(duration: str) -> int:
     for i in range(length):
         durationSeconds += duration[i] * (60 ** (length - i - 1))
 
-    # 02:00 -> 2 hours, not 2 minutes
+    # 02:00 -> 2 hours, not 2 minutes. That's the reason for multiplying by 60
     return durationSeconds * 60
 
 
@@ -34,6 +34,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     """
     data = []
     soup = BeautifulSoup(r.content, "lxml")
+    print(soup)
     contests = soup.find("div", class_="datatable").find_all("tr")[1:]
 
     for contest in contests:
@@ -81,7 +82,9 @@ async def getContestsFromAPI(ses: httpx.AsyncClient):
         if contest["phase"] == "BEFORE":
             name = contest["name"]
             url = f"https://codeforces.com/contest/{contest['id']}"
-            startTime = contest["startTimeSeconds"]
+            
+            startTimeStamp = contest["startTimeSeconds"] # timestamp eg. 1743847200
+            startTime = datetime.fromtimestamp(startTimeStamp).isoformat() + "Z"
             duration = contest["durationSeconds"]
             data.append([name, url, startTime, duration])
 
@@ -97,7 +100,9 @@ async def getContests(ses: httpx.AsyncClient):
         2: ses.get(mirror),
         3: getContestsFromAPI(ses),
     }
-    count = 1
+    # TODO: Change later if codeforces removes the cloudflare protection
+    count = 3  # Start from the API
+
     while count <= 3:
         try:
             if count == 3:  # API
