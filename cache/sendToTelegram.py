@@ -75,7 +75,7 @@ for platform, contests in data.items():
         """
 
         title, urlSuffix, startTime, duration = contest
-        url = urlData[platform] + urlSuffix
+        url = urlData[platform] + str(urlSuffix)
 
         if url.endswith("/"):
             url = url[:-1]
