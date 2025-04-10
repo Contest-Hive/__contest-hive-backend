@@ -81,8 +81,8 @@ async def getContestsFromAPI(ses: httpx.AsyncClient):
     for contest in contests:
         if contest["phase"] == "BEFORE":
             name = contest["name"]
-            url = f"https://codeforces.com/contest/{contest['id']}"
-            
+            # url = f"https://codeforces.com/contest/{contest['id']}"
+            url = url = contest["id"]
             startTimeStamp = contest["startTimeSeconds"] # timestamp eg. 1743847200
             startTime = datetime.fromtimestamp(startTimeStamp).isoformat() + "Z"
             duration = contest["durationSeconds"]
