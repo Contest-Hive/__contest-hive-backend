@@ -29,9 +29,9 @@ with open("Data/all.json") as f:
 urlData = {
     "atcoder": "atcoder.jp/contests/",
     "codechef": "www.codechef.com/",
-    "codeforces": "codeforces.com/contests/",
-    "codeforces-gym": "codeforces.com/gymRegistration/",
-	"codeforces_gym": "codeforces.com/gymRegistration/",
+    "codeforces": "codeforces.com/contest/",
+    "codeforces-gym": "codeforces.com/gym/",
+    "codeforces_gym": "codeforces.com/gym/",
     "hackerearth": "",  # No predefined URL format
     "hackerrank": "www.hackerrank.com/contests/",
     "leetcode": "leetcode.com/contest/",
