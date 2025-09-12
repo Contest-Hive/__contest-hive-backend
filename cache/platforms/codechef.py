@@ -30,10 +30,13 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
     for i in contests:
         name = i["contest_name"]
-        url = i["contest_code"]# + "?itm_campaign=contest_listing"
+        url = i["contest_code"]  # + "?itm_campaign=contest_listing"
         startIso = i["contest_start_date_iso"]
-        startTime = datetime.fromisoformat(startIso).astimezone(
-            pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        startTime = (
+            datetime.fromisoformat(startIso)
+            .astimezone(pytz.utc)
+            .strftime("%Y-%m-%dT%H:%M:%SZ")
+        )
         durationSec = int(i["contest_duration"]) * 60
         contest_list = [name, url, startTime, durationSec]
 
@@ -43,11 +46,18 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    response = await ses.get("https://www.codechef.com/api/list/contests/all")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+    }
+    response = await ses.get(
+        "https://www.codechef.com/api/list/contests/all", headers=headers
+    )
     loop = asyncio.get_event_loop()
 
     return await loop.run_in_executor(None, extractData, response)
 
+
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))

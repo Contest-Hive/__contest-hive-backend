@@ -28,8 +28,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
             continue
         name = i["name"]
         url = i["slug"]
-        startTime = datetime.strptime(
-            i["get_starttimeiso"], "%Y-%m-%dT%H:%M:%SZ")
+        startTime = datetime.strptime(i["get_starttimeiso"], "%Y-%m-%dT%H:%M:%SZ")
         endTime = datetime.strptime(i["get_endtimeiso"], "%Y-%m-%dT%H:%M:%SZ")
         durationSec = int((endTime - startTime).total_seconds())
         startTime = startTime.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -44,11 +43,15 @@ async def getContests(ses: httpx.AsyncClient):
         "User-Agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
     }
 
-    response = await ses.get("https://www.hackerrank.com/rest/contests/upcoming", headers=headers)
+    response = await ses.get(
+        "https://www.hackerrank.com/rest/contests/upcoming", headers=headers
+    )
     loop = asyncio.get_event_loop()
 
     return await loop.run_in_executor(None, extractData, response)
 
+
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))

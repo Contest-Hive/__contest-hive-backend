@@ -31,13 +31,16 @@ async def getContests(ses: httpx.AsyncClient):
     contest_list = []
     for contest in upcoming_contests:
         title = contest["title"]
-        url = title.lower().replace(' ', '-')
+        url = title.lower().replace(" ", "-")
         start_time = contest["startTime"]
-        start_time = datetime.utcfromtimestamp(start_time).strftime("%Y-%m-%dT%H:%M:%SZ")
+        start_time = datetime.utcfromtimestamp(start_time).strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
         duration = contest["duration"]
         contest_list.append([title, url, start_time, duration])
-    
+
     return contest_list
+
 
 if __name__ == "__main__":
     from pprint import pprint

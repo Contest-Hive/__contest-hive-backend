@@ -24,15 +24,15 @@ def secondsToTime(s):
 def timeToSeconds(duration):
     parts = duration.split()
     units = {
-        'days': 24 * 60 * 60,
-        'hours': 60 * 60,
-        'minutes': 60,
-        'day': 24 * 60 * 60,
-        'hour': 60 * 60,
-        'minute': 60}
+        "days": 24 * 60 * 60,
+        "hours": 60 * 60,
+        "minutes": 60,
+        "day": 24 * 60 * 60,
+        "hour": 60 * 60,
+        "minute": 60,
+    }
 
-    total = sum(int(parts[i - 1]) * units[parts[i]]
-                for i in range(1, len(parts), 2))
+    total = sum(int(parts[i - 1]) * units[parts[i]] for i in range(1, len(parts), 2))
 
     return total
 
@@ -43,17 +43,12 @@ def humanReadableTime(startTime: str):
     if a.startswith("0"):
         a = a[1:]
 
-    fate = {
-        "1": "st",
-        "2": "nd",
-        "3": "rd"
-    }
+    fate = {"1": "st", "2": "nd", "3": "rd"}
 
     date = a.split()[0]
     finalTime = f"{date}{fate.get(date[-1], 'th')} {a[len(date)+1:]} UTC"
 
     return finalTime
-
 
 
 def calculate_time_difference(time_str):

@@ -28,7 +28,7 @@ class Contests:
         "5": "hackerrank",
         "6": "leetcode",
         "7": "toph",
-        "8": "codeforces-gym"
+        "8": "codeforces-gym",
     }
 
     platformFuncs = {
@@ -39,7 +39,7 @@ class Contests:
         "5": HackerRank,
         "6": LeetCode,
         "7": Toph,
-        "8": CodeForcesGym
+        "8": CodeForcesGym,
     }
 
     def __init__(self):
@@ -64,7 +64,7 @@ class Contests:
         allData = {
             "ok": True,
             "data": self.cachedData,
-            "lastUpdated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            "lastUpdated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
         self.dumpJson("all", allData)
 
@@ -73,14 +73,17 @@ class Contests:
             data = {
                 "ok": True,
                 "data": self.cachedData[i],
-                "lastUpdated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+                "lastUpdated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
             self.dumpJson(i, data)
 
         print("Dumped all data to json files")
 
     async def getAllContests(self):
-        ses = httpx.AsyncClient(timeout=33, follow_redirects=1)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+        }
+        ses = httpx.AsyncClient(timeout=33, follow_redirects=1, headers=headers)
 
         print("Getting all contests...")
         x = [func(ses) for func in self.platformFuncs.values()]

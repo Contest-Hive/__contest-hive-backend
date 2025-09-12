@@ -90,7 +90,7 @@ for platform, contests in data.items():
         if isinstance(startTime, int):
             print(f"Invalid start time for {title} from {platform} {startTime}.")
             continue
-    
+
         then = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ").replace(
             tzinfo=datetime.timezone.utc
         )
@@ -100,7 +100,7 @@ for platform, contests in data.items():
 
         startTime = datetime.datetime.strptime(startTime, "%Y-%m-%dT%H:%M:%SZ")
         localTimeUrl = f"https://www.timeanddate.com/worldclock/fixedtime.html?iso={then.strftime('%Y%m%dT%H%M')}"
-        platform = platform.replace('-', '_')
+        platform = platform.replace("-", "_")
         print(localTimeUrl)
 
         startTime = startTime.strftime("%d %B %Y, %I:%M %p")
@@ -114,7 +114,7 @@ for platform, contests in data.items():
 
 Sent by <a href="https://contest-hive.vercel.app/">Contest Hive</a>
 """
-# 🔗 <b><a href="https://{url}">Register now</a></b>
+        # 🔗 <b><a href="https://{url}">Register now</a></b>
 
         # Define the payload
         payload = {

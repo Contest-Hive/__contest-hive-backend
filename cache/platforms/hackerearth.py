@@ -39,7 +39,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
         url = url[8:]
         if url[-1] == "/":
             url = url[:-1]
-        
+
         contest_list = [name, url, startTime, durationSec]
         data.append(contest_list)
 
@@ -51,6 +51,8 @@ async def getContests(ses: httpx.AsyncClient):
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
+
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=13))))

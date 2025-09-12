@@ -28,12 +28,16 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     for con in contests:
         ele = con.find_all("td")
         text = ele[1].text.strip()
-        name = text[text.find("\n") + 1:].strip().split()[1:]
+        name = text[text.find("\n") + 1 :].strip().split()[1:]
         name = " ".join(name)
         url = ele[1].select("a")[0].get("href")[10:]
         text = ele[0].text.strip()
-        startTime = datetime.strptime(text, "%Y-%m-%d %H:%M:%S%z").astimezone(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        h, m = ele[2].text.split(':')
+        startTime = (
+            datetime.strptime(text, "%Y-%m-%d %H:%M:%S%z")
+            .astimezone(pytz.utc)
+            .strftime("%Y-%m-%dT%H:%M:%SZ")
+        )
+        h, m = ele[2].text.split(":")
         durationSec = int(h) * 3600 + int(m) * 60
         contest_list = [name, url, startTime, durationSec]
         data.append(contest_list)
@@ -46,6 +50,8 @@ async def getContests(ses: httpx.AsyncClient):
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, extractData, response)
 
+
 if __name__ == "__main__":
     from pprint import pprint
+
     pprint(asyncio.run(getContests(httpx.AsyncClient(timeout=None))))

@@ -49,7 +49,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
     # with open("toph.html", "w") as f:
     #     f.write(str(contests.prettify()))
 
-    contests = contests.findAll("tr")
+    contests = contests.find_all("tr")
 
     for i in contests:
         timeData = i.find("span", class_="timestamp")
@@ -91,10 +91,10 @@ def extractDuration(r: httpx.Response) -> int:
 
     with open("toph.html", "w") as f:
         f.write(str(soup.prettify()))
-    
+
     span = (
-        soup.findAll("span", {"data-timestamp-type": "proper"})[-1]
-        .parent.findAll("strong")[-1]
+        soup.find_all("span", {"data-timestamp-type": "proper"})[-1]
+        .parent.find_all("strong")[-1]
         .text
     )
     return timeToSeconds(span)

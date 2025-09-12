@@ -121,15 +121,16 @@ Contest in {platform}
     i["title"] = i["title"].replace("&", "&amp;")
     i["url"] = i["url"].replace("&", "&amp;")
     i["platform"] = i["platform"].replace("&", "&amp;")
-    timeLeft = datetime.datetime.strptime(
-        i["startTime"], "%a, %d %b %Y %H:%M:%S GMT") - datetime.datetime.now()
+    timeLeft = (
+        datetime.datetime.strptime(i["startTime"], "%a, %d %b %Y %H:%M:%S GMT")
+        - datetime.datetime.now()
+    )
     i["relativeStartTime"] = secondsToTime(timeLeft.total_seconds())
 
     itemTemplate = itemTemplate.format(**i)
     allItems.append(itemTemplate)
 
-rssTemplate = rssTemplate.format(
-    buildTime=currentTime, items="\n".join(allItems))
+rssTemplate = rssTemplate.format(buildTime=currentTime, items="\n".join(allItems))
 
 with open("Data/rss.xml", "w", encoding="utf-8") as f:
     f.write(rssTemplate.strip())
