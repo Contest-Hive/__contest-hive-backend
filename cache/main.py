@@ -56,6 +56,7 @@ class Contests:
         if not os.path.exists("Data"):
             os.mkdir("Data")
 
+        
         with open(f"Data/{name}.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False)
 
@@ -94,12 +95,14 @@ class Contests:
         # if any error occurs, we will use the cached data
         # else we will update the cached data
         for i, j in enumerate(x):
+            
             if isinstance(j, Exception):
                 print(f"Error in {y[i]}: {j}")
-
             else:
-                self.cachedData[y[i]] = j
-                print(f"Updated {y[i]}")
+                # print(self.cachedData)
+                if j: # only dump is there is a new data
+                    self.cachedData[y[i]] = j
+                    print(f"Updated {y[i]}")
 
         self.dumpAllJson()
 
