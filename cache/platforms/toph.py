@@ -1,3 +1,4 @@
+import re
 import httpx
 import asyncio
 
@@ -80,6 +81,7 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 def extractDuration(r: httpx.Response) -> int:
     """
     Extracts the duration of a contest from a Toph webpage.
+    Yes, you have to visit the exact contest page to get the duration.
 
     Args:
         r (httpx.Response): The HTTP response object containing the HTML content of the Toph contest webpage.
@@ -88,16 +90,17 @@ def extractDuration(r: httpx.Response) -> int:
         int: The duration of the contest in seconds.
     """
     soup = BeautifulSoup(r.content, "lxml")
+    # with open("toph.html", "w") as f:
+    #     f.write(str(soup.prettify()))
 
-    with open("toph.html", "w") as f:
-        f.write(str(soup.prettify()))
+    scheduleParagraph = soup.find("h2", string="Schedule").find_next("p")
+    durationText = scheduleParagraph.find_all("strong")[-1].get_text(strip=True).lower()
 
-    span = (
-        soup.find_all("span", {"data-timestamp-type": "proper"})[-1]
-        .parent.find_all("strong")[-1]
-        .text
-    )
-    return timeToSeconds(span)
+    matches = re.findall(r'(\d+)\s*(hour|hours|minute|minutes)', durationText)
+    durationSeconds = sum(int(value) * (3600 if unit.startswith("hour") else 60) for value, unit in matches)
+
+    return durationSeconds
+
 
 
 async def getContests(ses: httpx.AsyncClient):
