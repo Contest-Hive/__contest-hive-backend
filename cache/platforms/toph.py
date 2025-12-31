@@ -1,34 +1,8 @@
-import re
 import httpx
 import asyncio
 
 from typing import List
-from bs4 import BeautifulSoup
-from datetime import datetime, timezone
-
-
-def timeToSeconds(duration):
-    parts = duration.split()
-    units = {
-        "days": 24 * 60 * 60,
-        "hours": 60 * 60,
-        "minutes": 60,
-        "seconds": 1,
-        "day": 24 * 60 * 60,
-        "hour": 60 * 60,
-        "minute": 60,
-        "second": 1,
-    }
-
-    # When I wrote this, God & I only knew what it did.
-    # Now, only God knows what it does. :P
-    total = sum(int(parts[i - 1]) * units[parts[i]] for i in range(1, len(parts), 2))
-
-    return total
-
-
-class Pending:
-    urls = []
+from datetime import datetime, UTC
 
 
 def extractData(r: httpx.Response) -> List[List[str]]:
@@ -43,79 +17,27 @@ def extractData(r: httpx.Response) -> List[List[str]]:
             - Name of the contest
             - URL of the contest
             - Start time of the contest in ISO 8601 format
+            - Duration in seconds
     """
-    soup = BeautifulSoup(r.content, "lxml")
-    contests = soup.find("div", class_="col-md-9")
+    jsonData = r.json()["contests"]
     data = []
-    # with open("toph.html", "w") as f:
-    #     f.write(str(contests.prettify()))
-
-    contests = contests.find_all("tr")
-
-    for i in contests:
-        timeData = i.find("span", class_="timestamp")
-        if not timeData:
-            continue
-
-        x = i.find("a")
-        name = x.text
-        url = x["href"]
-        timestamp = timeData["data-timestamp"]
-        startTime = datetime.strftime(
-            datetime.fromtimestamp(int(timestamp), timezone.utc), "%Y-%m-%dT%H:%M:%SZ"
-        )
-        if datetime.now(timezone.utc) > datetime.fromtimestamp(
-            int(timestamp), timezone.utc
-        ):
-            continue
-
-        contest_list = [name, url[3:], startTime]
-        data.append(contest_list)
-
-        # To get the duration of the contest
-        Pending.urls.append("https://toph.co" + url)
-
+    for i in jsonData:
+        title = i["title"]
+        url = i["url"].split('/')[-1]
+        startsAt = i["startsAt"]
+        duration = i["duration"] * 60
+        d = [title, url, startsAt, duration]
+        if datetime.fromisoformat(startsAt) > datetime.now(UTC):
+            data.append(d)
+    
     return data
 
-
-def extractDuration(r: httpx.Response) -> int:
-    """
-    Extracts the duration of a contest from a Toph webpage.
-    Yes, you have to visit the exact contest page to get the duration.
-
-    Args:
-        r (httpx.Response): The HTTP response object containing the HTML content of the Toph contest webpage.
-
-    Returns:
-        int: The duration of the contest in seconds.
-    """
-    soup = BeautifulSoup(r.content, "lxml")
-    # with open("toph.html", "w") as f:
-    #     f.write(str(soup.prettify()))
-
-    scheduleParagraph = soup.find("h2", string="Schedule").find_next("p")
-    durationText = scheduleParagraph.find_all("strong")[-1].get_text(strip=True).lower()
-
-    matches = re.findall(r'(\d+)\s*(hour|hours|minute|minutes)', durationText)
-    durationSeconds = sum(int(value) * (3600 if unit.startswith("hour") else 60) for value, unit in matches)
-
-    return durationSeconds
 
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://toph.co/contests/all")
-    loop = asyncio.get_event_loop()
-    data = await loop.run_in_executor(None, extractData, r)
-
-    tasks = await asyncio.gather(*[ses.get(i) for i in Pending.urls])
-    for i, r in enumerate(tasks):
-        try:
-            duration = extractDuration(r)
-            data[i].append(duration)
-        except Exception as e:
-            data[i].append(-1)
-            print(f"Error in Toph: {i} - {e}")
+    r = await ses.get("https://toph.co/contests.json")
+    data = extractData(r)
 
     return data
 
