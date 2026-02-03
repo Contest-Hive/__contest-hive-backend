@@ -36,8 +36,18 @@ def extractData(r: httpx.Response) -> List[List[str]]:
 
 
 async def getContests(ses: httpx.AsyncClient):
-    r = await ses.get("https://toph.co/contests.json")
-    data = extractData(r)
+    primary_url = "https://toph.co/contests.json"
+    proxy_url = "https://cors19.nusab19.workers.dev/?pass=monu&url=https://toph.co/contests.json"
+    
+    try:
+        r = await ses.get(primary_url)
+        r.raise_for_status()
+        data = extractData(r)
+    except (httpx.HTTPError, ValueError, KeyError):
+        print("Using proxy url")
+        r = await ses.get(proxy_url)
+        r.raise_for_status()
+        data = extractData(r)
 
     return data
 
