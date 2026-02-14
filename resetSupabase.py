@@ -4,28 +4,26 @@ Untested.
 """
 
 import os
+from datetime import datetime, timezone
+from sys import argv
+
 import psycopg2
 from dotenv import load_dotenv
-from datetime import datetime, timezone
 
 load_dotenv()
 
 # Database credentials
-USER = os.getenv("user", "postgres.uizfbklinelvplmvydba")
-PASSWORD = os.getenv("password")
-HOST = os.getenv("host", "aws-1-ap-south-1.pooler.supabase.com")
-PORT = os.getenv("port", "6543")
-DBNAME = os.getenv("dbname", "postgres")
+USER = "postgres.uizfbklinelvplmvydba"
+PASSWORD = argv[-1]
+HOST = "aws-1-ap-south-1.pooler.supabase.com"
+PORT = "6543"
+DBNAME = "postgres"
 
 utc_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 try:
     connection = psycopg2.connect(
-        user=USER,
-        password=PASSWORD,
-        host=HOST,
-        port=PORT,
-        dbname=DBNAME
+        user=USER, password=PASSWORD, host=HOST, port=PORT, dbname=DBNAME
     )
     cursor = connection.cursor()
 
@@ -49,8 +47,8 @@ try:
         upsert_query = """
         INSERT INTO public.daily_stats_history (date, past24api, past24page)
         VALUES (%s, %s, %s)
-        ON CONFLICT (date) 
-        DO UPDATE SET 
+        ON CONFLICT (date)
+        DO UPDATE SET
             past24api = EXCLUDED.past24api,
             past24page = EXCLUDED.past24page;
         """
@@ -59,8 +57,8 @@ try:
         # 4. Reset the daily statistics in the production table
         # Values: past24=1, past24api=1, past24page=2
         reset_query = """
-        UPDATE public.stats 
-        SET past24 = 1, past24api = 1, past24page = 2 
+        UPDATE public.stats
+        SET past24 = 1, past24api = 1, past24page = 2
         WHERE id = 1;
         """
         cursor.execute(reset_query)
@@ -76,12 +74,12 @@ try:
 
 except Exception as e:
     print(f"Failed to execute reset: {e}")
-    if 'connection' in locals():
+    if "connection" in locals():
         connection.rollback()
 
 finally:
-    if 'cursor' in locals():
+    if "cursor" in locals():
         cursor.close()
-    if 'connection' in locals():
+    if "connection" in locals():
         connection.close()
         print("Connection closed.")

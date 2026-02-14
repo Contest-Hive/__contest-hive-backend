@@ -21,5 +21,4 @@ jobs:
 
       - name: Reset Data
         run: |
-          python3 resetStat.py ${{ secrets.MONGO_URI }}
-
+          python3 resetSupabase.py ${{ secrets.SUPA_PASS }}
